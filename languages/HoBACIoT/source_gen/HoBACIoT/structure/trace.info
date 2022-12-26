@@ -1,0 +1,1390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1163670490218:jetbrains.mps.baseLanguage.structure.SwitchStatement" />
+  <root>
+    <file name="ConceptPresentationAspectImpl.java">
+      <unit at="11,0,293,0" name="HoBACIoT.structure.ConceptPresentationAspectImpl" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <unit at="10,0,94,0" name="HoBACIoT.structure.LanguageConceptSwitch" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <unit at="18,0,521,0" name="HoBACIoT.structure.StructureAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/2537808983820360097">
+    <file name="EnumerationDescriptor_Processor.java">
+      <node id="2537808983820360097" at="14,44,15,168" concept="10" />
+      <node id="2537808983820360098" at="18,0,19,0" concept="2" trace="myMember_ARM_0" />
+      <node id="2537808983820360099" at="19,0,20,0" concept="2" trace="myMember_x86_0" />
+      <node id="2718605664466731902" at="20,0,21,0" concept="2" trace="myMember_x64_0" />
+      <node id="2537808983820360097" at="22,0,23,0" concept="2" trace="myIndex" />
+      <node id="2537808983820360097" at="23,0,24,0" concept="2" trace="myMembers" />
+      <node id="2537808983820360097" at="27,62,28,26" concept="6" />
+      <node id="2537808983820360097" at="33,68,34,21" concept="6" />
+      <node id="2537808983820360097" at="40,29,41,18" concept="6" />
+      <node id="2537808983820360098" at="44,17,45,30" concept="6" />
+      <node id="2537808983820360099" at="46,17,47,30" concept="6" />
+      <node id="2718605664466731902" at="48,17,49,30" concept="6" />
+      <node id="2537808983820360097" at="50,5,51,16" concept="6" />
+      <node id="2537808983820360097" at="56,73,57,39" concept="5" />
+      <node id="2537808983820360097" at="58,22,59,18" concept="6" />
+      <node id="2537808983820360097" at="60,5,61,32" concept="6" />
+      <node id="2537808983820360097" at="14,0,17,0" concept="0" trace="EnumerationDescriptor_Processor#()V" />
+      <node id="2537808983820360097" at="39,88,42,5" concept="3" />
+      <node id="2537808983820360097" at="57,39,60,5" concept="3" />
+      <node id="2537808983820360097" at="25,0,30,0" concept="4" trace="getDefault#()Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="2537808983820360097" at="31,0,36,0" concept="4" trace="getMembers#()Ljava/util/List;" />
+      <node id="2537808983820360097" at="42,5,50,5" concept="11" />
+      <node id="2537808983820360097" at="54,0,63,0" concept="4" trace="getMember#(J)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="2537808983820360097" at="37,0,53,0" concept="4" trace="getMember#(Ljava/lang/String;)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <scope id="2537808983820360097" at="14,44,15,168" />
+      <scope id="2537808983820360097" at="27,62,28,26" />
+      <scope id="2537808983820360097" at="33,68,34,21" />
+      <scope id="2537808983820360097" at="40,29,41,18" />
+      <scope id="2537808983820360098" at="44,17,45,30" />
+      <scope id="2537808983820360099" at="46,17,47,30" />
+      <scope id="2718605664466731902" at="48,17,49,30" />
+      <scope id="2537808983820360097" at="58,22,59,18" />
+      <scope id="2537808983820360097" at="14,0,17,0" />
+      <scope id="2537808983820360097" at="25,0,30,0" />
+      <scope id="2537808983820360097" at="31,0,36,0" />
+      <scope id="2537808983820360097" at="56,73,61,32">
+        <var name="index" id="2537808983820360097" />
+      </scope>
+      <scope id="2537808983820360097" at="54,0,63,0">
+        <var name="idValue" id="2537808983820360097" />
+      </scope>
+      <scope id="2537808983820360097" at="39,88,51,16" />
+      <scope id="2537808983820360097" at="37,0,53,0">
+        <var name="memberName" id="2537808983820360097" />
+      </scope>
+      <unit id="2537808983820360097" at="12,0,64,0" name="HoBACIoT.structure.EnumerationDescriptor_Processor" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2537808983820360097" at="54,0,55,0" concept="2" trace="myEnumerationProcessor" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/2537808983820367253">
+    <file name="EnumerationDescriptor_Connectivity.java">
+      <node id="2537808983820367253" at="14,47,15,171" concept="10" />
+      <node id="2537808983820367254" at="18,0,19,0" concept="2" trace="myMember_Ethernet_0" />
+      <node id="2537808983820367255" at="19,0,20,0" concept="2" trace="myMember_Serial_0" />
+      <node id="2537808983820367262" at="20,0,21,0" concept="2" trace="myMember_WiFi_0" />
+      <node id="2537808983820367267" at="21,0,22,0" concept="2" trace="myMember_Bluethooth_0" />
+      <node id="2537808983820367277" at="22,0,23,0" concept="2" trace="myMember_ZigBee_0" />
+      <node id="2537808983820367283" at="23,0,24,0" concept="2" trace="myMember_Z_Wave_0" />
+      <node id="7022717227710136753" at="24,0,25,0" concept="2" trace="myMember_Other_0" />
+      <node id="2537808983820367253" at="26,0,27,0" concept="2" trace="myIndex" />
+      <node id="2537808983820367253" at="27,0,28,0" concept="2" trace="myMembers" />
+      <node id="2537808983820367253" at="31,62,32,16" concept="6" />
+      <node id="2537808983820367253" at="37,68,38,21" concept="6" />
+      <node id="2537808983820367253" at="44,29,45,18" concept="6" />
+      <node id="2537808983820367254" at="48,22,49,35" concept="6" />
+      <node id="2537808983820367255" at="50,20,51,33" concept="6" />
+      <node id="2537808983820367262" at="52,18,53,31" concept="6" />
+      <node id="2537808983820367267" at="54,24,55,37" concept="6" />
+      <node id="2537808983820367277" at="56,20,57,33" concept="6" />
+      <node id="2537808983820367283" at="58,20,59,33" concept="6" />
+      <node id="7022717227710136753" at="60,19,61,32" concept="6" />
+      <node id="2537808983820367253" at="62,5,63,16" concept="6" />
+      <node id="2537808983820367253" at="68,73,69,39" concept="5" />
+      <node id="2537808983820367253" at="70,22,71,18" concept="6" />
+      <node id="2537808983820367253" at="72,5,73,32" concept="6" />
+      <node id="2537808983820367253" at="14,0,17,0" concept="0" trace="EnumerationDescriptor_Connectivity#()V" />
+      <node id="2537808983820367253" at="43,88,46,5" concept="3" />
+      <node id="2537808983820367253" at="69,39,72,5" concept="3" />
+      <node id="2537808983820367253" at="29,0,34,0" concept="4" trace="getDefault#()Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="2537808983820367253" at="35,0,40,0" concept="4" trace="getMembers#()Ljava/util/List;" />
+      <node id="2537808983820367253" at="66,0,75,0" concept="4" trace="getMember#(J)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="2537808983820367253" at="46,5,62,5" concept="11" />
+      <node id="2537808983820367253" at="41,0,65,0" concept="4" trace="getMember#(Ljava/lang/String;)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <scope id="2537808983820367253" at="14,47,15,171" />
+      <scope id="2537808983820367253" at="31,62,32,16" />
+      <scope id="2537808983820367253" at="37,68,38,21" />
+      <scope id="2537808983820367253" at="44,29,45,18" />
+      <scope id="2537808983820367254" at="48,22,49,35" />
+      <scope id="2537808983820367255" at="50,20,51,33" />
+      <scope id="2537808983820367262" at="52,18,53,31" />
+      <scope id="2537808983820367267" at="54,24,55,37" />
+      <scope id="2537808983820367277" at="56,20,57,33" />
+      <scope id="2537808983820367283" at="58,20,59,33" />
+      <scope id="7022717227710136753" at="60,19,61,32" />
+      <scope id="2537808983820367253" at="70,22,71,18" />
+      <scope id="2537808983820367253" at="14,0,17,0" />
+      <scope id="2537808983820367253" at="29,0,34,0" />
+      <scope id="2537808983820367253" at="35,0,40,0" />
+      <scope id="2537808983820367253" at="68,73,73,32">
+        <var name="index" id="2537808983820367253" />
+      </scope>
+      <scope id="2537808983820367253" at="66,0,75,0">
+        <var name="idValue" id="2537808983820367253" />
+      </scope>
+      <scope id="2537808983820367253" at="43,88,63,16" />
+      <scope id="2537808983820367253" at="41,0,65,0">
+        <var name="memberName" id="2537808983820367253" />
+      </scope>
+      <unit id="2537808983820367253" at="12,0,76,0" name="HoBACIoT.structure.EnumerationDescriptor_Connectivity" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2537808983820367253" at="53,0,54,0" concept="2" trace="myEnumerationConnectivity" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/2822187207061900918">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2822187207061900918" at="33,0,34,0" concept="2" trace="props_Piece" />
+      <node id="2822187207061900918" at="200,34,201,76" concept="5" />
+      <node id="2822187207061900918" at="201,76,202,37" concept="1" />
+      <node id="2822187207061900918" at="203,9,204,27" concept="6" />
+      <node id="2822187207061900918" at="199,39,203,9" concept="3" />
+      <scope id="2822187207061900918" at="200,34,202,37">
+        <var name="cpb" id="2822187207061900918" />
+      </scope>
+      <scope id="2822187207061900918" at="199,39,204,27" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2822187207061900918" at="33,0,34,0" concept="8" trace="Piece" />
+      <node id="2822187207061900918" at="69,47,70,44" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2822187207061900918" at="40,0,41,0" concept="2" trace="myConceptPiece" />
+      <node id="2822187207061900918" at="118,39,119,30" concept="6" />
+      <node id="2822187207061900918" at="375,63,376,148" concept="5" />
+      <node id="2822187207061900918" at="376,148,377,33" concept="1" />
+      <node id="2822187207061900918" at="377,33,378,71" concept="1" />
+      <node id="2822187207061900918" at="378,71,379,95" concept="1" />
+      <node id="2822187207061900918" at="379,95,380,17" concept="1" />
+      <node id="7292197992424468465" at="380,17,381,197" concept="1" />
+      <node id="7292197992424468489" at="381,197,382,202" concept="1" />
+      <node id="7292197992424468498" at="382,202,383,201" concept="1" />
+      <node id="7292197992424468508" at="383,201,384,194" concept="1" />
+      <node id="7292197992424468519" at="384,194,385,197" concept="1" />
+      <node id="7292197992424468531" at="385,197,386,202" concept="1" />
+      <node id="2822187207061900918" at="386,202,387,22" concept="6" />
+      <node id="2822187207061900918" at="375,0,389,0" concept="9" trace="createDescriptorForPiece#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2822187207061900918" at="118,39,119,30" />
+      <scope id="2822187207061900918" at="375,63,387,22">
+        <var name="b" id="2822187207061900918" />
+      </scope>
+      <scope id="2822187207061900918" at="375,0,389,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/2822187207061900923">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2822187207061900923" at="16,0,17,0" concept="2" trace="props_Chambre" />
+      <node id="2822187207061900923" at="81,36,82,76" concept="5" />
+      <node id="2822187207061900923" at="82,76,83,35" concept="1" />
+      <node id="2822187207061900923" at="83,35,84,39" concept="1" />
+      <node id="2822187207061900923" at="85,9,86,29" concept="6" />
+      <node id="2822187207061900923" at="80,41,85,9" concept="3" />
+      <scope id="2822187207061900923" at="81,36,84,39">
+        <var name="cpb" id="2822187207061900923" />
+      </scope>
+      <scope id="2822187207061900923" at="80,41,86,29" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2822187207061900923" at="16,0,17,0" concept="8" trace="Chambre" />
+      <node id="2822187207061900923" at="52,49,53,46" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2822187207061900923" at="23,0,24,0" concept="2" trace="myConceptChambre" />
+      <node id="2822187207061900923" at="84,41,85,32" concept="6" />
+      <node id="2822187207061900923" at="198,65,199,150" concept="5" />
+      <node id="2822187207061900923" at="199,150,200,34" concept="1" />
+      <node id="2822187207061900923" at="200,34,201,40" concept="7" />
+      <node id="2822187207061900923" at="201,40,202,76" concept="1" />
+      <node id="2822187207061900923" at="202,76,203,95" concept="1" />
+      <node id="2822187207061900923" at="203,95,204,17" concept="1" />
+      <node id="2822187207061900923" at="204,17,205,23" concept="1" />
+      <node id="2822187207061900923" at="205,23,206,22" concept="6" />
+      <node id="2822187207061900923" at="198,0,208,0" concept="9" trace="createDescriptorForChambre#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2822187207061900923" at="84,41,85,32" />
+      <scope id="2822187207061900923" at="198,65,206,22">
+        <var name="b" id="2822187207061900923" />
+      </scope>
+      <scope id="2822187207061900923" at="198,0,208,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/2822187207061900924">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2822187207061900924" at="36,0,37,0" concept="2" trace="props_SalleDeBain" />
+      <node id="2822187207061900924" at="220,40,221,76" concept="5" />
+      <node id="2822187207061900924" at="221,76,222,35" concept="1" />
+      <node id="2822187207061900924" at="222,35,223,43" concept="1" />
+      <node id="2822187207061900924" at="224,9,225,33" concept="6" />
+      <node id="2822187207061900924" at="219,45,224,9" concept="3" />
+      <scope id="2822187207061900924" at="220,40,223,43">
+        <var name="cpb" id="2822187207061900924" />
+      </scope>
+      <scope id="2822187207061900924" at="219,45,225,33" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2822187207061900924" at="36,0,37,0" concept="8" trace="SalleDeBain" />
+      <node id="2822187207061900924" at="72,46,73,50" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2822187207061900924" at="43,0,44,0" concept="2" trace="myConceptSalleDeBain" />
+      <node id="2822187207061900924" at="124,45,125,36" concept="6" />
+      <node id="2822187207061900924" at="411,69,412,154" concept="5" />
+      <node id="2822187207061900924" at="412,154,413,34" concept="1" />
+      <node id="2822187207061900924" at="413,34,414,40" concept="7" />
+      <node id="2822187207061900924" at="414,40,415,76" concept="1" />
+      <node id="2822187207061900924" at="415,76,416,95" concept="1" />
+      <node id="2822187207061900924" at="416,95,417,17" concept="1" />
+      <node id="7292197992424584356" at="417,17,418,198" concept="1" />
+      <node id="7292197992424584361" at="418,198,419,198" concept="1" />
+      <node id="7292197992424584367" at="419,198,420,199" concept="1" />
+      <node id="2822187207061900924" at="420,199,421,27" concept="1" />
+      <node id="2822187207061900924" at="421,27,422,22" concept="6" />
+      <node id="2822187207061900924" at="411,0,424,0" concept="9" trace="createDescriptorForSalleDeBain#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2822187207061900924" at="124,45,125,36" />
+      <scope id="2822187207061900924" at="411,69,422,22">
+        <var name="b" id="2822187207061900924" />
+      </scope>
+      <scope id="2822187207061900924" at="411,0,424,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/2822187207061900925">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2822187207061900925" at="37,0,38,0" concept="2" trace="props_SalleReunion" />
+      <node id="2822187207061900925" at="227,41,228,76" concept="5" />
+      <node id="2822187207061900925" at="228,76,229,35" concept="1" />
+      <node id="2822187207061900925" at="229,35,230,44" concept="1" />
+      <node id="2822187207061900925" at="231,9,232,34" concept="6" />
+      <node id="2822187207061900925" at="226,46,231,9" concept="3" />
+      <scope id="2822187207061900925" at="227,41,230,44">
+        <var name="cpb" id="2822187207061900925" />
+      </scope>
+      <scope id="2822187207061900925" at="226,46,232,34" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2822187207061900925" at="37,0,38,0" concept="8" trace="SalleReunion" />
+      <node id="2822187207061900925" at="73,50,74,51" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2822187207061900925" at="44,0,45,0" concept="2" trace="myConceptSalleReunion" />
+      <node id="2822187207061900925" at="126,46,127,37" concept="6" />
+      <node id="2822187207061900925" at="424,70,425,155" concept="5" />
+      <node id="2822187207061900925" at="425,155,426,34" concept="1" />
+      <node id="2822187207061900925" at="426,34,427,40" concept="7" />
+      <node id="2822187207061900925" at="427,40,428,76" concept="1" />
+      <node id="2822187207061900925" at="428,76,429,95" concept="1" />
+      <node id="2822187207061900925" at="429,95,430,17" concept="1" />
+      <node id="2822187207061900925" at="430,17,431,28" concept="1" />
+      <node id="2822187207061900925" at="431,28,432,22" concept="6" />
+      <node id="2822187207061900925" at="424,0,434,0" concept="9" trace="createDescriptorForSalleReunion#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2822187207061900925" at="126,46,127,37" />
+      <scope id="2822187207061900925" at="424,70,432,22">
+        <var name="b" id="2822187207061900925" />
+      </scope>
+      <scope id="2822187207061900925" at="424,0,434,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/2822187207061900926">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2822187207061900926" at="38,0,39,0" concept="2" trace="props_Salon" />
+      <node id="2822187207061900926" at="234,34,235,76" concept="5" />
+      <node id="2822187207061900926" at="235,76,236,35" concept="1" />
+      <node id="2822187207061900926" at="236,35,237,37" concept="1" />
+      <node id="2822187207061900926" at="238,9,239,27" concept="6" />
+      <node id="2822187207061900926" at="233,39,238,9" concept="3" />
+      <scope id="2822187207061900926" at="234,34,237,37">
+        <var name="cpb" id="2822187207061900926" />
+      </scope>
+      <scope id="2822187207061900926" at="233,39,239,27" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2822187207061900926" at="38,0,39,0" concept="8" trace="Salon" />
+      <node id="2822187207061900926" at="74,51,75,44" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2822187207061900926" at="45,0,46,0" concept="2" trace="myConceptSalon" />
+      <node id="2822187207061900926" at="128,39,129,30" concept="6" />
+      <node id="2822187207061900926" at="434,63,435,148" concept="5" />
+      <node id="2822187207061900926" at="435,148,436,34" concept="1" />
+      <node id="2822187207061900926" at="436,34,437,40" concept="7" />
+      <node id="2822187207061900926" at="437,40,438,76" concept="1" />
+      <node id="2822187207061900926" at="438,76,439,95" concept="1" />
+      <node id="2822187207061900926" at="439,95,440,17" concept="1" />
+      <node id="2822187207061900926" at="440,17,441,21" concept="1" />
+      <node id="2822187207061900926" at="441,21,442,22" concept="6" />
+      <node id="2822187207061900926" at="434,0,444,0" concept="9" trace="createDescriptorForSalon#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2822187207061900926" at="128,39,129,30" />
+      <scope id="2822187207061900926" at="434,63,442,22">
+        <var name="b" id="2822187207061900926" />
+      </scope>
+      <scope id="2822187207061900926" at="434,0,444,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/2822187207061900927">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2822187207061900927" at="17,0,18,0" concept="2" trace="props_Cuisine" />
+      <node id="2822187207061900927" at="88,36,89,76" concept="5" />
+      <node id="2822187207061900927" at="89,76,90,35" concept="1" />
+      <node id="2822187207061900927" at="90,35,91,39" concept="1" />
+      <node id="2822187207061900927" at="92,9,93,29" concept="6" />
+      <node id="2822187207061900927" at="87,41,92,9" concept="3" />
+      <scope id="2822187207061900927" at="88,36,91,39">
+        <var name="cpb" id="2822187207061900927" />
+      </scope>
+      <scope id="2822187207061900927" at="87,41,93,29" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2822187207061900927" at="17,0,18,0" concept="8" trace="Cuisine" />
+      <node id="2822187207061900927" at="53,46,54,46" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2822187207061900927" at="24,0,25,0" concept="2" trace="myConceptCuisine" />
+      <node id="2822187207061900927" at="86,41,87,32" concept="6" />
+      <node id="2822187207061900927" at="208,65,209,150" concept="5" />
+      <node id="2822187207061900927" at="209,150,210,34" concept="1" />
+      <node id="2822187207061900927" at="210,34,211,40" concept="7" />
+      <node id="2822187207061900927" at="211,40,212,76" concept="1" />
+      <node id="2822187207061900927" at="212,76,213,95" concept="1" />
+      <node id="2822187207061900927" at="213,95,214,17" concept="1" />
+      <node id="7292197992424584386" at="214,17,215,196" concept="1" />
+      <node id="7292197992424584391" at="215,196,216,197" concept="1" />
+      <node id="7292197992424584397" at="216,197,217,201" concept="1" />
+      <node id="2822187207061900927" at="217,201,218,23" concept="1" />
+      <node id="2822187207061900927" at="218,23,219,22" concept="6" />
+      <node id="2822187207061900927" at="208,0,221,0" concept="9" trace="createDescriptorForCuisine#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2822187207061900927" at="86,41,87,32" />
+      <scope id="2822187207061900927" at="208,65,219,22">
+        <var name="b" id="2822187207061900927" />
+      </scope>
+      <scope id="2822187207061900927" at="208,0,221,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/2822187207061900938">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2822187207061900938" at="39,0,40,0" concept="2" trace="props_Smart_City" />
+      <node id="2822187207061900938" at="241,39,242,76" concept="5" />
+      <node id="2822187207061900938" at="242,76,243,44" concept="1" />
+      <node id="2822187207061900938" at="243,44,244,42" concept="1" />
+      <node id="2822187207061900938" at="245,9,246,32" concept="6" />
+      <node id="2822187207061900938" at="240,44,245,9" concept="3" />
+      <scope id="2822187207061900938" at="241,39,244,42">
+        <var name="cpb" id="2822187207061900938" />
+      </scope>
+      <scope id="2822187207061900938" at="240,44,246,32" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2822187207061900938" at="39,0,40,0" concept="8" trace="Smart_City" />
+      <node id="2822187207061900938" at="75,44,76,49" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2822187207061900938" at="46,0,47,0" concept="2" trace="myConceptSmart_City" />
+      <node id="2822187207061900938" at="130,44,131,35" concept="6" />
+      <node id="2822187207061900938" at="444,68,445,153" concept="5" />
+      <node id="2822187207061900938" at="445,153,446,34" concept="1" />
+      <node id="2822187207061900938" at="446,34,447,95" concept="1" />
+      <node id="2822187207061900938" at="447,95,448,17" concept="1" />
+      <node id="3298194222149298451" at="448,17,449,108" concept="1" />
+      <node id="3298194222149298453" at="449,108,450,110" concept="1" />
+      <node id="3298194222149298456" at="450,110,451,113" concept="1" />
+      <node id="3298194222149298460" at="451,113,452,114" concept="1" />
+      <node id="3298194222149298465" at="452,114,453,118" concept="1" />
+      <node id="7292197992424468414" at="453,118,454,198" concept="1" />
+      <node id="2822187207061900938" at="454,198,455,22" concept="6" />
+      <node id="2822187207061900938" at="444,0,457,0" concept="9" trace="createDescriptorForSmart_City#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2822187207061900938" at="130,44,131,35" />
+      <scope id="2822187207061900938" at="444,68,455,22">
+        <var name="b" id="2822187207061900938" />
+      </scope>
+      <scope id="2822187207061900938" at="444,0,457,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/2822187207061900939">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2822187207061900939" at="26,0,27,0" concept="2" trace="props_Maison" />
+      <node id="2822187207061900939" at="151,35,152,76" concept="5" />
+      <node id="2822187207061900939" at="152,76,153,35" concept="1" />
+      <node id="2822187207061900939" at="153,35,154,38" concept="1" />
+      <node id="2822187207061900939" at="155,9,156,28" concept="6" />
+      <node id="2822187207061900939" at="150,40,155,9" concept="3" />
+      <scope id="2822187207061900939" at="151,35,154,38">
+        <var name="cpb" id="2822187207061900939" />
+      </scope>
+      <scope id="2822187207061900939" at="150,40,156,28" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2822187207061900939" at="26,0,27,0" concept="8" trace="Maison" />
+      <node id="2822187207061900939" at="62,51,63,45" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2822187207061900939" at="33,0,34,0" concept="2" trace="myConceptMaison" />
+      <node id="2822187207061900939" at="104,40,105,31" concept="6" />
+      <node id="2822187207061900939" at="295,64,296,149" concept="5" />
+      <node id="2822187207061900939" at="296,149,297,33" concept="1" />
+      <node id="2822187207061900939" at="297,33,298,71" concept="1" />
+      <node id="2822187207061900939" at="298,71,299,95" concept="1" />
+      <node id="2822187207061900939" at="299,95,300,17" concept="1" />
+      <node id="7292197992424468418" at="300,17,301,198" concept="1" />
+      <node id="2822187207061900939" at="301,198,302,22" concept="6" />
+      <node id="2822187207061900939" at="295,0,304,0" concept="9" trace="createDescriptorForMaison#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2822187207061900939" at="104,40,105,31" />
+      <scope id="2822187207061900939" at="295,64,302,22">
+        <var name="b" id="2822187207061900939" />
+      </scope>
+      <scope id="2822187207061900939" at="295,0,304,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/2822187207061900940">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2822187207061900940" at="32,0,33,0" concept="2" trace="props_Personne" />
+      <node id="2822187207061900940" at="193,37,194,76" concept="5" />
+      <node id="2822187207061900940" at="194,76,195,35" concept="1" />
+      <node id="2822187207061900940" at="195,35,196,40" concept="1" />
+      <node id="2822187207061900940" at="197,9,198,30" concept="6" />
+      <node id="2822187207061900940" at="192,42,197,9" concept="3" />
+      <scope id="2822187207061900940" at="193,37,196,40">
+        <var name="cpb" id="2822187207061900940" />
+      </scope>
+      <scope id="2822187207061900940" at="192,42,198,30" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2822187207061900940" at="32,0,33,0" concept="8" trace="Personne" />
+      <node id="2822187207061900940" at="68,46,69,47" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2822187207061900940" at="39,0,40,0" concept="2" trace="myConceptPersonne" />
+      <node id="2822187207061900940" at="116,42,117,33" concept="6" />
+      <node id="2822187207061900940" at="360,66,361,151" concept="5" />
+      <node id="2822187207061900940" at="361,151,362,34" concept="1" />
+      <node id="2822187207061900940" at="362,34,363,71" concept="1" />
+      <node id="2822187207061900940" at="363,71,364,95" concept="1" />
+      <node id="2822187207061900940" at="364,95,365,17" concept="1" />
+      <node id="2822187207061900986" at="365,17,366,108" concept="1" />
+      <node id="2822187207061900988" at="366,108,367,109" concept="1" />
+      <node id="2822187207061900991" at="367,109,368,112" concept="1" />
+      <node id="2822187207061900995" at="368,112,369,112" concept="1" />
+      <node id="2822187207061901006" at="369,112,370,109" concept="1" />
+      <node id="2822187207061901000" at="370,109,371,116" concept="1" />
+      <node id="2822187207061900940" at="371,116,372,22" concept="1" />
+      <node id="2822187207061900940" at="372,22,373,22" concept="6" />
+      <node id="2822187207061900940" at="360,0,375,0" concept="9" trace="createDescriptorForPersonne#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2822187207061900940" at="116,42,117,33" />
+      <scope id="2822187207061900940" at="360,66,373,22">
+        <var name="b" id="2822187207061900940" />
+      </scope>
+      <scope id="2822187207061900940" at="360,0,375,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3298194222149298428">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3298194222149298428" at="20,0,21,0" concept="2" trace="props_Famille" />
+      <node id="3298194222149298428" at="109,36,110,76" concept="5" />
+      <node id="3298194222149298428" at="110,76,111,41" concept="1" />
+      <node id="3298194222149298428" at="111,41,112,39" concept="1" />
+      <node id="3298194222149298428" at="113,9,114,29" concept="6" />
+      <node id="3298194222149298428" at="108,41,113,9" concept="3" />
+      <scope id="3298194222149298428" at="109,36,112,39">
+        <var name="cpb" id="3298194222149298428" />
+      </scope>
+      <scope id="3298194222149298428" at="108,41,114,29" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3298194222149298428" at="20,0,21,0" concept="8" trace="Famille" />
+      <node id="3298194222149298428" at="56,47,57,46" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3298194222149298428" at="27,0,28,0" concept="2" trace="myConceptFamille" />
+      <node id="3298194222149298428" at="92,41,93,32" concept="6" />
+      <node id="3298194222149298428" at="236,65,237,150" concept="5" />
+      <node id="3298194222149298428" at="237,150,238,34" concept="1" />
+      <node id="3298194222149298428" at="238,34,239,95" concept="1" />
+      <node id="3298194222149298428" at="239,95,240,17" concept="1" />
+      <node id="3298194222149298429" at="240,17,241,169" concept="1" />
+      <node id="3298194222149298428" at="241,169,242,22" concept="6" />
+      <node id="3298194222149298428" at="236,0,244,0" concept="9" trace="createDescriptorForFamille#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3298194222149298428" at="92,41,93,32" />
+      <scope id="3298194222149298428" at="236,65,242,22">
+        <var name="b" id="3298194222149298428" />
+      </scope>
+      <scope id="3298194222149298428" at="236,0,244,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3298194222149298431">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3298194222149298431" at="31,0,32,0" concept="2" trace="props_Parents" />
+      <node id="3298194222149298431" at="186,36,187,76" concept="5" />
+      <node id="3298194222149298431" at="187,76,188,41" concept="1" />
+      <node id="3298194222149298431" at="188,41,189,39" concept="1" />
+      <node id="3298194222149298431" at="190,9,191,29" concept="6" />
+      <node id="3298194222149298431" at="185,41,190,9" concept="3" />
+      <scope id="3298194222149298431" at="186,36,189,39">
+        <var name="cpb" id="3298194222149298431" />
+      </scope>
+      <scope id="3298194222149298431" at="185,41,191,29" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3298194222149298431" at="31,0,32,0" concept="8" trace="Parents" />
+      <node id="3298194222149298431" at="67,43,68,46" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3298194222149298431" at="38,0,39,0" concept="2" trace="myConceptParents" />
+      <node id="3298194222149298431" at="114,41,115,32" concept="6" />
+      <node id="3298194222149298431" at="351,65,352,150" concept="5" />
+      <node id="3298194222149298431" at="352,150,353,34" concept="1" />
+      <node id="3298194222149298431" at="353,34,354,95" concept="1" />
+      <node id="3298194222149298431" at="354,95,355,17" concept="1" />
+      <node id="3298194222149346327" at="355,17,356,198" concept="1" />
+      <node id="3298194222149346331" at="356,198,357,199" concept="1" />
+      <node id="3298194222149298431" at="357,199,358,22" concept="6" />
+      <node id="3298194222149298431" at="351,0,360,0" concept="9" trace="createDescriptorForParents#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3298194222149298431" at="114,41,115,32" />
+      <scope id="3298194222149298431" at="351,65,358,22">
+        <var name="b" id="3298194222149298431" />
+      </scope>
+      <scope id="3298194222149298431" at="351,0,360,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3298194222149298432">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3298194222149298432" at="25,0,26,0" concept="2" trace="props_GrandParents" />
+      <node id="3298194222149298432" at="144,41,145,76" concept="5" />
+      <node id="3298194222149298432" at="145,76,146,46" concept="1" />
+      <node id="3298194222149298432" at="146,46,147,44" concept="1" />
+      <node id="3298194222149298432" at="148,9,149,34" concept="6" />
+      <node id="3298194222149298432" at="143,46,148,9" concept="3" />
+      <scope id="3298194222149298432" at="144,41,147,44">
+        <var name="cpb" id="3298194222149298432" />
+      </scope>
+      <scope id="3298194222149298432" at="143,46,149,34" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3298194222149298432" at="25,0,26,0" concept="8" trace="GrandParents" />
+      <node id="3298194222149298432" at="61,48,62,51" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3298194222149298432" at="32,0,33,0" concept="2" trace="myConceptGrandParents" />
+      <node id="3298194222149298432" at="102,46,103,37" concept="6" />
+      <node id="3298194222149298432" at="286,70,287,155" concept="5" />
+      <node id="3298194222149298432" at="287,155,288,34" concept="1" />
+      <node id="3298194222149298432" at="288,34,289,95" concept="1" />
+      <node id="3298194222149298432" at="289,95,290,17" concept="1" />
+      <node id="3298194222149346313" at="290,17,291,203" concept="1" />
+      <node id="3298194222149346317" at="291,203,292,204" concept="1" />
+      <node id="3298194222149298432" at="292,204,293,22" concept="6" />
+      <node id="3298194222149298432" at="286,0,295,0" concept="9" trace="createDescriptorForGrandParents#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3298194222149298432" at="102,46,103,37" />
+      <scope id="3298194222149298432" at="286,70,293,22">
+        <var name="b" id="3298194222149298432" />
+      </scope>
+      <scope id="3298194222149298432" at="286,0,295,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3298194222149298433">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3298194222149298433" at="18,0,19,0" concept="2" trace="props_Enfants" />
+      <node id="3298194222149298433" at="95,36,96,76" concept="5" />
+      <node id="3298194222149298433" at="96,76,97,41" concept="1" />
+      <node id="3298194222149298433" at="97,41,98,39" concept="1" />
+      <node id="3298194222149298433" at="99,9,100,29" concept="6" />
+      <node id="3298194222149298433" at="94,41,99,9" concept="3" />
+      <scope id="3298194222149298433" at="95,36,98,39">
+        <var name="cpb" id="3298194222149298433" />
+      </scope>
+      <scope id="3298194222149298433" at="94,41,100,29" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3298194222149298433" at="18,0,19,0" concept="8" trace="Enfants" />
+      <node id="3298194222149298433" at="54,46,55,46" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3298194222149298433" at="25,0,26,0" concept="2" trace="myConceptEnfants" />
+      <node id="3298194222149298433" at="88,41,89,32" concept="6" />
+      <node id="3298194222149298433" at="221,65,222,150" concept="5" />
+      <node id="3298194222149298433" at="222,150,223,33" concept="1" />
+      <node id="3298194222149298433" at="223,33,224,95" concept="1" />
+      <node id="3298194222149298433" at="224,95,225,17" concept="1" />
+      <node id="3298194222149298449" at="225,17,226,169" concept="1" />
+      <node id="3298194222149298433" at="226,169,227,22" concept="6" />
+      <node id="3298194222149298433" at="221,0,229,0" concept="9" trace="createDescriptorForEnfants#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3298194222149298433" at="88,41,89,32" />
+      <scope id="3298194222149298433" at="221,65,227,22">
+        <var name="b" id="3298194222149298433" />
+      </scope>
+      <scope id="3298194222149298433" at="221,0,229,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3298194222149298437">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3298194222149298437" at="30,0,31,0" concept="2" trace="props_Papa" />
+      <node id="3298194222149298437" at="179,33,180,76" concept="5" />
+      <node id="3298194222149298437" at="180,76,181,38" concept="1" />
+      <node id="3298194222149298437" at="181,38,182,36" concept="1" />
+      <node id="3298194222149298437" at="183,9,184,26" concept="6" />
+      <node id="3298194222149298437" at="178,38,183,9" concept="3" />
+      <scope id="3298194222149298437" at="179,33,182,36">
+        <var name="cpb" id="3298194222149298437" />
+      </scope>
+      <scope id="3298194222149298437" at="178,38,184,26" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3298194222149298437" at="30,0,31,0" concept="8" trace="Papa" />
+      <node id="3298194222149298437" at="66,45,67,43" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3298194222149298437" at="37,0,38,0" concept="2" trace="myConceptPapa" />
+      <node id="3298194222149298437" at="112,38,113,29" concept="6" />
+      <node id="3298194222149298437" at="337,62,338,147" concept="5" />
+      <node id="3298194222149298437" at="338,147,339,34" concept="1" />
+      <node id="3298194222149298437" at="339,34,340,42" concept="7" />
+      <node id="3298194222149298437" at="340,42,341,76" concept="1" />
+      <node id="3298194222149298437" at="341,76,342,95" concept="1" />
+      <node id="3298194222149298437" at="342,95,343,17" concept="1" />
+      <node id="950762063038702141" at="343,17,344,106" concept="1" />
+      <node id="950762063038702143" at="344,106,345,107" concept="1" />
+      <node id="950762063038702146" at="345,107,346,110" concept="1" />
+      <node id="950762063038702150" at="346,110,347,110" concept="1" />
+      <node id="3298194222149298437" at="347,110,348,20" concept="1" />
+      <node id="3298194222149298437" at="348,20,349,22" concept="6" />
+      <node id="3298194222149298437" at="337,0,351,0" concept="9" trace="createDescriptorForPapa#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3298194222149298437" at="112,38,113,29" />
+      <scope id="3298194222149298437" at="337,62,349,22">
+        <var name="b" id="3298194222149298437" />
+      </scope>
+      <scope id="3298194222149298437" at="337,0,351,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3298194222149298441">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3298194222149298441" at="27,0,28,0" concept="2" trace="props_Maman" />
+      <node id="3298194222149298441" at="158,34,159,76" concept="5" />
+      <node id="3298194222149298441" at="159,76,160,39" concept="1" />
+      <node id="3298194222149298441" at="160,39,161,37" concept="1" />
+      <node id="3298194222149298441" at="162,9,163,27" concept="6" />
+      <node id="3298194222149298441" at="157,39,162,9" concept="3" />
+      <scope id="3298194222149298441" at="158,34,161,37">
+        <var name="cpb" id="3298194222149298441" />
+      </scope>
+      <scope id="3298194222149298441" at="157,39,163,27" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3298194222149298441" at="27,0,28,0" concept="8" trace="Maman" />
+      <node id="3298194222149298441" at="63,45,64,44" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3298194222149298441" at="34,0,35,0" concept="2" trace="myConceptMaman" />
+      <node id="3298194222149298441" at="106,39,107,30" concept="6" />
+      <node id="3298194222149298441" at="304,63,305,148" concept="5" />
+      <node id="3298194222149298441" at="305,148,306,34" concept="1" />
+      <node id="3298194222149298441" at="306,34,307,42" concept="7" />
+      <node id="3298194222149298441" at="307,42,308,76" concept="1" />
+      <node id="3298194222149298441" at="308,76,309,95" concept="1" />
+      <node id="3298194222149298441" at="309,95,310,17" concept="1" />
+      <node id="950762063038702103" at="310,17,311,106" concept="1" />
+      <node id="950762063038702105" at="311,106,312,107" concept="1" />
+      <node id="950762063038702108" at="312,107,313,110" concept="1" />
+      <node id="950762063038702136" at="313,110,314,110" concept="1" />
+      <node id="3298194222149298441" at="314,110,315,21" concept="1" />
+      <node id="3298194222149298441" at="315,21,316,22" concept="6" />
+      <node id="3298194222149298441" at="304,0,318,0" concept="9" trace="createDescriptorForMaman#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3298194222149298441" at="106,39,107,30" />
+      <scope id="3298194222149298441" at="304,63,316,22">
+        <var name="b" id="3298194222149298441" />
+      </scope>
+      <scope id="3298194222149298441" at="304,0,318,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3298194222149298444">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3298194222149298444" at="24,0,25,0" concept="2" trace="props_GrandPapa" />
+      <node id="3298194222149298444" at="137,38,138,76" concept="5" />
+      <node id="3298194222149298444" at="138,76,139,43" concept="1" />
+      <node id="3298194222149298444" at="139,43,140,41" concept="1" />
+      <node id="3298194222149298444" at="141,9,142,31" concept="6" />
+      <node id="3298194222149298444" at="136,43,141,9" concept="3" />
+      <scope id="3298194222149298444" at="137,38,140,41">
+        <var name="cpb" id="3298194222149298444" />
+      </scope>
+      <scope id="3298194222149298444" at="136,43,142,31" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3298194222149298444" at="24,0,25,0" concept="8" trace="GrandPapa" />
+      <node id="3298194222149298444" at="60,49,61,48" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3298194222149298444" at="31,0,32,0" concept="2" trace="myConceptGrandPapa" />
+      <node id="3298194222149298444" at="100,43,101,34" concept="6" />
+      <node id="3298194222149298444" at="273,67,274,152" concept="5" />
+      <node id="3298194222149298444" at="274,152,275,34" concept="1" />
+      <node id="3298194222149298444" at="275,34,276,47" concept="7" />
+      <node id="3298194222149298444" at="276,47,277,76" concept="1" />
+      <node id="3298194222149298444" at="277,76,278,95" concept="1" />
+      <node id="3298194222149298444" at="278,95,279,17" concept="1" />
+      <node id="950762063038702089" at="279,17,280,106" concept="1" />
+      <node id="950762063038702091" at="280,106,281,107" concept="1" />
+      <node id="950762063038702094" at="281,107,282,110" concept="1" />
+      <node id="950762063038702098" at="282,110,283,110" concept="1" />
+      <node id="3298194222149298444" at="283,110,284,22" concept="6" />
+      <node id="3298194222149298444" at="273,0,286,0" concept="9" trace="createDescriptorForGrandPapa#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3298194222149298444" at="100,43,101,34" />
+      <scope id="3298194222149298444" at="273,67,284,22">
+        <var name="b" id="3298194222149298444" />
+      </scope>
+      <scope id="3298194222149298444" at="273,0,286,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3298194222149298448">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3298194222149298448" at="23,0,24,0" concept="2" trace="props_GrandMaman" />
+      <node id="3298194222149298448" at="130,39,131,76" concept="5" />
+      <node id="3298194222149298448" at="131,76,132,44" concept="1" />
+      <node id="3298194222149298448" at="132,44,133,42" concept="1" />
+      <node id="3298194222149298448" at="134,9,135,32" concept="6" />
+      <node id="3298194222149298448" at="129,44,134,9" concept="3" />
+      <scope id="3298194222149298448" at="130,39,133,42">
+        <var name="cpb" id="3298194222149298448" />
+      </scope>
+      <scope id="3298194222149298448" at="129,44,135,32" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3298194222149298448" at="23,0,24,0" concept="8" trace="GrandMaman" />
+      <node id="3298194222149298448" at="59,44,60,49" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3298194222149298448" at="30,0,31,0" concept="2" trace="myConceptGrandMaman" />
+      <node id="3298194222149298448" at="98,44,99,35" concept="6" />
+      <node id="3298194222149298448" at="260,68,261,153" concept="5" />
+      <node id="3298194222149298448" at="261,153,262,34" concept="1" />
+      <node id="3298194222149298448" at="262,34,263,47" concept="7" />
+      <node id="3298194222149298448" at="263,47,264,76" concept="1" />
+      <node id="3298194222149298448" at="264,76,265,95" concept="1" />
+      <node id="3298194222149298448" at="265,95,266,17" concept="1" />
+      <node id="950762063038702065" at="266,17,267,106" concept="1" />
+      <node id="950762063038702067" at="267,106,268,107" concept="1" />
+      <node id="950762063038702070" at="268,107,269,110" concept="1" />
+      <node id="950762063038702074" at="269,110,270,110" concept="1" />
+      <node id="3298194222149298448" at="270,110,271,22" concept="6" />
+      <node id="3298194222149298448" at="260,0,273,0" concept="9" trace="createDescriptorForGrandMaman#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3298194222149298448" at="98,44,99,35" />
+      <scope id="3298194222149298448" at="260,68,271,22">
+        <var name="b" id="3298194222149298448" />
+      </scope>
+      <scope id="3298194222149298448" at="260,0,273,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3298194222149298471">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3298194222149298471" at="21,0,22,0" concept="2" trace="props_Four" />
+      <node id="3298194222149298471" at="116,33,117,76" concept="5" />
+      <node id="3298194222149298471" at="117,76,118,38" concept="1" />
+      <node id="3298194222149298471" at="118,38,119,36" concept="1" />
+      <node id="3298194222149298471" at="120,9,121,26" concept="6" />
+      <node id="3298194222149298471" at="115,38,120,9" concept="3" />
+      <scope id="3298194222149298471" at="116,33,119,36">
+        <var name="cpb" id="3298194222149298471" />
+      </scope>
+      <scope id="3298194222149298471" at="115,38,121,26" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3298194222149298471" at="21,0,22,0" concept="8" trace="Four" />
+      <node id="3298194222149298471" at="57,46,58,43" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3298194222149298471" at="28,0,29,0" concept="2" trace="myConceptFour" />
+      <node id="3298194222149298471" at="94,38,95,29" concept="6" />
+      <node id="3298194222149298471" at="244,62,245,147" concept="5" />
+      <node id="3298194222149298471" at="245,147,246,34" concept="1" />
+      <node id="3298194222149298471" at="246,34,247,95" concept="1" />
+      <node id="3298194222149298471" at="247,95,248,17" concept="1" />
+      <node id="3298194222149298471" at="248,17,249,20" concept="1" />
+      <node id="3298194222149298471" at="249,20,250,22" concept="6" />
+      <node id="3298194222149298471" at="244,0,252,0" concept="9" trace="createDescriptorForFour#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3298194222149298471" at="94,38,95,29" />
+      <scope id="3298194222149298471" at="244,62,250,22">
+        <var name="b" id="3298194222149298471" />
+      </scope>
+      <scope id="3298194222149298471" at="244,0,252,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3298194222149298472">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3298194222149298472" at="22,0,23,0" concept="2" trace="props_Frigo" />
+      <node id="3298194222149298472" at="123,34,124,76" concept="5" />
+      <node id="3298194222149298472" at="124,76,125,39" concept="1" />
+      <node id="3298194222149298472" at="125,39,126,37" concept="1" />
+      <node id="3298194222149298472" at="127,9,128,27" concept="6" />
+      <node id="3298194222149298472" at="122,39,127,9" concept="3" />
+      <scope id="3298194222149298472" at="123,34,126,37">
+        <var name="cpb" id="3298194222149298472" />
+      </scope>
+      <scope id="3298194222149298472" at="122,39,128,27" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3298194222149298472" at="22,0,23,0" concept="8" trace="Frigo" />
+      <node id="3298194222149298472" at="58,43,59,44" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3298194222149298472" at="29,0,30,0" concept="2" trace="myConceptFrigo" />
+      <node id="3298194222149298472" at="96,39,97,30" concept="6" />
+      <node id="3298194222149298472" at="252,63,253,148" concept="5" />
+      <node id="3298194222149298472" at="253,148,254,34" concept="1" />
+      <node id="3298194222149298472" at="254,34,255,95" concept="1" />
+      <node id="3298194222149298472" at="255,95,256,17" concept="1" />
+      <node id="3298194222149298472" at="256,17,257,21" concept="1" />
+      <node id="3298194222149298472" at="257,21,258,22" concept="6" />
+      <node id="3298194222149298472" at="252,0,260,0" concept="9" trace="createDescriptorForFrigo#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3298194222149298472" at="96,39,97,30" />
+      <scope id="3298194222149298472" at="252,63,258,22">
+        <var name="b" id="3298194222149298472" />
+      </scope>
+      <scope id="3298194222149298472" at="252,0,260,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3298194222149298473">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3298194222149298473" at="28,0,29,0" concept="2" trace="props_MicrOnde" />
+      <node id="3298194222149298473" at="165,37,166,76" concept="5" />
+      <node id="3298194222149298473" at="166,76,167,39" concept="1" />
+      <node id="3298194222149298473" at="167,39,168,40" concept="1" />
+      <node id="3298194222149298473" at="169,9,170,30" concept="6" />
+      <node id="3298194222149298473" at="164,42,169,9" concept="3" />
+      <scope id="3298194222149298473" at="165,37,168,40">
+        <var name="cpb" id="3298194222149298473" />
+      </scope>
+      <scope id="3298194222149298473" at="164,42,170,30" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3298194222149298473" at="28,0,29,0" concept="8" trace="MicrOnde" />
+      <node id="3298194222149298473" at="64,44,65,47" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3298194222149298473" at="35,0,36,0" concept="2" trace="myConceptMicrOnde" />
+      <node id="3298194222149298473" at="108,42,109,33" concept="6" />
+      <node id="3298194222149298473" at="318,66,319,151" concept="5" />
+      <node id="3298194222149298473" at="319,151,320,34" concept="1" />
+      <node id="3298194222149298473" at="320,34,321,95" concept="1" />
+      <node id="3298194222149298473" at="321,95,322,17" concept="1" />
+      <node id="3298194222149298473" at="322,17,323,21" concept="1" />
+      <node id="3298194222149298473" at="323,21,324,22" concept="6" />
+      <node id="3298194222149298473" at="318,0,326,0" concept="9" trace="createDescriptorForMicrOnde#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3298194222149298473" at="108,42,109,33" />
+      <scope id="3298194222149298473" at="318,66,324,22">
+        <var name="b" id="3298194222149298473" />
+      </scope>
+      <scope id="3298194222149298473" at="318,0,326,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3298194222149298474">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3298194222149298474" at="35,0,36,0" concept="2" trace="props_Robinet" />
+      <node id="3298194222149298474" at="213,36,214,76" concept="5" />
+      <node id="3298194222149298474" at="214,76,215,41" concept="1" />
+      <node id="3298194222149298474" at="215,41,216,39" concept="1" />
+      <node id="3298194222149298474" at="217,9,218,29" concept="6" />
+      <node id="3298194222149298474" at="212,41,217,9" concept="3" />
+      <scope id="3298194222149298474" at="213,36,216,39">
+        <var name="cpb" id="3298194222149298474" />
+      </scope>
+      <scope id="3298194222149298474" at="212,41,218,29" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3298194222149298474" at="35,0,36,0" concept="8" trace="Robinet" />
+      <node id="3298194222149298474" at="71,44,72,46" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3298194222149298474" at="42,0,43,0" concept="2" trace="myConceptRobinet" />
+      <node id="3298194222149298474" at="122,41,123,32" concept="6" />
+      <node id="3298194222149298474" at="400,65,401,150" concept="5" />
+      <node id="3298194222149298474" at="401,150,402,34" concept="1" />
+      <node id="3298194222149298474" at="402,34,403,95" concept="1" />
+      <node id="3298194222149298474" at="403,95,404,17" concept="1" />
+      <node id="950762063038702060" at="404,17,405,106" concept="1" />
+      <node id="950762063038702062" at="405,106,406,110" concept="1" />
+      <node id="7292197992424469877" at="406,110,407,183" concept="1" />
+      <node id="3298194222149298474" at="407,183,408,23" concept="1" />
+      <node id="3298194222149298474" at="408,23,409,22" concept="6" />
+      <node id="3298194222149298474" at="400,0,411,0" concept="9" trace="createDescriptorForRobinet#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3298194222149298474" at="122,41,123,32" />
+      <scope id="3298194222149298474" at="400,65,409,22">
+        <var name="b" id="3298194222149298474" />
+      </scope>
+      <scope id="3298194222149298474" at="400,0,411,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3298194222149298475">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3298194222149298475" at="15,0,16,0" concept="2" trace="props_BrosseDent" />
+      <node id="3298194222149298475" at="74,39,75,76" concept="5" />
+      <node id="3298194222149298475" at="75,76,76,40" concept="1" />
+      <node id="3298194222149298475" at="76,40,77,42" concept="1" />
+      <node id="3298194222149298475" at="78,9,79,32" concept="6" />
+      <node id="3298194222149298475" at="73,44,78,9" concept="3" />
+      <scope id="3298194222149298475" at="74,39,77,42">
+        <var name="cpb" id="3298194222149298475" />
+      </scope>
+      <scope id="3298194222149298475" at="73,44,79,32" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3298194222149298475" at="15,0,16,0" concept="8" trace="BrosseDent" />
+      <node id="3298194222149298475" at="51,48,52,49" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3298194222149298475" at="22,0,23,0" concept="2" trace="myConceptBrosseDent" />
+      <node id="3298194222149298475" at="82,44,83,35" concept="6" />
+      <node id="3298194222149298475" at="187,68,188,153" concept="5" />
+      <node id="3298194222149298475" at="188,153,189,34" concept="1" />
+      <node id="3298194222149298475" at="189,34,190,95" concept="1" />
+      <node id="3298194222149298475" at="190,95,191,17" concept="1" />
+      <node id="7292197992424469585" at="191,17,192,108" concept="1" />
+      <node id="950762063038702044" at="192,108,193,181" concept="1" />
+      <node id="950762063038702052" at="193,181,194,110" concept="1" />
+      <node id="3298194222149298475" at="194,110,195,22" concept="1" />
+      <node id="3298194222149298475" at="195,22,196,22" concept="6" />
+      <node id="3298194222149298475" at="187,0,198,0" concept="9" trace="createDescriptorForBrosseDent#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3298194222149298475" at="82,44,83,35" />
+      <scope id="3298194222149298475" at="187,68,196,22">
+        <var name="b" id="3298194222149298475" />
+      </scope>
+      <scope id="3298194222149298475" at="187,0,198,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3298194222149298476">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3298194222149298476" at="29,0,30,0" concept="2" trace="props_Miroir" />
+      <node id="3298194222149298476" at="172,35,173,76" concept="5" />
+      <node id="3298194222149298476" at="173,76,174,40" concept="1" />
+      <node id="3298194222149298476" at="174,40,175,38" concept="1" />
+      <node id="3298194222149298476" at="176,9,177,28" concept="6" />
+      <node id="3298194222149298476" at="171,40,176,9" concept="3" />
+      <scope id="3298194222149298476" at="172,35,175,38">
+        <var name="cpb" id="3298194222149298476" />
+      </scope>
+      <scope id="3298194222149298476" at="171,40,177,28" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3298194222149298476" at="29,0,30,0" concept="8" trace="Miroir" />
+      <node id="3298194222149298476" at="65,47,66,45" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3298194222149298476" at="36,0,37,0" concept="2" trace="myConceptMiroir" />
+      <node id="3298194222149298476" at="110,40,111,31" concept="6" />
+      <node id="3298194222149298476" at="326,64,327,149" concept="5" />
+      <node id="3298194222149298476" at="327,149,328,34" concept="1" />
+      <node id="3298194222149298476" at="328,34,329,95" concept="1" />
+      <node id="3298194222149298476" at="329,95,330,17" concept="1" />
+      <node id="950762063038702055" at="330,17,331,106" concept="1" />
+      <node id="950762063038702057" at="331,106,332,110" concept="1" />
+      <node id="7292197992424469846" at="332,110,333,183" concept="1" />
+      <node id="3298194222149298476" at="333,183,334,22" concept="1" />
+      <node id="3298194222149298476" at="334,22,335,22" concept="6" />
+      <node id="3298194222149298476" at="326,0,337,0" concept="9" trace="createDescriptorForMiroir#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3298194222149298476" at="110,40,111,31" />
+      <scope id="3298194222149298476" at="326,64,335,22">
+        <var name="b" id="3298194222149298476" />
+      </scope>
+      <scope id="3298194222149298476" at="326,0,337,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3298194222149298477">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3298194222149298477" at="40,0,41,0" concept="2" trace="props_Store" />
+      <node id="3298194222149298477" at="248,34,249,76" concept="5" />
+      <node id="3298194222149298477" at="249,76,250,39" concept="1" />
+      <node id="3298194222149298477" at="250,39,251,37" concept="1" />
+      <node id="3298194222149298477" at="252,9,253,27" concept="6" />
+      <node id="3298194222149298477" at="247,39,252,9" concept="3" />
+      <scope id="3298194222149298477" at="248,34,251,37">
+        <var name="cpb" id="3298194222149298477" />
+      </scope>
+      <scope id="3298194222149298477" at="247,39,253,27" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3298194222149298477" at="40,0,41,0" concept="8" trace="Store" />
+      <node id="3298194222149298477" at="76,49,77,44" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3298194222149298477" at="47,0,48,0" concept="2" trace="myConceptStore" />
+      <node id="3298194222149298477" at="132,39,133,30" concept="6" />
+      <node id="3298194222149298477" at="457,63,458,148" concept="5" />
+      <node id="3298194222149298477" at="458,148,459,34" concept="1" />
+      <node id="3298194222149298477" at="459,34,460,95" concept="1" />
+      <node id="3298194222149298477" at="460,95,461,17" concept="1" />
+      <node id="950762063038701990" at="461,17,462,106" concept="1" />
+      <node id="950762063038702019" at="462,106,463,110" concept="1" />
+      <node id="950762063038702022" at="463,110,464,181" concept="1" />
+      <node id="950762063038702026" at="464,181,465,111" concept="1" />
+      <node id="3298194222149298477" at="465,111,466,21" concept="1" />
+      <node id="3298194222149298477" at="466,21,467,22" concept="6" />
+      <node id="3298194222149298477" at="457,0,469,0" concept="9" trace="createDescriptorForStore#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3298194222149298477" at="132,39,133,30" />
+      <scope id="3298194222149298477" at="457,63,467,22">
+        <var name="b" id="3298194222149298477" />
+      </scope>
+      <scope id="3298194222149298477" at="457,0,469,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3298194222149298478">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3298194222149298478" at="42,0,43,0" concept="2" trace="props_Thermostat" />
+      <node id="3298194222149298478" at="262,39,263,76" concept="5" />
+      <node id="3298194222149298478" at="263,76,264,44" concept="1" />
+      <node id="3298194222149298478" at="264,44,265,42" concept="1" />
+      <node id="3298194222149298478" at="266,9,267,32" concept="6" />
+      <node id="3298194222149298478" at="261,44,266,9" concept="3" />
+      <scope id="3298194222149298478" at="262,39,265,42">
+        <var name="cpb" id="3298194222149298478" />
+      </scope>
+      <scope id="3298194222149298478" at="261,44,267,32" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3298194222149298478" at="42,0,43,0" concept="8" trace="Thermostat" />
+      <node id="3298194222149298478" at="78,41,79,49" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3298194222149298478" at="49,0,50,0" concept="2" trace="myConceptThermostat" />
+      <node id="3298194222149298478" at="136,44,137,35" concept="6" />
+      <node id="3298194222149298478" at="481,68,482,153" concept="5" />
+      <node id="3298194222149298478" at="482,153,483,34" concept="1" />
+      <node id="3298194222149298478" at="483,34,484,95" concept="1" />
+      <node id="3298194222149298478" at="484,95,485,17" concept="1" />
+      <node id="950762063038701992" at="485,17,486,106" concept="1" />
+      <node id="950762063038701994" at="486,106,487,110" concept="1" />
+      <node id="950762063038701997" at="487,110,488,114" concept="1" />
+      <node id="7292197992424469863" at="488,114,489,183" concept="1" />
+      <node id="3298194222149298478" at="489,183,490,26" concept="1" />
+      <node id="3298194222149298478" at="490,26,491,22" concept="6" />
+      <node id="3298194222149298478" at="481,0,493,0" concept="9" trace="createDescriptorForThermostat#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3298194222149298478" at="136,44,137,35" />
+      <scope id="3298194222149298478" at="481,68,491,22">
+        <var name="b" id="3298194222149298478" />
+      </scope>
+      <scope id="3298194222149298478" at="481,0,493,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3298194222149298479">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3298194222149298479" at="14,0,15,0" concept="2" trace="props_Bluetooth" />
+      <node id="3298194222149298479" at="67,38,68,76" concept="5" />
+      <node id="3298194222149298479" at="68,76,69,43" concept="1" />
+      <node id="3298194222149298479" at="69,43,70,41" concept="1" />
+      <node id="3298194222149298479" at="71,9,72,31" concept="6" />
+      <node id="3298194222149298479" at="66,43,71,9" concept="3" />
+      <scope id="3298194222149298479" at="67,38,70,41">
+        <var name="cpb" id="3298194222149298479" />
+      </scope>
+      <scope id="3298194222149298479" at="66,43,72,31" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3298194222149298479" at="14,0,15,0" concept="8" trace="Bluetooth" />
+      <node id="3298194222149298479" at="50,49,51,48" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3298194222149298479" at="21,0,22,0" concept="2" trace="myConceptBluetooth" />
+      <node id="3298194222149298479" at="80,43,81,34" concept="6" />
+      <node id="3298194222149298479" at="176,67,177,152" concept="5" />
+      <node id="3298194222149298479" at="177,152,178,34" concept="1" />
+      <node id="3298194222149298479" at="178,34,179,95" concept="1" />
+      <node id="3298194222149298479" at="179,95,180,17" concept="1" />
+      <node id="950762063038701986" at="180,17,181,106" concept="1" />
+      <node id="950762063038702001" at="181,106,182,110" concept="1" />
+      <node id="950762063038702004" at="182,110,183,113" concept="1" />
+      <node id="7292197992424469854" at="183,113,184,183" concept="1" />
+      <node id="3298194222149298479" at="184,183,185,22" concept="6" />
+      <node id="3298194222149298479" at="176,0,187,0" concept="9" trace="createDescriptorForBluetooth#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3298194222149298479" at="80,43,81,34" />
+      <scope id="3298194222149298479" at="176,67,185,22">
+        <var name="b" id="3298194222149298479" />
+      </scope>
+      <scope id="3298194222149298479" at="176,0,187,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3298194222149298480">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3298194222149298480" at="41,0,42,0" concept="2" trace="props_TV" />
+      <node id="3298194222149298480" at="255,31,256,76" concept="5" />
+      <node id="3298194222149298480" at="256,76,257,36" concept="1" />
+      <node id="3298194222149298480" at="257,36,258,34" concept="1" />
+      <node id="3298194222149298480" at="259,9,260,24" concept="6" />
+      <node id="3298194222149298480" at="254,36,259,9" concept="3" />
+      <scope id="3298194222149298480" at="255,31,258,34">
+        <var name="cpb" id="3298194222149298480" />
+      </scope>
+      <scope id="3298194222149298480" at="254,36,260,24" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3298194222149298480" at="41,0,42,0" concept="8" trace="TV" />
+      <node id="3298194222149298480" at="77,44,78,41" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3298194222149298480" at="48,0,49,0" concept="2" trace="myConceptTV" />
+      <node id="3298194222149298480" at="134,36,135,27" concept="6" />
+      <node id="3298194222149298480" at="469,60,470,145" concept="5" />
+      <node id="3298194222149298480" at="470,145,471,34" concept="1" />
+      <node id="3298194222149298480" at="471,34,472,95" concept="1" />
+      <node id="3298194222149298480" at="472,95,473,17" concept="1" />
+      <node id="950762063038702031" at="473,17,474,106" concept="1" />
+      <node id="950762063038702033" at="474,106,475,110" concept="1" />
+      <node id="950762063038702036" at="475,110,476,109" concept="1" />
+      <node id="7292197992424470011" at="476,109,477,181" concept="1" />
+      <node id="3298194222149298480" at="477,181,478,18" concept="1" />
+      <node id="3298194222149298480" at="478,18,479,22" concept="6" />
+      <node id="3298194222149298480" at="469,0,481,0" concept="9" trace="createDescriptorForTV#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3298194222149298480" at="134,36,135,27" />
+      <scope id="3298194222149298480" at="469,60,479,22">
+        <var name="b" id="3298194222149298480" />
+      </scope>
+      <scope id="3298194222149298480" at="469,0,481,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3298194222149298481">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3298194222149298481" at="34,0,35,0" concept="2" trace="props_Prise" />
+      <node id="3298194222149298481" at="206,34,207,76" concept="5" />
+      <node id="3298194222149298481" at="207,76,208,39" concept="1" />
+      <node id="3298194222149298481" at="208,39,209,37" concept="1" />
+      <node id="3298194222149298481" at="210,9,211,27" concept="6" />
+      <node id="3298194222149298481" at="205,39,210,9" concept="3" />
+      <scope id="3298194222149298481" at="206,34,209,37">
+        <var name="cpb" id="3298194222149298481" />
+      </scope>
+      <scope id="3298194222149298481" at="205,39,211,27" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3298194222149298481" at="34,0,35,0" concept="8" trace="Prise" />
+      <node id="3298194222149298481" at="70,44,71,44" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3298194222149298481" at="41,0,42,0" concept="2" trace="myConceptPrise" />
+      <node id="3298194222149298481" at="120,39,121,30" concept="6" />
+      <node id="3298194222149298481" at="389,63,390,148" concept="5" />
+      <node id="3298194222149298481" at="390,148,391,34" concept="1" />
+      <node id="3298194222149298481" at="391,34,392,95" concept="1" />
+      <node id="3298194222149298481" at="392,95,393,17" concept="1" />
+      <node id="950762063038701988" at="393,17,394,106" concept="1" />
+      <node id="950762063038702016" at="394,106,395,110" concept="1" />
+      <node id="7292197992424469859" at="395,110,396,183" concept="1" />
+      <node id="3298194222149298481" at="396,183,397,21" concept="1" />
+      <node id="3298194222149298481" at="397,21,398,22" concept="6" />
+      <node id="3298194222149298481" at="389,0,400,0" concept="9" trace="createDescriptorForPrise#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3298194222149298481" at="120,39,121,30" />
+      <scope id="3298194222149298481" at="389,63,398,22">
+        <var name="b" id="3298194222149298481" />
+      </scope>
+      <scope id="3298194222149298481" at="389,0,400,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3298194222149298482">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3298194222149298482" at="13,0,14,0" concept="2" trace="props_Aspirateur" />
+      <node id="3298194222149298482" at="60,39,61,76" concept="5" />
+      <node id="3298194222149298482" at="61,76,62,44" concept="1" />
+      <node id="3298194222149298482" at="62,44,63,42" concept="1" />
+      <node id="3298194222149298482" at="64,9,65,32" concept="6" />
+      <node id="3298194222149298482" at="59,44,64,9" concept="3" />
+      <scope id="3298194222149298482" at="60,39,63,42">
+        <var name="cpb" id="3298194222149298482" />
+      </scope>
+      <scope id="3298194222149298482" at="59,44,65,32" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3298194222149298482" at="13,0,14,0" concept="8" trace="Aspirateur" />
+      <node id="3298194222149298482" at="49,46,50,49" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3298194222149298482" at="20,0,21,0" concept="2" trace="myConceptAspirateur" />
+      <node id="3298194222149298482" at="78,44,79,35" concept="6" />
+      <node id="3298194222149298482" at="165,68,166,153" concept="5" />
+      <node id="3298194222149298482" at="166,153,167,34" concept="1" />
+      <node id="3298194222149298482" at="167,34,168,95" concept="1" />
+      <node id="3298194222149298482" at="168,95,169,17" concept="1" />
+      <node id="950762063038701982" at="169,17,170,106" concept="1" />
+      <node id="7292197992424468736" at="170,106,171,112" concept="1" />
+      <node id="7292197992424469850" at="171,112,172,183" concept="1" />
+      <node id="3298194222149298482" at="172,183,173,26" concept="1" />
+      <node id="3298194222149298482" at="173,26,174,22" concept="6" />
+      <node id="3298194222149298482" at="165,0,176,0" concept="9" trace="createDescriptorForAspirateur#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3298194222149298482" at="78,44,79,35" />
+      <scope id="3298194222149298482" at="165,68,174,22">
+        <var name="b" id="3298194222149298482" />
+      </scope>
+      <scope id="3298194222149298482" at="165,0,176,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/4779655994528793097">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="4779655994528793097" at="45,0,46,0" concept="2" trace="props_Usager" />
+      <node id="4779655994528793097" at="283,35,284,76" concept="5" />
+      <node id="4779655994528793097" at="284,76,285,40" concept="1" />
+      <node id="4779655994528793097" at="285,40,286,38" concept="1" />
+      <node id="4779655994528793097" at="287,9,288,28" concept="6" />
+      <node id="4779655994528793097" at="282,40,287,9" concept="3" />
+      <scope id="4779655994528793097" at="283,35,286,38">
+        <var name="cpb" id="4779655994528793097" />
+      </scope>
+      <scope id="4779655994528793097" at="282,40,288,28" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="4779655994528793097" at="45,0,46,0" concept="8" trace="Usager" />
+      <node id="4779655994528793097" at="81,52,82,45" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="4779655994528793097" at="52,0,53,0" concept="2" trace="myConceptUsager" />
+      <node id="4779655994528793097" at="142,40,143,31" concept="6" />
+      <node id="4779655994528793097" at="507,64,508,149" concept="5" />
+      <node id="4779655994528793097" at="508,149,509,34" concept="1" />
+      <node id="4779655994528793097" at="509,34,510,95" concept="1" />
+      <node id="4779655994528793097" at="510,95,511,17" concept="1" />
+      <node id="4779655994528803472" at="511,17,512,108" concept="1" />
+      <node id="4779655994528803474" at="512,108,513,109" concept="1" />
+      <node id="4779655994528803477" at="513,109,514,112" concept="1" />
+      <node id="4779655994528803481" at="514,112,515,112" concept="1" />
+      <node id="4779655994528803486" at="515,112,516,116" concept="1" />
+      <node id="4779655994528803492" at="516,116,517,109" concept="1" />
+      <node id="4779655994528793097" at="517,109,518,22" concept="6" />
+      <node id="4779655994528793097" at="507,0,520,0" concept="9" trace="createDescriptorForUsager#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="4779655994528793097" at="142,40,143,31" />
+      <scope id="4779655994528793097" at="507,64,518,22">
+        <var name="b" id="4779655994528793097" />
+      </scope>
+      <scope id="4779655994528793097" at="507,0,520,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/7292197992424468732">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="7292197992424468732" at="12,0,13,0" concept="2" trace="props_Allumer" />
+      <node id="7292197992424468732" at="53,36,54,76" concept="5" />
+      <node id="7292197992424468732" at="54,76,55,41" concept="1" />
+      <node id="7292197992424468732" at="55,41,56,39" concept="1" />
+      <node id="7292197992424468732" at="57,9,58,29" concept="6" />
+      <node id="7292197992424468732" at="52,41,57,9" concept="3" />
+      <scope id="7292197992424468732" at="53,36,56,39">
+        <var name="cpb" id="7292197992424468732" />
+      </scope>
+      <scope id="7292197992424468732" at="52,41,58,29" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="7292197992424468732" at="12,0,13,0" concept="8" trace="Allumer" />
+      <node id="7292197992424468732" at="48,116,49,46" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="7292197992424468732" at="19,0,20,0" concept="2" trace="myConceptAllumer" />
+      <node id="7292197992424468732" at="76,41,77,32" concept="6" />
+      <node id="7292197992424468732" at="158,65,159,150" concept="5" />
+      <node id="7292197992424468732" at="159,150,160,34" concept="1" />
+      <node id="7292197992424468732" at="160,34,161,95" concept="1" />
+      <node id="7292197992424468732" at="161,95,162,17" concept="1" />
+      <node id="7292197992424468732" at="162,17,163,22" concept="6" />
+      <node id="7292197992424468732" at="158,0,165,0" concept="9" trace="createDescriptorForAllumer#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="7292197992424468732" at="76,41,77,32" />
+      <scope id="7292197992424468732" at="158,65,163,22">
+        <var name="b" id="7292197992424468732" />
+      </scope>
+      <scope id="7292197992424468732" at="158,0,165,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/7292197992424468733">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="7292197992424468733" at="43,0,44,0" concept="2" trace="props_TournerAgauche" />
+      <node id="7292197992424468733" at="269,43,270,76" concept="5" />
+      <node id="7292197992424468733" at="270,76,271,48" concept="1" />
+      <node id="7292197992424468733" at="271,48,272,46" concept="1" />
+      <node id="7292197992424468733" at="273,9,274,36" concept="6" />
+      <node id="7292197992424468733" at="268,48,273,9" concept="3" />
+      <scope id="7292197992424468733" at="269,43,272,46">
+        <var name="cpb" id="7292197992424468733" />
+      </scope>
+      <scope id="7292197992424468733" at="268,48,274,36" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="7292197992424468733" at="43,0,44,0" concept="8" trace="TournerAgauche" />
+      <node id="7292197992424468733" at="79,49,80,53" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="7292197992424468733" at="50,0,51,0" concept="2" trace="myConceptTournerAgauche" />
+      <node id="7292197992424468733" at="138,48,139,39" concept="6" />
+      <node id="7292197992424468733" at="493,72,494,157" concept="5" />
+      <node id="7292197992424468733" at="494,157,495,34" concept="1" />
+      <node id="7292197992424468733" at="495,34,496,95" concept="1" />
+      <node id="7292197992424468733" at="496,95,497,17" concept="1" />
+      <node id="7292197992424468733" at="497,17,498,22" concept="6" />
+      <node id="7292197992424468733" at="493,0,500,0" concept="9" trace="createDescriptorForTournerAgauche#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="7292197992424468733" at="138,48,139,39" />
+      <scope id="7292197992424468733" at="493,72,498,22">
+        <var name="b" id="7292197992424468733" />
+      </scope>
+      <scope id="7292197992424468733" at="493,0,500,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/7292197992424468734">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="7292197992424468734" at="19,0,20,0" concept="2" trace="props_Eteindre" />
+      <node id="7292197992424468734" at="102,37,103,76" concept="5" />
+      <node id="7292197992424468734" at="103,76,104,42" concept="1" />
+      <node id="7292197992424468734" at="104,42,105,40" concept="1" />
+      <node id="7292197992424468734" at="106,9,107,30" concept="6" />
+      <node id="7292197992424468734" at="101,42,106,9" concept="3" />
+      <scope id="7292197992424468734" at="102,37,105,40">
+        <var name="cpb" id="7292197992424468734" />
+      </scope>
+      <scope id="7292197992424468734" at="101,42,107,30" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="7292197992424468734" at="19,0,20,0" concept="8" trace="Eteindre" />
+      <node id="7292197992424468734" at="55,46,56,47" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="7292197992424468734" at="26,0,27,0" concept="2" trace="myConceptEteindre" />
+      <node id="7292197992424468734" at="90,42,91,33" concept="6" />
+      <node id="7292197992424468734" at="229,66,230,151" concept="5" />
+      <node id="7292197992424468734" at="230,151,231,34" concept="1" />
+      <node id="7292197992424468734" at="231,34,232,95" concept="1" />
+      <node id="7292197992424468734" at="232,95,233,17" concept="1" />
+      <node id="7292197992424468734" at="233,17,234,22" concept="6" />
+      <node id="7292197992424468734" at="229,0,236,0" concept="9" trace="createDescriptorForEteindre#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="7292197992424468734" at="90,42,91,33" />
+      <scope id="7292197992424468734" at="229,66,234,22">
+        <var name="b" id="7292197992424468734" />
+      </scope>
+      <scope id="7292197992424468734" at="229,0,236,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/7292197992424468735">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="7292197992424468735" at="44,0,45,0" concept="2" trace="props_TurnerAdroite" />
+      <node id="7292197992424468735" at="276,42,277,76" concept="5" />
+      <node id="7292197992424468735" at="277,76,278,47" concept="1" />
+      <node id="7292197992424468735" at="278,47,279,45" concept="1" />
+      <node id="7292197992424468735" at="280,9,281,35" concept="6" />
+      <node id="7292197992424468735" at="275,47,280,9" concept="3" />
+      <scope id="7292197992424468735" at="276,42,279,45">
+        <var name="cpb" id="7292197992424468735" />
+      </scope>
+      <scope id="7292197992424468735" at="275,47,281,35" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="7292197992424468735" at="44,0,45,0" concept="8" trace="TurnerAdroite" />
+      <node id="7292197992424468735" at="80,53,81,52" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="7292197992424468735" at="51,0,52,0" concept="2" trace="myConceptTurnerAdroite" />
+      <node id="7292197992424468735" at="140,47,141,38" concept="6" />
+      <node id="7292197992424468735" at="500,71,501,156" concept="5" />
+      <node id="7292197992424468735" at="501,156,502,34" concept="1" />
+      <node id="7292197992424468735" at="502,34,503,95" concept="1" />
+      <node id="7292197992424468735" at="503,95,504,17" concept="1" />
+      <node id="7292197992424468735" at="504,17,505,22" concept="6" />
+      <node id="7292197992424468735" at="500,0,507,0" concept="9" trace="createDescriptorForTurnerAdroite#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="7292197992424468735" at="140,47,141,38" />
+      <scope id="7292197992424468735" at="500,71,505,22">
+        <var name="b" id="7292197992424468735" />
+      </scope>
+      <scope id="7292197992424468735" at="500,0,507,0" />
+    </file>
+  </root>
+</debug-info>
+
