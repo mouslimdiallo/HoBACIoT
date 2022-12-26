@@ -1,0 +1,3 @@
+# Project exclude paths
+/languages/HoBACIoT/classes_gen/
+/languages/HoBACIoT/generator/classes_gen/
