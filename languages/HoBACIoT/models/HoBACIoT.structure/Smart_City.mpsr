@@ -66,7 +66,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="maison" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="2sEr4ZI$SUb" resolve="Maison" />
+      <ref role="20lvS9" node="2sEr4ZI$SUb" resolve="House" />
     </node>
   </node>
 </model>

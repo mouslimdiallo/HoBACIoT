@@ -7,8 +7,8 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class Miroir_Editor extends DefaultNodeEditor {
+public class MicrOnde_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new Miroir_EditorBuilder_a(editorContext, node).createCell();
+    return new MicrOnde_EditorBuilder_a(editorContext, node).createCell();
   }
 }

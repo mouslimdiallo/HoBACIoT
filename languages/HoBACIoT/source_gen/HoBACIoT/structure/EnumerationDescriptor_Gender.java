@@ -9,10 +9,10 @@ import java.util.List;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.annotations.NotNull;
 
-public class EnumerationDescriptor_Genre extends EnumerationDescriptorBase {
+public class EnumerationDescriptor_Gender extends EnumerationDescriptorBase {
 
-  public EnumerationDescriptor_Genre() {
-    super(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6b13425312337c94L, "Genre", "r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/7715583511170874516");
+  public EnumerationDescriptor_Gender() {
+    super(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6b13425312337c94L, "Gender", "r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/7715583511170874516");
   }
 
   private final EnumerationDescriptor.MemberDescriptor myMember_Masculin_0 = new EnumerationDescriptor.MemberDescriptor("Masculin", "Masculin", 0x6b13425312337c95L, "r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/7715583511170874517");

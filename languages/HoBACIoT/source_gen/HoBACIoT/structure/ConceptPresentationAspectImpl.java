@@ -18,26 +18,29 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Aspirateur;
   private ConceptPresentation props_AttributeDesignator;
   private ConceptPresentation props_AttributeValue;
+  private ConceptPresentation props_Autorization;
   private ConceptPresentation props_Bluetooth;
-  private ConceptPresentation props_BrosseDent;
   private ConceptPresentation props_Chambre;
   private ConceptPresentation props_Condition;
   private ConceptPresentation props_Cuisine;
+  private ConceptPresentation props_Devices;
   private ConceptPresentation props_Enfants;
+  private ConceptPresentation props_EntityType;
   private ConceptPresentation props_Environment;
   private ConceptPresentation props_EnvironmentType;
   private ConceptPresentation props_Eteindre;
-  private ConceptPresentation props_Famille;
+  private ConceptPresentation props_Family;
   private ConceptPresentation props_Four;
   private ConceptPresentation props_Frigo;
   private ConceptPresentation props_GrandMaman;
   private ConceptPresentation props_GrandPapa;
   private ConceptPresentation props_GrandParents;
-  private ConceptPresentation props_Maison;
+  private ConceptPresentation props_House;
   private ConceptPresentation props_Maman;
   private ConceptPresentation props_Match;
   private ConceptPresentation props_MicrOnde;
-  private ConceptPresentation props_Miroir;
+  private ConceptPresentation props_Miror;
+  private ConceptPresentation props_ObjectType;
   private ConceptPresentation props_Papa;
   private ConceptPresentation props_Parents;
   private ConceptPresentation props_Person;
@@ -47,7 +50,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_PolicySet;
   private ConceptPresentation props_Prise;
   private ConceptPresentation props_Resource;
-  private ConceptPresentation props_ResourceType;
   private ConceptPresentation props_Robinet;
   private ConceptPresentation props_Rule;
   private ConceptPresentation props_RuleCombiningAlgorithm;
@@ -61,6 +63,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_TV;
   private ConceptPresentation props_Target;
   private ConceptPresentation props_Thermostat;
+  private ConceptPresentation props_ToothBrush;
   private ConceptPresentation props_TournerAgauche;
   private ConceptPresentation props_TurnerAdroite;
   private ConceptPresentation props_Usager;
@@ -115,7 +118,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Aspirateur:
         if (props_Aspirateur == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("aspirateur");
+          cpb.presentationByName();
           props_Aspirateur = cpb.create();
         }
         return props_Aspirateur;
@@ -133,20 +136,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_AttributeValue = cpb.create();
         }
         return props_AttributeValue;
+      case LanguageConceptSwitch.Autorization:
+        if (props_Autorization == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Autorization = cpb.create();
+        }
+        return props_Autorization;
       case LanguageConceptSwitch.Bluetooth:
         if (props_Bluetooth == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Bluetooth");
+          cpb.presentationByName();
           props_Bluetooth = cpb.create();
         }
         return props_Bluetooth;
-      case LanguageConceptSwitch.BrosseDent:
-        if (props_BrosseDent == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("brosse");
-          props_BrosseDent = cpb.create();
-        }
-        return props_BrosseDent;
       case LanguageConceptSwitch.Chambre:
         if (props_Chambre == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -168,13 +171,27 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Cuisine = cpb.create();
         }
         return props_Cuisine;
+      case LanguageConceptSwitch.Devices:
+        if (props_Devices == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Devices = cpb.create();
+        }
+        return props_Devices;
       case LanguageConceptSwitch.Enfants:
         if (props_Enfants == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Enfants");
+          cpb.presentationByName();
           props_Enfants = cpb.create();
         }
         return props_Enfants;
+      case LanguageConceptSwitch.EntityType:
+        if (props_EntityType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_EntityType = cpb.create();
+        }
+        return props_EntityType;
       case LanguageConceptSwitch.Environment:
         if (props_Environment == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -196,38 +213,38 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Eteindre = cpb.create();
         }
         return props_Eteindre;
-      case LanguageConceptSwitch.Famille:
-        if (props_Famille == null) {
+      case LanguageConceptSwitch.Family:
+        if (props_Family == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Famille");
-          props_Famille = cpb.create();
+          cpb.rawPresentation("Family");
+          props_Family = cpb.create();
         }
-        return props_Famille;
+        return props_Family;
       case LanguageConceptSwitch.Four:
         if (props_Four == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("four");
+          cpb.presentationByName();
           props_Four = cpb.create();
         }
         return props_Four;
       case LanguageConceptSwitch.Frigo:
         if (props_Frigo == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("frigo");
+          cpb.presentationByName();
           props_Frigo = cpb.create();
         }
         return props_Frigo;
       case LanguageConceptSwitch.GrandMaman:
         if (props_GrandMaman == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("GrandMaman");
+          cpb.presentationByName();
           props_GrandMaman = cpb.create();
         }
         return props_GrandMaman;
       case LanguageConceptSwitch.GrandPapa:
         if (props_GrandPapa == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("GrandPapa");
+          cpb.presentationByName();
           props_GrandPapa = cpb.create();
         }
         return props_GrandPapa;
@@ -238,17 +255,17 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_GrandParents = cpb.create();
         }
         return props_GrandParents;
-      case LanguageConceptSwitch.Maison:
-        if (props_Maison == null) {
+      case LanguageConceptSwitch.House:
+        if (props_House == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          props_Maison = cpb.create();
+          props_House = cpb.create();
         }
-        return props_Maison;
+        return props_House;
       case LanguageConceptSwitch.Maman:
         if (props_Maman == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("maman");
+          cpb.presentationByName();
           props_Maman = cpb.create();
         }
         return props_Maman;
@@ -262,28 +279,35 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.MicrOnde:
         if (props_MicrOnde == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("micro");
+          cpb.presentationByName();
           props_MicrOnde = cpb.create();
         }
         return props_MicrOnde;
-      case LanguageConceptSwitch.Miroir:
-        if (props_Miroir == null) {
+      case LanguageConceptSwitch.Miror:
+        if (props_Miror == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("miroir");
-          props_Miroir = cpb.create();
+          cpb.presentationByName();
+          props_Miror = cpb.create();
         }
-        return props_Miroir;
+        return props_Miror;
+      case LanguageConceptSwitch.ObjectType:
+        if (props_ObjectType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_ObjectType = cpb.create();
+        }
+        return props_ObjectType;
       case LanguageConceptSwitch.Papa:
         if (props_Papa == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("papa");
+          cpb.presentationByName();
           props_Papa = cpb.create();
         }
         return props_Papa;
       case LanguageConceptSwitch.Parents:
         if (props_Parents == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Parents");
+          cpb.presentationByName();
           props_Parents = cpb.create();
         }
         return props_Parents;
@@ -323,7 +347,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Prise:
         if (props_Prise == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("prise");
+          cpb.presentationByName();
           props_Prise = cpb.create();
         }
         return props_Prise;
@@ -334,17 +358,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Resource = cpb.create();
         }
         return props_Resource;
-      case LanguageConceptSwitch.ResourceType:
-        if (props_ResourceType == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_ResourceType = cpb.create();
-        }
-        return props_ResourceType;
       case LanguageConceptSwitch.Robinet:
         if (props_Robinet == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("robinet");
+          cpb.presentationByName();
           props_Robinet = cpb.create();
         }
         return props_Robinet;
@@ -393,7 +410,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Store:
         if (props_Store == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("store");
+          cpb.presentationByName();
           props_Store = cpb.create();
         }
         return props_Store;
@@ -414,7 +431,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.TV:
         if (props_TV == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("tv");
+          cpb.presentationByName();
           props_TV = cpb.create();
         }
         return props_TV;
@@ -428,10 +445,17 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Thermostat:
         if (props_Thermostat == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("thermostat");
+          cpb.presentationByName();
           props_Thermostat = cpb.create();
         }
         return props_Thermostat;
+      case LanguageConceptSwitch.ToothBrush:
+        if (props_ToothBrush == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_ToothBrush = cpb.create();
+        }
+        return props_ToothBrush;
       case LanguageConceptSwitch.TournerAgauche:
         if (props_TournerAgauche == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

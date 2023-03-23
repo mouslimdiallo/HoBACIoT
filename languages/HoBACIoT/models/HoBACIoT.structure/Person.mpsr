@@ -16,6 +16,7 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
@@ -45,10 +46,11 @@
     <property role="TrG5h" value="Person" />
     <property role="3GE5qa" value="SubjectType" />
     <property role="34LRSv" value="person" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2sEr4ZI$SUU" role="1TKVEl">
       <property role="IQ2nx" value="2822187207061900986" />
-      <property role="TrG5h" value="id" />
+      <property role="TrG5h" value="subject_id" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="2sEr4ZI$SUW" role="1TKVEl">
@@ -101,11 +103,25 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6Gjg_ciewyd" resolve="Devices" />
     </node>
+    <node concept="1TJgyj" id="6Gjg_cieGHp" role="1TKVEi">
+      <property role="IQ2ns" value="7715583511171353433" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="niveauAutorisation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6Gjg_cieH52" resolve="Autorization" />
+    </node>
+    <node concept="1TJgyj" id="6Gjg_cieHgt" role="1TKVEi">
+      <property role="IQ2ns" value="7715583511171355677" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="action" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="3rmguCBqVg6" resolve="Action" />
+    </node>
     <node concept="1TJgyj" id="6Gjg_ciewTO" role="1TKVEi">
       <property role="IQ2ns" value="7715583511171305076" />
       <property role="20kJfa" value="famille" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="2R5yyIzt6zW" resolve="Famille" />
+      <ref role="20lvS9" node="2R5yyIzt6zW" resolve="Family" />
     </node>
     <node concept="1TJgyj" id="6Gjg_ciexa7" role="1TKVEi">
       <property role="IQ2ns" value="7715583511171306119" />

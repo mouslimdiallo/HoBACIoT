@@ -45,18 +45,18 @@
     <property role="TrG5h" value="Subject" />
     <property role="3GE5qa" value="Concepts" />
     <property role="34LRSv" value="sujet" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="2sEr4ZI$SUc" resolve="Person" />
     <node concept="PrWs8" id="3rmguCBqUP8" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyi" id="3rmguCBr87K" role="1TKVEl">
-      <property role="IQ2nx" value="3951418197003764208" />
-      <property role="TrG5h" value="subject_id" />
+    <node concept="1TJgyi" id="6Gjg_cieApS" role="1TKVEl">
+      <property role="IQ2nx" value="7715583511171327608" />
+      <property role="TrG5h" value="role" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="1TJgyi" id="1zdHfxP6rFG" role="1TKVEl">
-      <property role="IQ2nx" value="1787283606345464556" />
-      <property role="TrG5h" value="nom" />
+    <node concept="1TJgyi" id="6Gjg_cieAvB" role="1TKVEl">
+      <property role="IQ2nx" value="7715583511171327975" />
+      <property role="TrG5h" value="departement" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyj" id="3rmguCBr8NE" role="1TKVEi">
@@ -64,13 +64,6 @@
       <property role="20kJfa" value="subject_type" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="3rmguCBr9ns" resolve="SubjectType" />
-    </node>
-    <node concept="1TJgyj" id="3rmguCBriO$" role="1TKVEi">
-      <property role="IQ2ns" value="3951418197003808036" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="attributes" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" to="tpck:4uZwTti3_$T" resolve="Attribute" />
     </node>
     <node concept="1TJgyj" id="1zdHfxP3_Re" role="1TKVEi">
       <property role="IQ2ns" value="1787283606344719822" />

@@ -23,17 +23,29 @@
       </concept>
     </language>
   </registry>
-  <node concept="25R3W" id="6Gjg_cicRMk">
-    <property role="3F6X1D" value="7715583511170874516" />
+  <node concept="25R3W" id="6Gjg_cieLJ7">
+    <property role="3F6X1D" value="7715583511171374023" />
     <property role="3GE5qa" value="IoT Infra" />
-    <property role="TrG5h" value="Genre" />
-    <node concept="25R33" id="6Gjg_cicRMl" role="25R1y">
-      <property role="3tVfz5" value="7715583511170874517" />
-      <property role="TrG5h" value="Masculin" />
+    <property role="TrG5h" value="DevicesType" />
+    <node concept="25R33" id="6Gjg_cieLJ8" role="25R1y">
+      <property role="3tVfz5" value="7715583511171374024" />
+      <property role="TrG5h" value="smartphone" />
     </node>
-    <node concept="25R33" id="6Gjg_cicRMm" role="25R1y">
-      <property role="3tVfz5" value="7715583511170874518" />
-      <property role="TrG5h" value="Feminin" />
+    <node concept="25R33" id="6Gjg_cieLJa" role="25R1y">
+      <property role="3tVfz5" value="7715583511171374026" />
+      <property role="TrG5h" value="Electronique" />
+    </node>
+    <node concept="25R33" id="6Gjg_cieLJd" role="25R1y">
+      <property role="3tVfz5" value="7715583511171374029" />
+      <property role="TrG5h" value="Electromenager" />
+    </node>
+    <node concept="25R33" id="6Gjg_cieLJh" role="25R1y">
+      <property role="3tVfz5" value="7715583511171374033" />
+      <property role="TrG5h" value="Ordinateur" />
+    </node>
+    <node concept="25R33" id="6Gjg_cieLJm" role="25R1y">
+      <property role="3tVfz5" value="7715583511171374038" />
+      <property role="TrG5h" value="Tablette" />
     </node>
   </node>
 </model>
