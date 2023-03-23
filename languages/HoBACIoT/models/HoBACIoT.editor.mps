@@ -59,7 +59,7 @@
   </registry>
   <node concept="24kQdi" id="49kJWQAtaF5">
     <property role="3GE5qa" value="SubjectType" />
-    <ref role="1XX52x" to="jlpl:2sEr4ZI$SUc" resolve="Personne" />
+    <ref role="1XX52x" to="jlpl:2sEr4ZI$SUc" resolve="Person" />
     <node concept="3EZMnI" id="49kJWQAtaF7" role="2wV5jI">
       <node concept="3F0ifn" id="6kN5R0UhJsz" role="3EZMnx">
         <property role="3F0ifm" value="person" />

@@ -36,7 +36,7 @@
     <node concept="1TJgyj" id="2R5yyIzt6zX" role="1TKVEi">
       <property role="IQ2ns" value="3298194222149298429" />
       <property role="20kJfa" value="person" />
-      <ref role="20lvS9" node="2sEr4ZI$SUc" resolve="Personne" />
+      <ref role="20lvS9" node="2sEr4ZI$SUc" resolve="Person" />
     </node>
   </node>
 </model>
