@@ -63,11 +63,6 @@
       <property role="TrG5h" value="connexion" />
       <ref role="AX2Wp" node="2cS6XcGq7ml" resolve="Connectivity" />
     </node>
-    <node concept="1TJgyi" id="6Gjg_cieLGd" role="1TKVEl">
-      <property role="IQ2nx" value="7715583511171373837" />
-      <property role="TrG5h" value="type" />
-      <ref role="AX2Wp" node="6Gjg_cieLJ7" resolve="DevicesType" />
-    </node>
     <node concept="1TJgyj" id="6Gjg_cieKNf" role="1TKVEi">
       <property role="IQ2ns" value="7715583511171370191" />
       <property role="20kJfa" value="userRef" />

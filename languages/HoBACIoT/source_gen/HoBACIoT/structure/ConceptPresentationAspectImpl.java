@@ -18,6 +18,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Aspirateur;
   private ConceptPresentation props_AttributeDesignator;
   private ConceptPresentation props_AttributeValue;
+  private ConceptPresentation props_AuthorizationType;
   private ConceptPresentation props_Autorization;
   private ConceptPresentation props_Bluetooth;
   private ConceptPresentation props_Chambre;
@@ -136,6 +137,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_AttributeValue = cpb.create();
         }
         return props_AttributeValue;
+      case LanguageConceptSwitch.AuthorizationType:
+        if (props_AuthorizationType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_AuthorizationType = cpb.create();
+        }
+        return props_AuthorizationType;
       case LanguageConceptSwitch.Autorization:
         if (props_Autorization == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -321,6 +329,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Piece:
         if (props_Piece == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
           props_Piece = cpb.create();
         }
         return props_Piece;

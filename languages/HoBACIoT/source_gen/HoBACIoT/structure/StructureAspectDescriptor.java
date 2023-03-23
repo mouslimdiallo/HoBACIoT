@@ -25,6 +25,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAspirateur = createDescriptorForAspirateur();
   /*package*/ final ConceptDescriptor myConceptAttributeDesignator = createDescriptorForAttributeDesignator();
   /*package*/ final ConceptDescriptor myConceptAttributeValue = createDescriptorForAttributeValue();
+  /*package*/ final ConceptDescriptor myConceptAuthorizationType = createDescriptorForAuthorizationType();
   /*package*/ final ConceptDescriptor myConceptAutorization = createDescriptorForAutorization();
   /*package*/ final ConceptDescriptor myConceptBluetooth = createDescriptorForBluetooth();
   /*package*/ final ConceptDescriptor myConceptChambre = createDescriptorForChambre();
@@ -75,7 +76,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptTurnerAdroite = createDescriptorForTurnerAdroite();
   /*package*/ final ConceptDescriptor myConceptUsager = createDescriptorForUsager();
   /*package*/ final EnumerationDescriptor myEnumerationConnectivity = new EnumerationDescriptor_Connectivity();
-  /*package*/ final EnumerationDescriptor myEnumerationDevicesType = new EnumerationDescriptor_DevicesType();
   /*package*/ final EnumerationDescriptor myEnumerationEffect = new EnumerationDescriptor_Effect();
   /*package*/ final EnumerationDescriptor myEnumerationGender = new EnumerationDescriptor_Gender();
   /*package*/ final EnumerationDescriptor myEnumerationProcessor = new EnumerationDescriptor_Processor();
@@ -94,7 +94,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAction, myConceptActionType, myConceptAllOf, myConceptAllumer, myConceptAnyOf, myConceptApply, myConceptAspirateur, myConceptAttributeDesignator, myConceptAttributeValue, myConceptAutorization, myConceptBluetooth, myConceptChambre, myConceptCondition, myConceptCuisine, myConceptDevices, myConceptEnfants, myConceptEntityType, myConceptEnvironment, myConceptEnvironmentType, myConceptEteindre, myConceptFamily, myConceptFour, myConceptFrigo, myConceptGrandMaman, myConceptGrandPapa, myConceptGrandParents, myConceptHouse, myConceptMaman, myConceptMatch, myConceptMicrOnde, myConceptMiror, myConceptObjectType, myConceptPapa, myConceptParents, myConceptPerson, myConceptPiece, myConceptPolicy, myConceptPolicyCombiningAlgorithm, myConceptPolicySet, myConceptPrise, myConceptResource, myConceptRobinet, myConceptRule, myConceptRuleCombiningAlgorithm, myConceptSalleDeBain, myConceptSalleReunion, myConceptSalon, myConceptSmart_City, myConceptStore, myConceptSubject, myConceptSubjectType, myConceptTV, myConceptTarget, myConceptThermostat, myConceptToothBrush, myConceptTournerAgauche, myConceptTurnerAdroite, myConceptUsager);
+    return Arrays.asList(myConceptAction, myConceptActionType, myConceptAllOf, myConceptAllumer, myConceptAnyOf, myConceptApply, myConceptAspirateur, myConceptAttributeDesignator, myConceptAttributeValue, myConceptAuthorizationType, myConceptAutorization, myConceptBluetooth, myConceptChambre, myConceptCondition, myConceptCuisine, myConceptDevices, myConceptEnfants, myConceptEntityType, myConceptEnvironment, myConceptEnvironmentType, myConceptEteindre, myConceptFamily, myConceptFour, myConceptFrigo, myConceptGrandMaman, myConceptGrandPapa, myConceptGrandParents, myConceptHouse, myConceptMaman, myConceptMatch, myConceptMicrOnde, myConceptMiror, myConceptObjectType, myConceptPapa, myConceptParents, myConceptPerson, myConceptPiece, myConceptPolicy, myConceptPolicyCombiningAlgorithm, myConceptPolicySet, myConceptPrise, myConceptResource, myConceptRobinet, myConceptRule, myConceptRuleCombiningAlgorithm, myConceptSalleDeBain, myConceptSalleReunion, myConceptSalon, myConceptSmart_City, myConceptStore, myConceptSubject, myConceptSubjectType, myConceptTV, myConceptTarget, myConceptThermostat, myConceptToothBrush, myConceptTournerAgauche, myConceptTurnerAdroite, myConceptUsager);
   }
 
   @Override
@@ -119,6 +119,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptAttributeDesignator;
       case LanguageConceptSwitch.AttributeValue:
         return myConceptAttributeValue;
+      case LanguageConceptSwitch.AuthorizationType:
+        return myConceptAuthorizationType;
       case LanguageConceptSwitch.Autorization:
         return myConceptAutorization;
       case LanguageConceptSwitch.Bluetooth:
@@ -224,7 +226,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
-    return Arrays.asList(myEnumerationConnectivity, myEnumerationDevicesType, myEnumerationEffect, myEnumerationGender, myEnumerationProcessor);
+    return Arrays.asList(myEnumerationConnectivity, myEnumerationEffect, myEnumerationGender, myEnumerationProcessor);
   }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
@@ -239,7 +241,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(3);
     b.property("action_id", 0x36d641ea276ca9ffL).type(PrimitiveTypeId.STRING).origin("3951418197003774463").done();
     b.associate("action_type", 0x36d641ea276cb1a6L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276cb6f0L).optional(false).origin("3951418197003776422").done();
-    b.aggregate("attributes", 0x36d641ea276d24b0L).target(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x47bf8397520e5939L).optional(true).ordered(true).multiple(true).origin("3951418197003805872").done();
     b.aggregate("policy", 0x18cdb4f8750e5aa4L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b7ddbL).optional(true).ordered(true).multiple(true).origin("1787283606344719012").done();
     return b.create();
   }
@@ -320,12 +321,21 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("dataType", 0x36d641ea276c3fcfL).type(PrimitiveTypeId.STRING).origin("3951418197003747279").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForAuthorizationType() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "AuthorizationType", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6b1342531269bbf5L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/7715583511174429685");
+    b.version(3);
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForAutorization() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "Autorization", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6b134253123ad142L);
     b.class_(false, false, false);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/7715583511171354946");
     b.version(3);
+    b.associate("type", 0x6b1342531269c698L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6b1342531269bbf5L).optional(false).origin("7715583511174432408").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForBluetooth() {
@@ -378,7 +388,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("id", 0x6b134253123cc4a1L).type(PrimitiveTypeId.STRING).origin("7715583511171482785").done();
     b.property("modele", 0x6b134253123b093cL).type(PrimitiveTypeId.STRING).origin("7715583511171369276").done();
     b.property("connexion", 0x6b134253123b0aaaL).type(MetaIdFactory.dataTypeId(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x23381bd32c687595L)).origin("7715583511171369642").done();
-    b.property("type", 0x6b134253123b1b0dL).type(MetaIdFactory.dataTypeId(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6b134253123b1bc7L)).origin("7715583511171373837").done();
     b.associate("userRef", 0x6b134253123b0ccfL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x272a6c4fee938e8cL).optional(false).origin("7715583511171370191").done();
     b.associate("type", 0x6b134253123b2e7aL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276cde66L).optional(false).origin("7715583511171378810").done();
     b.alias("devices");
@@ -404,7 +413,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("subjects", 0x6b134253123ae39cL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276c95dcL).optional(true).ordered(true).multiple(true).origin("7715583511171359644").done();
     b.aggregate("objects", 0x6b134253123ae6f9L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276cde66L).optional(true).ordered(true).multiple(true).origin("7715583511171360505").done();
     b.aggregate("environment", 0x6b134253123aed97L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276cfab1L).optional(true).ordered(true).multiple(true).origin("7715583511171362199").done();
-    b.aggregate("Authorization", 0x6b134253123af1acL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6b134253123ad142L).optional(true).ordered(true).multiple(true).origin("7715583511171363244").done();
+    b.aggregate("action", 0x6b1342531269b312L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276cb6f0L).optional(true).ordered(true).multiple(true).origin("7715583511174427410").done();
+    b.aggregate("Authorization", 0x6b134253123af1acL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6b1342531269bbf5L).optional(true).ordered(true).multiple(true).origin("7715583511171363244").done();
     b.alias("EntityType");
     return b.create();
   }
@@ -609,7 +619,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
   private static ConceptDescriptor createDescriptorForPiece() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "Piece", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x272a6c4fee938e76L);
-    b.class_(false, true, false);
+    b.class_(false, false, false);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/2822187207061900918");
     b.version(3);
@@ -617,7 +627,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("temperature", 0x6b134253123ce2f0L).type(PrimitiveTypeId.INTEGER).origin("7715583511171490544").done();
     b.associate("type", 0x6b134253123ce5b0L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276cde66L).optional(false).origin("7715583511171491248").done();
     b.aggregate("device", 0x6b134253123a4ff4L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6b134253123a088dL).optional(true).ordered(true).multiple(true).origin("7715583511171321844").done();
-    b.aggregate("chambre", 0x6b134253123ce95cL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x272a6c4fee938e7bL).optional(true).ordered(true).multiple(true).origin("7715583511171492188").done();
     b.alias("piece");
     return b.create();
   }

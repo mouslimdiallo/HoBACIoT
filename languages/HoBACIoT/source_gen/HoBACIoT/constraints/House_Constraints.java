@@ -21,26 +21,6 @@ public class House_Constraints extends BaseConstraintsDescriptor {
     super(CONCEPTS.House$Ke);
   }
 
-  public static class EnergyConsomSeuil_Property extends BasePropertyConstraintsDescriptor {
-    public EnergyConsomSeuil_Property(ConstraintsDescriptor container) {
-      super(PROPS.EnergyConsomSeuil$TI1f, container, false, false, true);
-    }
-    @Override
-    public boolean validateValue(SNode node, Object propertyValue, CheckingNodeContext checkingNodeContext) {
-      boolean result = staticValidateProperty(node, SPropertyOperations.castInteger(propertyValue));
-      if (!(result) && checkingNodeContext != null) {
-        checkingNodeContext.setBreakingNode(new SNodePointer("r:cbb3d6d9-c3f4-4bd1-9485-670730770fab(HoBACIoT.constraints)", "7715583511171381659"));
-      }
-      return result;
-    }
-    private static boolean staticValidateProperty(SNode node, int propertyValue) {
-      SPropertyOperations.assign(node, PROPS.energyConsom$njrL, SPropertyOperations.getInteger(node, PROPS.temperature$LARk));
-      if (SPropertyOperations.getInteger(node, PROPS.energyConsom$njrL) <= propertyValue) {
-        return true;
-      }
-      return false;
-    }
-  }
   public static class Temperature_Property extends BasePropertyConstraintsDescriptor {
     public Temperature_Property(ConstraintsDescriptor container) {
       super(PROPS.temperature$LARk, container, false, false, true);
@@ -63,7 +43,6 @@ public class House_Constraints extends BaseConstraintsDescriptor {
   @Override
   protected Map<SProperty, PropertyConstraintsDescriptor> getSpecifiedProperties() {
     Map<SProperty, PropertyConstraintsDescriptor> properties = new HashMap<SProperty, PropertyConstraintsDescriptor>();
-    properties.put(PROPS.EnergyConsomSeuil$TI1f, new EnergyConsomSeuil_Property(this));
     properties.put(PROPS.temperature$LARk, new Temperature_Property(this));
     return properties;
   }
@@ -73,8 +52,6 @@ public class House_Constraints extends BaseConstraintsDescriptor {
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty EnergyConsomSeuil$TI1f = MetaAdapterFactory.getProperty(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x272a6c4fee938e8bL, 0x6b134253123b0191L, "EnergyConsomSeuil");
-    /*package*/ static final SProperty energyConsom$njrL = MetaAdapterFactory.getProperty(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x272a6c4fee938e8bL, 0x6b134253123afee9L, "energyConsom");
     /*package*/ static final SProperty temperature$LARk = MetaAdapterFactory.getProperty(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x272a6c4fee938e8bL, 0x6b134253123afbf5L, "temperature");
   }
 }

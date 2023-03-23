@@ -17,88 +17,53 @@
   <root nodeRef="r:cbb3d6d9-c3f4-4bd1-9485-670730770fab(HoBACIoT.constraints)/7715583511171381162">
     <file name="House_Constraints.java">
       <node id="7715583511171381162" at="20,30,21,29" concept="8" />
-      <node id="7715583511171381294" at="25,72,26,73" concept="8" />
-      <node id="7715583511171381294" at="29,109,30,100" concept="4" />
-      <node id="7715583511171381294" at="31,53,32,149" concept="1" />
-      <node id="7715583511171381294" at="33,7,34,20" concept="5" />
-      <node id="7715583511171434364" at="36,82,37,126" concept="1" />
-      <node id="7715583511171454075" at="38,91,39,20" concept="5" />
-      <node id="7715583511171456735" at="40,7,41,19" concept="5" />
-      <node id="7715583511171459290" at="45,66,46,67" concept="8" />
-      <node id="7715583511171459290" at="49,109,50,100" concept="4" />
-      <node id="7715583511171459290" at="51,53,52,149" concept="1" />
-      <node id="7715583511171459290" at="53,7,54,20" concept="5" />
-      <node id="7715583511171469744" at="57,54,58,20" concept="5" />
-      <node id="7715583511171470556" at="59,7,60,19" concept="5" />
-      <node id="7715583511171381162" at="64,84,65,119" concept="4" />
-      <node id="7715583511171381294" at="65,119,66,87" concept="1" />
-      <node id="7715583511171459290" at="66,87,67,75" concept="1" />
-      <node id="7715583511171381162" at="67,75,68,22" concept="5" />
-      <node id="7715583511171381162" at="72,0,73,0" concept="6" trace="House$Ke" />
-      <node id="7715583511171381162" at="76,0,77,0" concept="6" trace="EnergyConsomSeuil$TI1f" />
-      <node id="7715583511171381162" at="77,0,78,0" concept="6" trace="energyConsom$njrL" />
-      <node id="7715583511171381162" at="78,0,79,0" concept="6" trace="temperature$LARk" />
+      <node id="7715583511171459290" at="25,66,26,67" concept="8" />
+      <node id="7715583511171459290" at="29,109,30,100" concept="4" />
+      <node id="7715583511171459290" at="31,53,32,149" concept="1" />
+      <node id="7715583511171459290" at="33,7,34,20" concept="5" />
+      <node id="7715583511171469744" at="37,54,38,20" concept="5" />
+      <node id="7715583511171470556" at="39,7,40,19" concept="5" />
+      <node id="7715583511171381162" at="44,84,45,119" concept="4" />
+      <node id="7715583511171459290" at="45,119,46,75" concept="1" />
+      <node id="7715583511171381162" at="46,75,47,22" concept="5" />
+      <node id="7715583511171381162" at="51,0,52,0" concept="6" trace="House$Ke" />
+      <node id="7715583511171381162" at="55,0,56,0" concept="6" trace="temperature$LARk" />
       <node id="7715583511171381162" at="20,0,23,0" concept="0" trace="House_Constraints#()V" />
-      <node id="7715583511171381294" at="25,0,28,0" concept="0" trace="EnergyConsomSeuil_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
-      <node id="7715583511171381294" at="30,100,33,7" concept="2" />
-      <node id="7715583511171449243" at="37,126,40,7" concept="2" />
-      <node id="7715583511171459290" at="45,0,48,0" concept="0" trace="Temperature_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
-      <node id="7715583511171459290" at="50,100,53,7" concept="2" />
-      <node id="7715583511171459999" at="56,82,59,7" concept="2" />
-      <node id="7715583511171459290" at="56,0,62,0" concept="7" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;I)Z" />
-      <node id="7715583511171381294" at="36,0,43,0" concept="7" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;I)Z" />
-      <node id="7715583511171381162" at="63,0,70,0" concept="3" trace="getSpecifiedProperties#()Ljava/util/Map;" />
-      <node id="7715583511171381294" at="28,0,36,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
-      <node id="7715583511171459290" at="48,0,56,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <node id="7715583511171459290" at="25,0,28,0" concept="0" trace="Temperature_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="7715583511171459290" at="30,100,33,7" concept="2" />
+      <node id="7715583511171459999" at="36,82,39,7" concept="2" />
+      <node id="7715583511171459290" at="36,0,42,0" concept="7" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;I)Z" />
+      <node id="7715583511171381162" at="43,0,49,0" concept="3" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <node id="7715583511171459290" at="28,0,36,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
       <scope id="7715583511171381162" at="20,30,21,29" />
-      <scope id="7715583511171381294" at="25,72,26,73" />
-      <scope id="7715583511171381294" at="31,53,32,149" />
-      <scope id="7715583511171449245" at="38,91,39,20" />
-      <scope id="7715583511171459290" at="45,66,46,67" />
-      <scope id="7715583511171459290" at="51,53,52,149" />
-      <scope id="7715583511171460001" at="57,54,58,20" />
+      <scope id="7715583511171459290" at="25,66,26,67" />
+      <scope id="7715583511171459290" at="31,53,32,149" />
+      <scope id="7715583511171460001" at="37,54,38,20" />
       <scope id="7715583511171381162" at="20,0,23,0" />
-      <scope id="7715583511171381294" at="25,0,28,0">
-        <var name="container" id="7715583511171381294" />
-      </scope>
-      <scope id="7715583511171459290" at="45,0,48,0">
+      <scope id="7715583511171459290" at="25,0,28,0">
         <var name="container" id="7715583511171459290" />
       </scope>
-      <scope id="7715583511171459853" at="56,82,60,19" />
-      <scope id="7715583511171381162" at="64,84,68,22">
+      <scope id="7715583511171381162" at="44,84,47,22">
         <var name="properties" id="7715583511171381162" />
       </scope>
-      <scope id="7715583511171381294" at="29,109,34,20">
-        <var name="result" id="7715583511171381294" />
-      </scope>
-      <scope id="7715583511171381660" at="36,82,41,19" />
-      <scope id="7715583511171459290" at="49,109,54,20">
+      <scope id="7715583511171459853" at="36,82,40,19" />
+      <scope id="7715583511171459290" at="29,109,34,20">
         <var name="result" id="7715583511171459290" />
       </scope>
-      <scope id="7715583511171459290" at="56,0,62,0">
+      <scope id="7715583511171459290" at="36,0,42,0">
         <var name="node" id="7715583511171459290" />
         <var name="propertyValue" id="7715583511171459290" />
       </scope>
-      <scope id="7715583511171381294" at="36,0,43,0">
-        <var name="node" id="7715583511171381294" />
-        <var name="propertyValue" id="7715583511171381294" />
-      </scope>
-      <scope id="7715583511171381162" at="63,0,70,0" />
-      <scope id="7715583511171381294" at="28,0,36,0">
-        <var name="checkingNodeContext" id="7715583511171381294" />
-        <var name="node" id="7715583511171381294" />
-        <var name="propertyValue" id="7715583511171381294" />
-      </scope>
-      <scope id="7715583511171459290" at="48,0,56,0">
+      <scope id="7715583511171381162" at="43,0,49,0" />
+      <scope id="7715583511171459290" at="28,0,36,0">
         <var name="checkingNodeContext" id="7715583511171459290" />
         <var name="node" id="7715583511171459290" />
         <var name="propertyValue" id="7715583511171459290" />
       </scope>
-      <unit id="7715583511171381162" at="71,0,74,0" name="HoBACIoT.constraints.House_Constraints$CONCEPTS" />
-      <unit id="7715583511171381162" at="75,0,80,0" name="HoBACIoT.constraints.House_Constraints$PROPS" />
-      <unit id="7715583511171459290" at="44,0,63,0" name="HoBACIoT.constraints.House_Constraints$Temperature_Property" />
-      <unit id="7715583511171381294" at="24,0,44,0" name="HoBACIoT.constraints.House_Constraints$EnergyConsomSeuil_Property" />
-      <unit id="7715583511171381162" at="19,0,81,0" name="HoBACIoT.constraints.House_Constraints" />
+      <unit id="7715583511171381162" at="50,0,53,0" name="HoBACIoT.constraints.House_Constraints$CONCEPTS" />
+      <unit id="7715583511171381162" at="54,0,57,0" name="HoBACIoT.constraints.House_Constraints$PROPS" />
+      <unit id="7715583511171459290" at="24,0,43,0" name="HoBACIoT.constraints.House_Constraints$Temperature_Property" />
+      <unit id="7715583511171381162" at="19,0,58,0" name="HoBACIoT.constraints.House_Constraints" />
     </file>
   </root>
 </debug-info>
