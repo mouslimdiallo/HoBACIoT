@@ -16,13 +16,23 @@ import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
+  /*package*/ final ConceptDescriptor myConceptAction = createDescriptorForAction();
+  /*package*/ final ConceptDescriptor myConceptActionType = createDescriptorForActionType();
+  /*package*/ final ConceptDescriptor myConceptAllOf = createDescriptorForAllOf();
   /*package*/ final ConceptDescriptor myConceptAllumer = createDescriptorForAllumer();
+  /*package*/ final ConceptDescriptor myConceptAnyOf = createDescriptorForAnyOf();
+  /*package*/ final ConceptDescriptor myConceptApply = createDescriptorForApply();
   /*package*/ final ConceptDescriptor myConceptAspirateur = createDescriptorForAspirateur();
+  /*package*/ final ConceptDescriptor myConceptAttributeDesignator = createDescriptorForAttributeDesignator();
+  /*package*/ final ConceptDescriptor myConceptAttributeValue = createDescriptorForAttributeValue();
   /*package*/ final ConceptDescriptor myConceptBluetooth = createDescriptorForBluetooth();
   /*package*/ final ConceptDescriptor myConceptBrosseDent = createDescriptorForBrosseDent();
   /*package*/ final ConceptDescriptor myConceptChambre = createDescriptorForChambre();
+  /*package*/ final ConceptDescriptor myConceptCondition = createDescriptorForCondition();
   /*package*/ final ConceptDescriptor myConceptCuisine = createDescriptorForCuisine();
   /*package*/ final ConceptDescriptor myConceptEnfants = createDescriptorForEnfants();
+  /*package*/ final ConceptDescriptor myConceptEnvironment = createDescriptorForEnvironment();
+  /*package*/ final ConceptDescriptor myConceptEnvironmentType = createDescriptorForEnvironmentType();
   /*package*/ final ConceptDescriptor myConceptEteindre = createDescriptorForEteindre();
   /*package*/ final ConceptDescriptor myConceptFamille = createDescriptorForFamille();
   /*package*/ final ConceptDescriptor myConceptFour = createDescriptorForFour();
@@ -32,25 +42,38 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptGrandParents = createDescriptorForGrandParents();
   /*package*/ final ConceptDescriptor myConceptMaison = createDescriptorForMaison();
   /*package*/ final ConceptDescriptor myConceptMaman = createDescriptorForMaman();
+  /*package*/ final ConceptDescriptor myConceptMatch = createDescriptorForMatch();
   /*package*/ final ConceptDescriptor myConceptMicrOnde = createDescriptorForMicrOnde();
   /*package*/ final ConceptDescriptor myConceptMiroir = createDescriptorForMiroir();
   /*package*/ final ConceptDescriptor myConceptPapa = createDescriptorForPapa();
   /*package*/ final ConceptDescriptor myConceptParents = createDescriptorForParents();
-  /*package*/ final ConceptDescriptor myConceptPersonne = createDescriptorForPersonne();
+  /*package*/ final ConceptDescriptor myConceptPerson = createDescriptorForPerson();
   /*package*/ final ConceptDescriptor myConceptPiece = createDescriptorForPiece();
+  /*package*/ final ConceptDescriptor myConceptPolicy = createDescriptorForPolicy();
+  /*package*/ final ConceptDescriptor myConceptPolicyCombiningAlgorithm = createDescriptorForPolicyCombiningAlgorithm();
+  /*package*/ final ConceptDescriptor myConceptPolicySet = createDescriptorForPolicySet();
   /*package*/ final ConceptDescriptor myConceptPrise = createDescriptorForPrise();
+  /*package*/ final ConceptDescriptor myConceptResource = createDescriptorForResource();
+  /*package*/ final ConceptDescriptor myConceptResourceType = createDescriptorForResourceType();
   /*package*/ final ConceptDescriptor myConceptRobinet = createDescriptorForRobinet();
+  /*package*/ final ConceptDescriptor myConceptRule = createDescriptorForRule();
+  /*package*/ final ConceptDescriptor myConceptRuleCombiningAlgorithm = createDescriptorForRuleCombiningAlgorithm();
   /*package*/ final ConceptDescriptor myConceptSalleDeBain = createDescriptorForSalleDeBain();
   /*package*/ final ConceptDescriptor myConceptSalleReunion = createDescriptorForSalleReunion();
   /*package*/ final ConceptDescriptor myConceptSalon = createDescriptorForSalon();
   /*package*/ final ConceptDescriptor myConceptSmart_City = createDescriptorForSmart_City();
   /*package*/ final ConceptDescriptor myConceptStore = createDescriptorForStore();
+  /*package*/ final ConceptDescriptor myConceptSubject = createDescriptorForSubject();
+  /*package*/ final ConceptDescriptor myConceptSubjectType = createDescriptorForSubjectType();
   /*package*/ final ConceptDescriptor myConceptTV = createDescriptorForTV();
+  /*package*/ final ConceptDescriptor myConceptTarget = createDescriptorForTarget();
   /*package*/ final ConceptDescriptor myConceptThermostat = createDescriptorForThermostat();
   /*package*/ final ConceptDescriptor myConceptTournerAgauche = createDescriptorForTournerAgauche();
   /*package*/ final ConceptDescriptor myConceptTurnerAdroite = createDescriptorForTurnerAdroite();
   /*package*/ final ConceptDescriptor myConceptUsager = createDescriptorForUsager();
   /*package*/ final EnumerationDescriptor myEnumerationConnectivity = new EnumerationDescriptor_Connectivity();
+  /*package*/ final EnumerationDescriptor myEnumerationEffect = new EnumerationDescriptor_Effect();
+  /*package*/ final EnumerationDescriptor myEnumerationGenre = new EnumerationDescriptor_Genre();
   /*package*/ final EnumerationDescriptor myEnumerationProcessor = new EnumerationDescriptor_Processor();
   private final LanguageConceptSwitch myIndexSwitch;
 
@@ -62,31 +85,52 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   @Override
   public void reportDependencies(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.Dependencies deps) {
     deps.extendedLanguage(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, "jetbrains.mps.lang.core");
+    deps.aggregatedLanguage(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, "jetbrains.mps.lang.core");
   }
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAllumer, myConceptAspirateur, myConceptBluetooth, myConceptBrosseDent, myConceptChambre, myConceptCuisine, myConceptEnfants, myConceptEteindre, myConceptFamille, myConceptFour, myConceptFrigo, myConceptGrandMaman, myConceptGrandPapa, myConceptGrandParents, myConceptMaison, myConceptMaman, myConceptMicrOnde, myConceptMiroir, myConceptPapa, myConceptParents, myConceptPersonne, myConceptPiece, myConceptPrise, myConceptRobinet, myConceptSalleDeBain, myConceptSalleReunion, myConceptSalon, myConceptSmart_City, myConceptStore, myConceptTV, myConceptThermostat, myConceptTournerAgauche, myConceptTurnerAdroite, myConceptUsager);
+    return Arrays.asList(myConceptAction, myConceptActionType, myConceptAllOf, myConceptAllumer, myConceptAnyOf, myConceptApply, myConceptAspirateur, myConceptAttributeDesignator, myConceptAttributeValue, myConceptBluetooth, myConceptBrosseDent, myConceptChambre, myConceptCondition, myConceptCuisine, myConceptEnfants, myConceptEnvironment, myConceptEnvironmentType, myConceptEteindre, myConceptFamille, myConceptFour, myConceptFrigo, myConceptGrandMaman, myConceptGrandPapa, myConceptGrandParents, myConceptMaison, myConceptMaman, myConceptMatch, myConceptMicrOnde, myConceptMiroir, myConceptPapa, myConceptParents, myConceptPerson, myConceptPiece, myConceptPolicy, myConceptPolicyCombiningAlgorithm, myConceptPolicySet, myConceptPrise, myConceptResource, myConceptResourceType, myConceptRobinet, myConceptRule, myConceptRuleCombiningAlgorithm, myConceptSalleDeBain, myConceptSalleReunion, myConceptSalon, myConceptSmart_City, myConceptStore, myConceptSubject, myConceptSubjectType, myConceptTV, myConceptTarget, myConceptThermostat, myConceptTournerAgauche, myConceptTurnerAdroite, myConceptUsager);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
+      case LanguageConceptSwitch.Action:
+        return myConceptAction;
+      case LanguageConceptSwitch.ActionType:
+        return myConceptActionType;
+      case LanguageConceptSwitch.AllOf:
+        return myConceptAllOf;
       case LanguageConceptSwitch.Allumer:
         return myConceptAllumer;
+      case LanguageConceptSwitch.AnyOf:
+        return myConceptAnyOf;
+      case LanguageConceptSwitch.Apply:
+        return myConceptApply;
       case LanguageConceptSwitch.Aspirateur:
         return myConceptAspirateur;
+      case LanguageConceptSwitch.AttributeDesignator:
+        return myConceptAttributeDesignator;
+      case LanguageConceptSwitch.AttributeValue:
+        return myConceptAttributeValue;
       case LanguageConceptSwitch.Bluetooth:
         return myConceptBluetooth;
       case LanguageConceptSwitch.BrosseDent:
         return myConceptBrosseDent;
       case LanguageConceptSwitch.Chambre:
         return myConceptChambre;
+      case LanguageConceptSwitch.Condition:
+        return myConceptCondition;
       case LanguageConceptSwitch.Cuisine:
         return myConceptCuisine;
       case LanguageConceptSwitch.Enfants:
         return myConceptEnfants;
+      case LanguageConceptSwitch.Environment:
+        return myConceptEnvironment;
+      case LanguageConceptSwitch.EnvironmentType:
+        return myConceptEnvironmentType;
       case LanguageConceptSwitch.Eteindre:
         return myConceptEteindre;
       case LanguageConceptSwitch.Famille:
@@ -105,6 +149,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptMaison;
       case LanguageConceptSwitch.Maman:
         return myConceptMaman;
+      case LanguageConceptSwitch.Match:
+        return myConceptMatch;
       case LanguageConceptSwitch.MicrOnde:
         return myConceptMicrOnde;
       case LanguageConceptSwitch.Miroir:
@@ -113,14 +159,28 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptPapa;
       case LanguageConceptSwitch.Parents:
         return myConceptParents;
-      case LanguageConceptSwitch.Personne:
-        return myConceptPersonne;
+      case LanguageConceptSwitch.Person:
+        return myConceptPerson;
       case LanguageConceptSwitch.Piece:
         return myConceptPiece;
+      case LanguageConceptSwitch.Policy:
+        return myConceptPolicy;
+      case LanguageConceptSwitch.PolicyCombiningAlgorithm:
+        return myConceptPolicyCombiningAlgorithm;
+      case LanguageConceptSwitch.PolicySet:
+        return myConceptPolicySet;
       case LanguageConceptSwitch.Prise:
         return myConceptPrise;
+      case LanguageConceptSwitch.Resource:
+        return myConceptResource;
+      case LanguageConceptSwitch.ResourceType:
+        return myConceptResourceType;
       case LanguageConceptSwitch.Robinet:
         return myConceptRobinet;
+      case LanguageConceptSwitch.Rule:
+        return myConceptRule;
+      case LanguageConceptSwitch.RuleCombiningAlgorithm:
+        return myConceptRuleCombiningAlgorithm;
       case LanguageConceptSwitch.SalleDeBain:
         return myConceptSalleDeBain;
       case LanguageConceptSwitch.SalleReunion:
@@ -131,8 +191,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptSmart_City;
       case LanguageConceptSwitch.Store:
         return myConceptStore;
+      case LanguageConceptSwitch.Subject:
+        return myConceptSubject;
+      case LanguageConceptSwitch.SubjectType:
+        return myConceptSubjectType;
       case LanguageConceptSwitch.TV:
         return myConceptTV;
+      case LanguageConceptSwitch.Target:
+        return myConceptTarget;
       case LanguageConceptSwitch.Thermostat:
         return myConceptThermostat;
       case LanguageConceptSwitch.TournerAgauche:
@@ -148,18 +214,67 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
-    return Arrays.asList(myEnumerationConnectivity, myEnumerationProcessor);
+    return Arrays.asList(myEnumerationConnectivity, myEnumerationEffect, myEnumerationGenre, myEnumerationProcessor);
   }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
     return myIndexSwitch.index(c);
   }
 
+  private static ConceptDescriptor createDescriptorForAction() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "Action", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276bb406L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3951418197003711494");
+    b.version(3);
+    b.property("action_id", 0x36d641ea276ca9ffL).type(PrimitiveTypeId.STRING).origin("3951418197003774463").done();
+    b.associate("action_type", 0x36d641ea276cb1a6L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276cb6f0L).optional(false).origin("3951418197003776422").done();
+    b.aggregate("attributes", 0x36d641ea276d24b0L).target(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x47bf8397520e5939L).optional(true).ordered(true).multiple(true).origin("3951418197003805872").done();
+    b.aggregate("policy", 0x18cdb4f8750e5aa4L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b7ddbL).optional(true).ordered(true).multiple(true).origin("1787283606344719012").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForActionType() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "ActionType", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276cb6f0L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3951418197003777776");
+    b.version(3);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForAllOf() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "AllOf", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276d4f25L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3951418197003816741");
+    b.version(3);
+    b.aggregate("match", 0x36d641ea276d5fdbL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276d54beL).optional(true).ordered(true).multiple(true).origin("3951418197003821019").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForAllumer() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "Allumer", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x653317703a46f0fcL);
     b.class_(false, false, false);
     b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/7292197992424468732");
     b.version(3);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForAnyOf() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "AnyOf", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276d479dL);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3951418197003814813");
+    b.version(3);
+    b.aggregate("allof", 0x6b6bcd963e1010b2L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276d4f25L).optional(false).ordered(true).multiple(true).origin("7740506429736358066").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForApply() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "Apply", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276ba405L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3951418197003707397");
+    b.version(3);
+    b.property("functionId", 0x36d641ea276c26e1L).type(PrimitiveTypeId.STRING).origin("3951418197003740897").done();
+    b.aggregate("attributeValue", 0x36d641ea276c2f87L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276c3402L).optional(true).ordered(true).multiple(true).origin("3951418197003743111").done();
+    b.aggregate("designator", 0x36d641ea277e0521L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276c516aL).optional(true).ordered(true).multiple(true).origin("3951418197004911905").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForAspirateur() {
@@ -171,6 +286,28 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("modele", 0x653317703a46f100L).type(PrimitiveTypeId.STRING).origin("7292197992424468736").done();
     b.property("connectivity", 0x653317703a46f55aL).type(MetaIdFactory.dataTypeId(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x23381bd32c687595L)).origin("7292197992424469850").done();
     b.alias("aspirateur");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForAttributeDesignator() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "AttributeDesignator", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276c516aL);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3951418197003751786");
+    b.version(3);
+    b.property("catogory", 0x36d641ea276c5ff4L).type(PrimitiveTypeId.STRING).origin("3951418197003755508").done();
+    b.property("attributeid", 0x36d641ea276c643aL).type(PrimitiveTypeId.STRING).origin("3951418197003756602").done();
+    b.property("dataType", 0x36d641ea276c67cbL).type(PrimitiveTypeId.STRING).origin("3951418197003757515").done();
+    b.property("mustBePresent", 0x36d641ea276c6adbL).type(PrimitiveTypeId.BOOLEAN).origin("3951418197003758299").done();
+    b.associate("attributevalue", 0x36d641ea27767a28L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276c3402L).optional(false).origin("3951418197004417576").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForAttributeValue() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "AttributeValue", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276c3402L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3951418197003744258");
+    b.version(3);
+    b.property("dataType", 0x36d641ea276c3fcfL).type(PrimitiveTypeId.STRING).origin("3951418197003747279").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForBluetooth() {
@@ -205,6 +342,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("chambre");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForCondition() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "Condition", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6d82a07076a2e559L);
+    b.class_(false, false, false);
+    b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/7891045901993698649");
+    b.version(3);
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForCuisine() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "Cuisine", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x272a6c4fee938e7fL);
     b.class_(false, false, false);
@@ -224,6 +368,25 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3298194222149298433");
     b.version(3);
     b.associate("enfant", 0x2dc58a2ba3746911L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x2dc58a2ba3746901L).optional(true).origin("3298194222149298449").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForEnvironment() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "Environment", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276bc97cL);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3951418197003716988");
+    b.version(3);
+    b.property("environment_id", 0x36d641ea276ceda9L).type(PrimitiveTypeId.STRING).origin("3951418197003791785").done();
+    b.associate("type", 0x36d641ea276cf272L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276cfab1L).optional(false).origin("3951418197003793010").done();
+    b.aggregate("attributes", 0x36d641ea276d0fe2L).target(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x47bf8397520e5939L).optional(true).ordered(true).multiple(true).origin("3951418197003800546").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForEnvironmentType() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "EnvironmentType", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276cfab1L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3951418197003795121");
+    b.version(3);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForEteindre() {
@@ -315,6 +478,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("maman");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForMatch() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "Match", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276d54beL);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3951418197003818174");
+    b.version(3);
+    b.property("matchId", 0x36d641ea276d5835L).type(PrimitiveTypeId.STRING).origin("3951418197003819061").done();
+    b.associate("attributeValue", 0x36d641ea2782cbdfL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276c3402L).optional(false).origin("3951418197005224927").done();
+    b.associate("attributeDesignator", 0x36d641ea2782d15dL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276c516aL).optional(false).origin("3951418197005226333").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForMicrOnde() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "MicrOnde", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x2dc58a2ba3746929L);
     b.class_(false, false, false);
@@ -357,8 +531,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("maman", 0x2dc58a2ba375241bL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x2dc58a2ba3746909L).optional(false).ordered(true).multiple(false).origin("3298194222149346331").done();
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForPersonne() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "Personne", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x272a6c4fee938e8cL);
+  private static ConceptDescriptor createDescriptorForPerson() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "Person", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x272a6c4fee938e8cL);
     b.class_(false, false, false);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/2822187207061900940");
@@ -369,6 +543,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("adress", 0x272a6c4fee938ec3L).type(PrimitiveTypeId.STRING).origin("2822187207061900995").done();
     b.property("age", 0x272a6c4fee938eceL).type(PrimitiveTypeId.STRING).origin("2822187207061901006").done();
     b.property("profession", 0x272a6c4fee938ec8L).type(PrimitiveTypeId.STRING).origin("2822187207061901000").done();
+    b.property("sexe", 0x6b13425312337b54L).type(MetaIdFactory.dataTypeId(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6b13425312337c94L)).origin("7715583511170874196").done();
     b.alias("person");
     return b.create();
   }
@@ -386,6 +561,41 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("aspirateur", 0x653317703a46f033L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x2dc58a2ba3746932L).optional(true).ordered(true).multiple(true).origin("7292197992424468531").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForPolicy() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "Policy", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b7ddbL);
+    b.class_(false, false, true);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3951418197003697627");
+    b.version(3);
+    b.property("policyId", 0x36d641ea276c02f0L).type(PrimitiveTypeId.STRING).origin("3951418197003731696").done();
+    b.property("ruleCombiningAlgId", 0x36d641ea276c0596L).type(PrimitiveTypeId.STRING).origin("3951418197003732374").done();
+    b.property("maxDelegationDepth", 0x36d641ea276c0b7dL).type(PrimitiveTypeId.INTEGER).origin("3951418197003733885").done();
+    b.property("description", 0x36d641ea276c0f77L).type(PrimitiveTypeId.STRING).origin("3951418197003734903").done();
+    b.property("version", 0x36d641ea277a1964L).type(PrimitiveTypeId.STRING).origin("3951418197004654948").done();
+    b.aggregate("rules", 0x36d641ea276b9250L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b8152L).optional(false).ordered(true).multiple(true).origin("3951418197003702864").done();
+    b.aggregate("target", 0x18cdb4f874e29a7bL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b9907L).optional(false).ordered(true).multiple(false).origin("1787283606341851771").done();
+    b.aggregate("ruleCombinAlgo", 0x6d82a070768513dcL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6d82a07076850e2bL).optional(false).ordered(true).multiple(false).origin("7891045901991744476").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForPolicyCombiningAlgorithm() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "PolicyCombiningAlgorithm", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6d82a07076852807L);
+    b.class_(false, false, false);
+    b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/7891045901991749639");
+    b.version(3);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForPolicySet() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "PolicySet", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b77f4L);
+    b.class_(false, true, true);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3951418197003696116");
+    b.version(3);
+    b.property("policyCombiningAlgId", 0x6d82a0707684f2b6L).type(PrimitiveTypeId.STRING).origin("7891045901991735990").done();
+    b.aggregate("policy", 0x36d641ea276b8604L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b7ddbL).optional(true).ordered(true).multiple(true).origin("3951418197003699716").done();
+    b.aggregate("policyCombinAlgo", 0x6d82a070768520b4L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6d82a07076852807L).optional(false).ordered(true).multiple(false).origin("7891045901991747764").done();
+    b.aggregate("target", 0x6d82a070768538e8L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b9907L).optional(false).ordered(true).multiple(false).origin("7891045901991753960").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForPrise() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "Prise", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x2dc58a2ba3746931L);
     b.class_(false, false, false);
@@ -397,6 +607,25 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("prise");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForResource() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "Resource", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276baf08L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3951418197003710216");
+    b.version(3);
+    b.property("resource_id", 0x36d641ea276cc680L).type(PrimitiveTypeId.STRING).origin("3951418197003781760").done();
+    b.associate("type", 0x36d641ea276cd0fcL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276cde66L).optional(false).origin("3951418197003784444").done();
+    b.aggregate("attributes", 0x36d641ea276d1bd4L).target(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x47bf8397520e5939L).optional(true).ordered(true).multiple(true).origin("3951418197003803604").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForResourceType() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "ResourceType", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276cde66L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3951418197003787878");
+    b.version(3);
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForRobinet() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "Robinet", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x2dc58a2ba374692aL);
     b.class_(false, false, false);
@@ -406,6 +635,27 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("modele", 0xd31c90f1956e1eeL).type(PrimitiveTypeId.STRING).origin("950762063038702062").done();
     b.property("connectivity", 0x653317703a46f575L).type(MetaIdFactory.dataTypeId(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x23381bd32c687595L)).origin("7292197992424469877").done();
     b.alias("robinet");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForRule() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "Rule", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b8152L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3951418197003698514");
+    b.version(3);
+    b.property("ruleid", 0x36d641ea276bd83cL).type(PrimitiveTypeId.STRING).origin("3951418197003720764").done();
+    b.property("effect", 0x36d641ea276bda46L).type(MetaIdFactory.dataTypeId(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276bdf77L)).origin("3951418197003721286").done();
+    b.property("RuleCombiningALId", 0x6d82a0707684ee54L).type(PrimitiveTypeId.STRING).origin("7891045901991734868").done();
+    b.aggregate("target", 0x36d641ea276bf5b4L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b9907L).optional(true).ordered(true).multiple(false).origin("3951418197003728308").done();
+    b.aggregate("apply", 0x36d641ea2782bd5eL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276ba405L).optional(true).ordered(true).multiple(true).origin("3951418197005221214").done();
+    b.aggregate("condition", 0x6d82a07076a2dbf6L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6d82a07076a2e559L).optional(false).ordered(true).multiple(false).origin("7891045901993696246").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForRuleCombiningAlgorithm() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "RuleCombiningAlgorithm", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6d82a07076850e2bL);
+    b.class_(false, false, false);
+    b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/7891045901991743019");
+    b.version(3);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForSalleDeBain() {
@@ -466,6 +716,28 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("store");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForSubject() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "Subject", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276ba96bL);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3951418197003708779");
+    b.version(3);
+    b.property("subject_id", 0x36d641ea276c81f0L).type(PrimitiveTypeId.STRING).origin("3951418197003764208").done();
+    b.property("nom", 0x18cdb4f87519baecL).type(PrimitiveTypeId.STRING).origin("1787283606345464556").done();
+    b.associate("subject_type", 0x36d641ea276c8ceaL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276c95dcL).optional(false).origin("3951418197003767018").done();
+    b.aggregate("attributes", 0x36d641ea276d2d24L).target(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x47bf8397520e5939L).optional(true).ordered(true).multiple(true).origin("3951418197003808036").done();
+    b.aggregate("policy", 0x18cdb4f8750e5dceL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b7ddbL).optional(true).ordered(true).multiple(true).origin("1787283606344719822").done();
+    b.alias("sujet");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForSubjectType() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "SubjectType", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276c95dcL);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3951418197003769308");
+    b.version(3);
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForTV() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "TV", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x2dc58a2ba3746930L);
     b.class_(false, false, false);
@@ -476,6 +748,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("pouce", 0xd31c90f1956e1d4L).type(PrimitiveTypeId.STRING).origin("950762063038702036").done();
     b.property("connection", 0x653317703a46f5fbL).type(MetaIdFactory.dataTypeId(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x23381bd32c687595L)).origin("7292197992424470011").done();
     b.alias("tv");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForTarget() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "Target", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b9907L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3951418197003704583");
+    b.version(3);
+    b.property("condition", 0x6d82a0707685435dL).type(PrimitiveTypeId.BOOLEAN).origin("7891045901991756637").done();
+    b.aggregate("anyof", 0x36d641ea276d3f95L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276d479dL).optional(false).ordered(true).multiple(true).origin("3951418197003812757").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForThermostat() {
