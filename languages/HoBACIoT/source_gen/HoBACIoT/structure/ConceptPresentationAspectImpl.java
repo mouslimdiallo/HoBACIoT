@@ -216,7 +216,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Family:
         if (props_Family == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Family");
+          cpb.presentationByName();
           props_Family = cpb.create();
         }
         return props_Family;

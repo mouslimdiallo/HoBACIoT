@@ -437,6 +437,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForFamily() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "Family", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x2dc58a2ba37468fcL);
     b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3298194222149298428");
     b.version(3);
     b.associate("person", 0x2dc58a2ba37468fdL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x272a6c4fee938e8cL).optional(true).origin("3298194222149298429").done();
@@ -504,6 +505,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.associate("type", 0x6b134253123a40c7L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276cde66L).optional(false).origin("7715583511171317959").done();
     b.associate("person", 0x6b134253123a4b5bL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x272a6c4fee938e8cL).optional(true).origin("7715583511171320667").done();
     b.associate("enfants", 0x6b134253123b32f7L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x2dc58a2ba3746901L).optional(true).origin("7715583511171379959").done();
+    b.associate("policy", 0x6b134253124fbcfbL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b7ddbL).optional(true).origin("7715583511172726011").done();
     b.aggregate("pieces", 0x653317703a46efc2L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x272a6c4fee938e76L).optional(true).ordered(true).multiple(true).origin("7292197992424468418").done();
     b.aggregate("chambre", 0x6b134253123a3ce8L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x272a6c4fee938e7bL).optional(true).ordered(true).multiple(true).origin("7715583511171316968").done();
     b.alias("House");
