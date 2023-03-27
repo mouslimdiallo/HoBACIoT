@@ -45,7 +45,6 @@
       </languageVersions>
       <dependencyVersions>
         <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
-        <module reference="3fbb45ee-81da-477e-ba7d-f1b8ec591273(HOBACITv2)" version="0" />
         <module reference="c51db5c4-495f-4e00-b889-12a634a9acb3(HoBACIoT)" version="0" />
         <module reference="a9cf1577-1ee9-4319-be1f-37005517d5a4(HoBACIoT)" version="0" />
         <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />

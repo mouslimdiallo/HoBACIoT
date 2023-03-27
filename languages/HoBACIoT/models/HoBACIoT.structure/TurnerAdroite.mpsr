@@ -26,7 +26,7 @@
     <property role="EcuMT" value="7292197992424468735" />
     <property role="TrG5h" value="TurnerAdroite" />
     <property role="3GE5qa" value="Actions" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 

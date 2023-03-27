@@ -9,6 +9,17 @@
     <language id="c51db5c4-495f-4e00-b889-12a634a9acb3" name="HoBACIoT">
       <concept id="3298194222149298428" name="HoBACIoT.structure.Family" flags="ng" index="2eGubn" />
       <concept id="3298194222149298472" name="HoBACIoT.structure.Frigo" flags="ng" index="2eGuc3" />
+      <concept id="3951418197003751786" name="HoBACIoT.structure.AttributeDesignator" flags="ng" index="hIx20">
+        <property id="3951418197003755508" name="category" index="hIxSu" />
+        <property id="3951418197003756602" name="attributeid" index="hIyng" />
+        <property id="3951418197003757515" name="dataType" index="hIyox" />
+        <property id="3951418197003758299" name="mustBePresent" index="hIyGL" />
+        <reference id="3951418197004417576" name="attributevalue" index="hC3J2" />
+      </concept>
+      <concept id="3951418197003744258" name="HoBACIoT.structure.AttributeValue" flags="ng" index="hIBnC">
+        <property id="3951418197003747279" name="dataType" index="hIBS_" />
+        <property id="7302839959590883095" name="text" index="JEq_n" />
+      </concept>
       <concept id="3951418197003787878" name="HoBACIoT.structure.ObjectType" flags="ng" index="hIDYc" />
       <concept id="3951418197003795121" name="HoBACIoT.structure.EnvironmentType" flags="ng" index="hIFHr" />
       <concept id="3951418197003769308" name="HoBACIoT.structure.SubjectType" flags="ng" index="hIHgQ" />
@@ -21,6 +32,8 @@
       </concept>
       <concept id="3951418197003818174" name="HoBACIoT.structure.Match" flags="ng" index="hILlk">
         <property id="3951418197003819061" name="matchId" index="hILBv" />
+        <reference id="3951418197005224927" name="attributeValue" index="hl8CP" />
+        <reference id="3951418197005226333" name="attributeDesignator" index="hl92R" />
       </concept>
       <concept id="3951418197003697627" name="HoBACIoT.structure.Policy" flags="ng" index="hJjKL">
         <property id="3951418197004654948" name="version" index="hF5ye" />
@@ -36,9 +49,16 @@
         <property id="3951418197003720764" name="ruleid" index="hJpBm" />
         <property id="3951418197003721286" name="effect" index="hJpIG" />
         <property id="7891045901991734868" name="RuleCombiningALId" index="r1$S$" />
+        <child id="3951418197005221214" name="apply" index="hlfMO" />
+        <child id="3951418197003728308" name="target" index="hJrhu" />
       </concept>
       <concept id="3951418197003704583" name="HoBACIoT.structure.Target" flags="ng" index="hJtzH">
         <child id="3951418197003812757" name="anyof" index="hIRTZ" />
+      </concept>
+      <concept id="3951418197003707397" name="HoBACIoT.structure.Apply" flags="ng" index="hJunJ">
+        <property id="3951418197003740897" name="functionId" index="hIAsb" />
+        <child id="3951418197004911905" name="designator" index="hE4jb" />
+        <child id="3951418197003743111" name="attributeValue" index="hIATH" />
       </concept>
       <concept id="3951418197003711494" name="HoBACIoT.structure.Action" flags="ng" index="hJvnG">
         <property id="3951418197003774463" name="action_id" index="hIIwl" />
@@ -205,13 +225,22 @@
         <property role="hI$cq" value="14" />
         <property role="hI$hW" value="urn:oasis:names:tc:xacml:3.0:rule-combining-algorithm:deny-overrides" />
         <property role="hI$En" value="4" />
-        <property role="hI$Ut" value="descrio" />
+        <property role="hI$Ut" value="description de ma politique" />
         <property role="hF5ye" value="1.0" />
         <node concept="hJs2S" id="6Gjg_cixwEy" role="hJteU">
           <property role="TrG5h" value="Rule1" />
           <property role="hJpBm" value="urn:com:example:rule:house:temperature:acces" />
           <property role="hJpIG" value="3rmguCBqXXS/Permit" />
           <property role="r1$S$" value="overides" />
+          <node concept="hJtzH" id="6Gjg_cizLr5" role="hJrhu">
+            <property role="TrG5h" value="Cible1" />
+            <node concept="hIKpR" id="6Gjg_cizLr6" role="hIRTZ">
+              <property role="TrG5h" value="Any" />
+              <node concept="hIKVf" id="6Gjg_cizLr7" role="1luXO$">
+                <property role="TrG5h" value="All" />
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="hJtzH" id="6Gjg_cixwEz" role="1GbMU3">
           <property role="TrG5h" value="cible" />
@@ -219,10 +248,6 @@
             <property role="TrG5h" value="Any" />
             <node concept="hIKVf" id="6Gjg_cixwE_" role="1luXO$">
               <property role="TrG5h" value="all" />
-              <node concept="hILlk" id="6Gjg_cixwEH" role="hILSL">
-                <property role="TrG5h" value="Match" />
-                <property role="hILBv" value="id" />
-              </node>
             </node>
           </node>
         </node>
@@ -242,29 +267,59 @@
       <ref role="1Ta6KD" node="6Gjg_cimD8o" resolve="Autre" />
     </node>
   </node>
-  <node concept="hJjKL" id="6Gjg_cixOSm">
-    <property role="TrG5h" value="Access" />
+  <node concept="hJjKL" id="6loT$1aYa$d">
+    <property role="TrG5h" value="Acess" />
     <property role="hI$cq" value="id" />
-    <property role="hI$hW" value="rule" />
-    <property role="hI$En" value="47" />
+    <property role="hI$hW" value="rul" />
+    <property role="hI$En" value="5" />
     <property role="hI$Ut" value="des" />
-    <property role="hF5ye" value="1" />
-    <node concept="hJs2S" id="6Gjg_cixOTc" role="hJteU">
-      <property role="TrG5h" value="rule" />
-      <property role="hJpBm" value="id" />
+    <property role="hF5ye" value="1.0" />
+    <node concept="hJs2S" id="6loT$1aYa$e" role="hJteU">
+      <property role="TrG5h" value="rule1" />
+      <property role="hJpBm" value="idrule" />
       <property role="hJpIG" value="3rmguCBqXXS/Permit" />
-      <property role="r1$S$" value="ru" />
-    </node>
-    <node concept="hJtzH" id="6Gjg_cixOSo" role="1GbMU3">
-      <property role="TrG5h" value="cible" />
-      <node concept="hIKpR" id="6Gjg_cixOSp" role="hIRTZ">
-        <property role="TrG5h" value="an" />
-        <node concept="hIKVf" id="6Gjg_cixOSq" role="1luXO$">
-          <property role="TrG5h" value="all" />
+      <property role="r1$S$" value="rykeco" />
+      <node concept="hJunJ" id="6loT$1aYa$r" role="hlfMO">
+        <property role="hIAsb" value="fun" />
+        <node concept="hIx20" id="6loT$1aYa$v" role="hE4jb">
+          <property role="TrG5h" value="De" />
+          <property role="hIxSu" value="cat" />
+          <property role="hIyng" value="od" />
+          <property role="hIyox" value="da" />
+          <property role="hIyGL" value="true" />
+          <ref role="hC3J2" node="6loT$1aYa$t" resolve="v" />
+        </node>
+        <node concept="hIBnC" id="6loT$1aYa$t" role="hIATH">
+          <property role="hIBS_" value="data" />
+          <property role="TrG5h" value="v" />
+          <property role="JEq_n" value="admin" />
+        </node>
+      </node>
+      <node concept="hJtzH" id="6loT$1aYa$j" role="hJrhu">
+        <property role="TrG5h" value="Cible" />
+        <node concept="hIKpR" id="6loT$1aYa$k" role="hIRTZ">
+          <property role="TrG5h" value="Any" />
+          <node concept="hIKVf" id="6loT$1aYa$l" role="1luXO$">
+            <property role="TrG5h" value="All" />
+            <node concept="hILlk" id="6loT$1aYa$p" role="hILSL">
+              <property role="hILBv" value="idm" />
+              <ref role="hl8CP" node="6loT$1aYa$t" resolve="v" />
+              <ref role="hl92R" node="6loT$1aYa$v" resolve="De" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
-    <node concept="r1UTr" id="6Gjg_cixOSr" role="r1VeG" />
+    <node concept="hJtzH" id="6loT$1aYa$f" role="1GbMU3">
+      <property role="TrG5h" value="Cible" />
+      <node concept="hIKpR" id="6loT$1aYhzD" role="hIRTZ">
+        <property role="TrG5h" value="A" />
+        <node concept="hIKVf" id="6loT$1aYhzE" role="1luXO$">
+          <property role="TrG5h" value="A" />
+        </node>
+      </node>
+    </node>
+    <node concept="r1UTr" id="6loT$1aYa$i" role="r1VeG" />
   </node>
 </model>
 

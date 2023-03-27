@@ -319,6 +319,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3951418197003744258");
     b.version(3);
     b.property("dataType", 0x36d641ea276c3fcfL).type(PrimitiveTypeId.STRING).origin("3951418197003747279").done();
+    b.property("text", 0x6558e6404af14f17L).type(PrimitiveTypeId.STRING).origin("7302839959590883095").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForAuthorizationType() {

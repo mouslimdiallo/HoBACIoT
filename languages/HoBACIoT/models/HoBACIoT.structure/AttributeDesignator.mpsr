@@ -70,7 +70,7 @@
       <property role="IQ2ns" value="3951418197004417576" />
       <property role="20kJfa" value="attributevalue" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="3rmguCBr3g2" />
+      <ref role="20lvS9" node="3rmguCBr3g2" resolve="AttributeValue" />
     </node>
   </node>
 </model>
