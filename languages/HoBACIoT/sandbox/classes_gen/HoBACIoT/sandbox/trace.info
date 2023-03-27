@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
-  <root nodeRef="r:8a051bce-24c2-4ce8-90db-c0f213834c51(HoBACIoT.sandbox)/7302839959591364877">
-    <file name="map_Policy.xml">
-      <unit id="7302839959591364877" at="1,0,1,143" name="HoBACIoT.sandbox.map_Policy" />
+  <root nodeRef="r:8a051bce-24c2-4ce8-90db-c0f213834c51(HoBACIoT.sandbox)/7715583511173131151">
+    <file name="map_EntityType.java">
+      <unit id="7715583511173131151" at="6,0,12,0" name="HoBACIoT.sandbox.map_EntityType" />
     </file>
   </root>
-  <root nodeRef="r:8a051bce-24c2-4ce8-90db-c0f213834c51(HoBACIoT.sandbox)/7715583511176284824">
-    <file name="Mamadou.xml">
-      <unit id="7715583511176284824" at="1,0,7,9" name="HoBACIoT.sandbox.Mamadou" />
-    </file>
-    <file name="map_Policy.xml">
-      <unit id="7715583511176284833" at="1,0,1,232" name="HoBACIoT.sandbox.map_Policy" />
+  <root nodeRef="r:8a051bce-24c2-4ce8-90db-c0f213834c51(HoBACIoT.sandbox)/9130818380117100574">
+    <file name="Access.xml">
+      <unit id="9130818380117100574" at="1,0,26,9" name="HoBACIoT.sandbox.Access" />
     </file>
   </root>
 </debug-info>

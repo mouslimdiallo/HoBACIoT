@@ -36,9 +36,6 @@
     <property role="TrG5h" value="AttributeValue" />
     <property role="3GE5qa" value="PolicyXACML" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3rmguCBr3CP" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
     <node concept="1TJgyi" id="3rmguCBr3Zf" role="1TKVEl">
       <property role="IQ2nx" value="3951418197003747279" />
       <property role="TrG5h" value="dataType" />
@@ -48,6 +45,9 @@
       <property role="IQ2nx" value="7302839959590883095" />
       <property role="TrG5h" value="text" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="7URbJ27voA$" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>

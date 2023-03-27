@@ -16,7 +16,6 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
-        <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
@@ -41,7 +40,6 @@
   <node concept="1TIwiD" id="2sEr4ZI$SUb">
     <property role="EcuMT" value="2822187207061900939" />
     <property role="TrG5h" value="House" />
-    <property role="19KtqR" value="true" />
     <property role="34LRSv" value="House" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6kN5R0UhIZ2" role="1TKVEi">
@@ -66,21 +64,6 @@
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="3rmguCBrdTA" resolve="ObjectType" />
-    </node>
-    <node concept="1TJgyj" id="6Gjg_cie$Hr" role="1TKVEi">
-      <property role="IQ2ns" value="7715583511171320667" />
-      <property role="20kJfa" value="person" />
-      <ref role="20lvS9" node="2sEr4ZI$SUc" resolve="Person" />
-    </node>
-    <node concept="1TJgyj" id="6Gjg_cieNbR" role="1TKVEi">
-      <property role="IQ2ns" value="7715583511171379959" />
-      <property role="20kJfa" value="enfants" />
-      <ref role="20lvS9" node="2R5yyIzt6$1" resolve="Enfants" />
-    </node>
-    <node concept="1TJgyj" id="6Gjg_cijVNV" role="1TKVEi">
-      <property role="IQ2ns" value="7715583511172726011" />
-      <property role="20kJfa" value="policy" />
-      <ref role="20lvS9" node="3rmguCBqRRr" resolve="Policy" />
     </node>
     <node concept="1TJgyi" id="6Gjg_cieJJP" role="1TKVEl">
       <property role="IQ2nx" value="7715583511171365877" />

@@ -91,7 +91,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.AllOf:
         if (props_AllOf == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
+          cpb.rawPresentation("AllOf");
           props_AllOf = cpb.create();
         }
         return props_AllOf;
@@ -105,7 +105,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.AnyOf:
         if (props_AnyOf == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
+          cpb.rawPresentation("AnyOf");
           props_AnyOf = cpb.create();
         }
         return props_AnyOf;

@@ -8,7 +8,6 @@
   <registry>
     <language id="c51db5c4-495f-4e00-b889-12a634a9acb3" name="HoBACIoT">
       <concept id="3298194222149298428" name="HoBACIoT.structure.Family" flags="ng" index="2eGubn" />
-      <concept id="3298194222149298472" name="HoBACIoT.structure.Frigo" flags="ng" index="2eGuc3" />
       <concept id="3951418197003751786" name="HoBACIoT.structure.AttributeDesignator" flags="ng" index="hIx20">
         <property id="3951418197003755508" name="category" index="hIxSu" />
         <property id="3951418197003756602" name="attributeid" index="hIyng" />
@@ -41,9 +40,9 @@
         <property id="3951418197003732374" name="ruleCombiningAlgId" index="hI$hW" />
         <property id="3951418197003733885" name="maxDelegationDepth" index="hI$En" />
         <property id="3951418197003734903" name="description" index="hI$Ut" />
+        <reference id="9130818380114868724" name="type" index="3TVps4" />
         <child id="3951418197003702864" name="rules" index="hJteU" />
         <child id="7891045901991744476" name="ruleCombinAlgo" index="r1VeG" />
-        <child id="1787283606341851771" name="target" index="1GbMU3" />
       </concept>
       <concept id="3951418197003698514" name="HoBACIoT.structure.Rule" flags="ng" index="hJs2S">
         <property id="3951418197003720764" name="ruleid" index="hJpBm" />
@@ -51,6 +50,7 @@
         <property id="7891045901991734868" name="RuleCombiningALId" index="r1$S$" />
         <child id="3951418197005221214" name="apply" index="hlfMO" />
         <child id="3951418197003728308" name="target" index="hJrhu" />
+        <child id="7891045901993696246" name="condition" index="r87I6" />
       </concept>
       <concept id="3951418197003704583" name="HoBACIoT.structure.Target" flags="ng" index="hJtzH">
         <child id="3951418197003812757" name="anyof" index="hIRTZ" />
@@ -60,52 +60,8 @@
         <child id="3951418197004911905" name="designator" index="hE4jb" />
         <child id="3951418197003743111" name="attributeValue" index="hIATH" />
       </concept>
-      <concept id="3951418197003711494" name="HoBACIoT.structure.Action" flags="ng" index="hJvnG">
-        <property id="3951418197003774463" name="action_id" index="hIIwl" />
-        <reference id="3951418197003776422" name="action_type" index="hIJ1c" />
-        <child id="1787283606344719012" name="policy" index="1HKYTs" />
-      </concept>
       <concept id="7891045901991743019" name="HoBACIoT.structure.RuleCombiningAlgorithm" flags="ng" index="r1UTr" />
-      <concept id="2822187207061900918" name="HoBACIoT.structure.Piece" flags="ng" index="39Iu8T">
-        <property id="7715583511171490544" name="temperature" index="1TbU2z" />
-        <property id="7715583511171493544" name="id" index="1TbUNV" />
-        <reference id="7715583511171491248" name="type" index="1TbUvz" />
-        <child id="7715583511171321844" name="device" index="1TagQB" />
-      </concept>
-      <concept id="2822187207061900940" name="HoBACIoT.structure.Person" flags="ng" index="39Iub3">
-        <property id="2822187207061901006" name="age" index="39Iua1" />
-        <property id="2822187207061901000" name="profession" index="39Iua7" />
-        <property id="2822187207061900995" name="adress" index="39Iuac" />
-        <property id="2822187207061900991" name="prenom" index="39IubK" />
-        <property id="2822187207061900988" name="nom" index="39IubN" />
-        <property id="2822187207061900986" name="subject_id" index="39IubP" />
-        <property id="7715583511170874196" name="sexe" index="1T83$7" />
-        <property id="7715583511171301515" name="login" index="1Takbo" />
-        <property id="7715583511171302486" name="password" index="1Tako5" />
-        <reference id="7715583511171305076" name="famille" index="1TakKB" />
-        <reference id="7715583511171306119" name="type" index="1Tal3k" />
-        <child id="7715583511171303069" name="device" index="1Takje" />
-        <child id="7715583511171353433" name="niveauAutorisation" index="1Tao$a" />
-        <child id="7715583511171355677" name="action" index="1Tappe" />
-      </concept>
-      <concept id="2822187207061900939" name="HoBACIoT.structure.House" flags="ng" index="39Iub4">
-        <property id="7715583511171367839" name="adress" index="1Ta47c" />
-        <property id="7715583511171367313" name="EnergyConsomSeuil" index="1Ta4f2" />
-        <property id="7715583511171365877" name="temperature" index="1TarAA" />
-        <property id="7715583511171366633" name="energyConsom" index="1TarMU" />
-        <reference id="7715583511171317959" name="type" index="1Tagak" />
-        <child id="7292197992424468418" name="pieces" index="1vtvyM" />
-      </concept>
-      <concept id="7715583511171303565" name="HoBACIoT.structure.Devices" flags="ng" index="1TakFu">
-        <property id="7715583511171369642" name="connexion" index="1Ta4zT" />
-        <property id="7715583511171369276" name="modele" index="1Ta4HJ" />
-        <property id="7715583511171482785" name="id" index="1TbSrM" />
-        <reference id="7715583511171370191" name="userRef" index="1Ta4Us" />
-        <reference id="7715583511171378810" name="type" index="1Ta6KD" />
-      </concept>
-      <concept id="7715583511171354946" name="HoBACIoT.structure.Autorization" flags="ng" index="1Tapch">
-        <reference id="7715583511174432408" name="type" index="1TuCjb" />
-      </concept>
+      <concept id="7891045901993698649" name="HoBACIoT.structure.Condition" flags="ng" index="r84kD" />
       <concept id="7715583511171357767" name="HoBACIoT.structure.EntityType" flags="ng" index="1TapSk">
         <child id="7715583511171358602" name="famille" index="1TapRp" />
         <child id="7715583511171359644" name="subjects" index="1Taq7f" />
@@ -182,144 +138,87 @@
       <property role="TrG5h" value="Autre" />
     </node>
   </node>
-  <node concept="39Iub4" id="6Gjg_civd4D">
-    <property role="1TarMU" value="23" />
-    <property role="1TarAA" value="24" />
-    <property role="1Ta4f2" value="25" />
-    <property role="1Ta47c" value="levis" />
-    <ref role="1Tagak" node="6Gjg_cimD8f" resolve="Batisse" />
-    <node concept="39Iu8T" id="6Gjg_civd4E" role="1vtvyM">
-      <property role="TrG5h" value="P1" />
-      <property role="1TbUNV" value="id" />
-      <property role="1TbU2z" value="20" />
-      <ref role="1TbUvz" node="6Gjg_cimD8o" resolve="Autre" />
-      <node concept="1TakFu" id="6Gjg_civd4G" role="1TagQB">
-        <property role="TrG5h" value="D1" />
-        <property role="1TbSrM" value="20" />
-        <property role="1Ta4HJ" value="sam" />
-        <property role="1Ta4zT" value="2cS6XcGq7mz/Bluethooth" />
-        <ref role="1Ta6KD" node="6Gjg_cimD8o" resolve="Autre" />
-        <ref role="1Ta4Us" node="6Gjg_cixwEo" resolve="Mamadou" />
-      </node>
-    </node>
-  </node>
-  <node concept="39Iub3" id="6Gjg_cixwEo">
-    <property role="TrG5h" value="Mamadou" />
-    <property role="39IubP" value="id" />
-    <property role="39IubN" value="nom" />
-    <property role="39IubK" value="pre" />
-    <property role="1Takbo" value="log" />
-    <property role="1Tako5" value="pass" />
-    <property role="39Iuac" value="levi" />
-    <property role="39Iua1" value="25" />
-    <property role="39Iua7" value="pro" />
-    <property role="1T83$7" value="6Gjg_cicRMl/Masculin" />
-    <ref role="1TakKB" node="6Gjg_cilysO" resolve="Diallo" />
-    <ref role="1Tal3k" node="6Gjg_cimD8c" resolve="User" />
-    <node concept="hJvnG" id="6Gjg_cixwEv" role="1Tappe">
-      <property role="TrG5h" value="Action" />
-      <property role="hIIwl" value="id" />
-      <ref role="hIJ1c" node="6Gjg_civd4v" resolve="Control Total" />
-      <node concept="hJjKL" id="6Gjg_cixwEx" role="1HKYTs">
-        <property role="TrG5h" value="Access" />
-        <property role="hI$cq" value="14" />
-        <property role="hI$hW" value="urn:oasis:names:tc:xacml:3.0:rule-combining-algorithm:deny-overrides" />
-        <property role="hI$En" value="4" />
-        <property role="hI$Ut" value="description de ma politique" />
-        <property role="hF5ye" value="1.0" />
-        <node concept="hJs2S" id="6Gjg_cixwEy" role="hJteU">
-          <property role="TrG5h" value="Rule1" />
-          <property role="hJpBm" value="urn:com:example:rule:house:temperature:acces" />
-          <property role="hJpIG" value="3rmguCBqXXS/Permit" />
-          <property role="r1$S$" value="overides" />
-          <node concept="hJtzH" id="6Gjg_cizLr5" role="hJrhu">
-            <property role="TrG5h" value="Cible1" />
-            <node concept="hIKpR" id="6Gjg_cizLr6" role="hIRTZ">
-              <property role="TrG5h" value="Any" />
-              <node concept="hIKVf" id="6Gjg_cizLr7" role="1luXO$">
-                <property role="TrG5h" value="All" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="hJtzH" id="6Gjg_cixwEz" role="1GbMU3">
-          <property role="TrG5h" value="cible" />
-          <node concept="hIKpR" id="6Gjg_cixwE$" role="hIRTZ">
-            <property role="TrG5h" value="Any" />
-            <node concept="hIKVf" id="6Gjg_cixwE_" role="1luXO$">
-              <property role="TrG5h" value="all" />
-            </node>
-          </node>
-        </node>
-        <node concept="r1UTr" id="6Gjg_cixwEA" role="r1VeG" />
-      </node>
-    </node>
-    <node concept="1Tapch" id="6Gjg_cixwEt" role="1Tao$a">
-      <property role="TrG5h" value="Name" />
-      <ref role="1TuCjb" node="6Gjg_civd4A" resolve="Deny" />
-    </node>
-    <node concept="2eGuc3" id="6Gjg_cixwEr" role="1Takje">
-      <property role="TrG5h" value="Frigo" />
-      <property role="1TbSrM" value="2" />
-      <property role="1Ta4HJ" value="sal" />
-      <property role="1Ta4zT" value="2cS6XcGq7mz/Bluethooth" />
-      <ref role="1Ta4Us" node="6Gjg_cixwEo" resolve="Mamadou" />
-      <ref role="1Ta6KD" node="6Gjg_cimD8o" resolve="Autre" />
-    </node>
-  </node>
-  <node concept="hJjKL" id="6loT$1aYa$d">
-    <property role="TrG5h" value="Acess" />
-    <property role="hI$cq" value="id" />
-    <property role="hI$hW" value="rul" />
-    <property role="hI$En" value="5" />
-    <property role="hI$Ut" value="des" />
+  <node concept="hJjKL" id="7URbJ27vcwu">
+    <property role="TrG5h" value="Access" />
+    <property role="hI$cq" value="idpol" />
+    <property role="hI$hW" value="rulcom" />
+    <property role="hI$En" value="4" />
+    <property role="hI$Ut" value="descrip" />
     <property role="hF5ye" value="1.0" />
-    <node concept="hJs2S" id="6loT$1aYa$e" role="hJteU">
+    <ref role="3TVps4" node="6Gjg_ciluIf" resolve="Entities" />
+    <node concept="hJs2S" id="7URbJ27vcwv" role="hJteU">
       <property role="TrG5h" value="rule1" />
       <property role="hJpBm" value="idrule" />
       <property role="hJpIG" value="3rmguCBqXXS/Permit" />
-      <property role="r1$S$" value="rykeco" />
-      <node concept="hJunJ" id="6loT$1aYa$r" role="hlfMO">
-        <property role="hIAsb" value="fun" />
-        <node concept="hIx20" id="6loT$1aYa$v" role="hE4jb">
-          <property role="TrG5h" value="De" />
+      <property role="r1$S$" value="overide" />
+      <node concept="hJunJ" id="7URbJ27vcwN" role="hlfMO">
+        <property role="hIAsb" value="funid" />
+        <node concept="hIx20" id="7URbJ27vcwR" role="hE4jb">
+          <property role="TrG5h" value="Designator" />
           <property role="hIxSu" value="cat" />
-          <property role="hIyng" value="od" />
-          <property role="hIyox" value="da" />
+          <property role="hIyng" value="ida" />
+          <property role="hIyox" value="daypp" />
           <property role="hIyGL" value="true" />
-          <ref role="hC3J2" node="6loT$1aYa$t" resolve="v" />
+          <ref role="hC3J2" node="7URbJ27vcwP" resolve="valATT" />
         </node>
-        <node concept="hIBnC" id="6loT$1aYa$t" role="hIATH">
+        <node concept="hIBnC" id="7URbJ27vcwP" role="hIATH">
+          <property role="JEq_n" value="administrateur" />
           <property role="hIBS_" value="data" />
-          <property role="TrG5h" value="v" />
-          <property role="JEq_n" value="admin" />
+          <property role="TrG5h" value="val" />
         </node>
       </node>
-      <node concept="hJtzH" id="6loT$1aYa$j" role="hJrhu">
-        <property role="TrG5h" value="Cible" />
-        <node concept="hIKpR" id="6loT$1aYa$k" role="hIRTZ">
-          <property role="TrG5h" value="Any" />
-          <node concept="hIKVf" id="6loT$1aYa$l" role="1luXO$">
-            <property role="TrG5h" value="All" />
-            <node concept="hILlk" id="6loT$1aYa$p" role="hILSL">
-              <property role="hILBv" value="idm" />
-              <ref role="hl8CP" node="6loT$1aYa$t" resolve="v" />
-              <ref role="hl92R" node="6loT$1aYa$v" resolve="De" />
+      <node concept="hJtzH" id="7URbJ27vcww" role="hJrhu">
+        <property role="TrG5h" value="cible" />
+        <node concept="hIKpR" id="7URbJ27vcwx" role="hIRTZ">
+          <node concept="hIKVf" id="7URbJ27vcwy" role="1luXO$">
+            <node concept="hILlk" id="7URbJ27vcw$" role="hILSL">
+              <property role="hILBv" value="idmatch" />
+              <ref role="hl8CP" node="7URbJ27vcwP" resolve="valATT" />
+              <ref role="hl92R" node="7URbJ27vcwR" resolve="Designator" />
+            </node>
+            <node concept="hILlk" id="7URbJ27vcwK" role="hILSL">
+              <property role="hILBv" value="matid" />
+              <ref role="hl8CP" node="7URbJ27vcwP" resolve="valATT" />
+              <ref role="hl92R" node="7URbJ27vcwR" resolve="Designator" />
             </node>
           </node>
         </node>
       </node>
+      <node concept="r84kD" id="7URbJ27vcwT" role="r87I6" />
     </node>
-    <node concept="hJtzH" id="6loT$1aYa$f" role="1GbMU3">
-      <property role="TrG5h" value="Cible" />
-      <node concept="hIKpR" id="6loT$1aYhzD" role="hIRTZ">
-        <property role="TrG5h" value="A" />
-        <node concept="hIKVf" id="6loT$1aYhzE" role="1luXO$">
-          <property role="TrG5h" value="A" />
+    <node concept="hJs2S" id="7URbJ27vcyz" role="hJteU">
+      <property role="TrG5h" value="rule2" />
+      <property role="hJpBm" value="id2" />
+      <property role="hJpIG" value="3rmguCBqY7D/Deny" />
+      <property role="r1$S$" value="denyoverride" />
+      <node concept="hJunJ" id="7URbJ27xbuC" role="hlfMO">
+        <property role="hIAsb" value="idfunc" />
+        <node concept="hIx20" id="7URbJ27xbuG" role="hE4jb">
+          <property role="hIxSu" value="catss" />
+          <property role="hIyng" value="idat" />
+          <property role="hIyox" value="dat" />
+          <ref role="hC3J2" node="7URbJ27vcwP" resolve="valATT" />
+        </node>
+        <node concept="hIBnC" id="7URbJ27xbuE" role="hIATH">
+          <property role="hIBS_" value="dx" />
+          <property role="JEq_n" value="user" />
         </node>
       </node>
+      <node concept="hJtzH" id="7URbJ27vcy$" role="hJrhu">
+        <property role="TrG5h" value="Cible2" />
+        <node concept="hIKpR" id="7URbJ27vcy_" role="hIRTZ">
+          <node concept="hIKVf" id="7URbJ27vcyA" role="1luXO$">
+            <node concept="hILlk" id="7URbJ27xbu$" role="hILSL">
+              <property role="hILBv" value="idmt" />
+              <ref role="hl8CP" node="7URbJ27vcwP" resolve="valATT" />
+              <ref role="hl92R" node="7URbJ27vcwR" resolve="Designator" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="r84kD" id="7URbJ27xbuA" role="r87I6" />
     </node>
-    <node concept="r1UTr" id="6loT$1aYa$i" role="r1VeG" />
+    <node concept="r1UTr" id="7URbJ27vcwz" role="r1VeG" />
   </node>
 </model>
 

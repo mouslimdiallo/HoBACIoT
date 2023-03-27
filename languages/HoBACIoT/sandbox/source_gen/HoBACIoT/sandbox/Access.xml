@@ -1,0 +1,26 @@
+<?xml version = "1.0"?>
+<Policy xmlns="urn:oasis:names:tc:xacml:3.0:core:schema:wd-17" PolicyId="idpol" RuleCombiningAlgId="rulcom" Version="1.0" description="descrip" maxDelegationDepth="4">  
+  <Description></Description>
+  
+  <Target></Target>
+  <Rule RuledId="idrule" Effect="Permit">    
+    <Description></Description>
+    
+    <Condition>      
+      <Apply FunctionId="funid">        
+        <AttributeValue DataType="data">administrateur</AttributeValue>
+        <AttributeDesignator AttributeID="ida" Category="cat" DataType="daypp" MustBePresent="true"></AttributeDesignator>
+      </Apply>
+    </Condition>
+  </Rule>
+  <Rule RuledId="id2" Effect="Deny">    
+    <Description></Description>
+    
+    <Condition>      
+      <Apply FunctionId="idfunc">        
+        <AttributeValue DataType="dx">user</AttributeValue>
+        <AttributeDesignator AttributeID="idat" Category="catss" DataType="dat" MustBePresent="false"></AttributeDesignator>
+      </Apply>
+    </Condition>
+  </Rule>
+</Policy>
