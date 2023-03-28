@@ -43,14 +43,6 @@
       <property role="3tVfz5" value="2537808983820367267" />
       <property role="TrG5h" value="Bluethooth" />
     </node>
-    <node concept="25R33" id="2cS6XcGq7mH" role="25R1y">
-      <property role="3tVfz5" value="2537808983820367277" />
-      <property role="TrG5h" value="ZigBee" />
-    </node>
-    <node concept="25R33" id="2cS6XcGq7mN" role="25R1y">
-      <property role="3tVfz5" value="2537808983820367283" />
-      <property role="TrG5h" value="Z_Wave" />
-    </node>
     <node concept="25R33" id="65PH1LjFs6L" role="25R1y">
       <property role="3tVfz5" value="7022717227710136753" />
       <property role="TrG5h" value="Other" />

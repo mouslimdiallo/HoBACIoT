@@ -8,6 +8,7 @@
   <registry>
     <language id="c51db5c4-495f-4e00-b889-12a634a9acb3" name="HoBACIoT">
       <concept id="3298194222149298428" name="HoBACIoT.structure.Family" flags="ng" index="2eGubn" />
+      <concept id="3298194222149298471" name="HoBACIoT.structure.Four" flags="ng" index="2eGucc" />
       <concept id="3951418197003751786" name="HoBACIoT.structure.AttributeDesignator" flags="ng" index="hIx20">
         <property id="3951418197003755508" name="category" index="hIxSu" />
         <property id="3951418197003756602" name="attributeid" index="hIyng" />
@@ -60,14 +61,66 @@
         <child id="3951418197004911905" name="designator" index="hE4jb" />
         <child id="3951418197003743111" name="attributeValue" index="hIATH" />
       </concept>
+      <concept id="3951418197003711494" name="HoBACIoT.structure.Action" flags="ng" index="hJvnG">
+        <property id="3951418197003774463" name="action_id" index="hIIwl" />
+        <reference id="3951418197003776422" name="action_type" index="hIJ1c" />
+      </concept>
       <concept id="7891045901991743019" name="HoBACIoT.structure.RuleCombiningAlgorithm" flags="ng" index="r1UTr" />
       <concept id="7891045901993698649" name="HoBACIoT.structure.Condition" flags="ng" index="r84kD" />
+      <concept id="2822187207061900927" name="HoBACIoT.structure.Kitchen" flags="ng" index="39Iu8K">
+        <child id="7292197992424584386" name="four" index="1vuUeM" />
+      </concept>
+      <concept id="2822187207061900923" name="HoBACIoT.structure.Room" flags="ng" index="39Iu8O" />
+      <concept id="2822187207061900918" name="HoBACIoT.structure.Piece" flags="ng" index="39Iu8T">
+        <property id="7715583511171490544" name="temperature" index="1TbU2z" />
+        <property id="7715583511171493544" name="id" index="1TbUNV" />
+        <reference id="7715583511171491248" name="type" index="1TbUvz" />
+        <child id="7715583511171321844" name="device" index="1TagQB" />
+      </concept>
+      <concept id="2822187207061900940" name="HoBACIoT.structure.Person" flags="ng" index="39Iub3">
+        <property id="2822187207061901006" name="age" index="39Iua1" />
+        <property id="2822187207061901000" name="profession" index="39Iua7" />
+        <property id="2822187207061900995" name="adress" index="39Iuac" />
+        <property id="2822187207061900991" name="prenom" index="39IubK" />
+        <property id="2822187207061900986" name="subject_id" index="39IubP" />
+        <property id="7715583511170874196" name="sexe" index="1T83$7" />
+        <property id="7715583511171301515" name="login" index="1Takbo" />
+        <property id="7715583511171302486" name="password" index="1Tako5" />
+        <reference id="7715583511171305076" name="famille" index="1TakKB" />
+        <reference id="7715583511171306119" name="type" index="1Tal3k" />
+        <child id="7715583511171303069" name="device" index="1Takje" />
+        <child id="7715583511171353433" name="niveauAutorisation" index="1Tao$a" />
+        <child id="7715583511171355677" name="action" index="1Tappe" />
+      </concept>
+      <concept id="2822187207061900939" name="HoBACIoT.structure.House" flags="ng" index="39Iub4">
+        <property id="7715583511171367839" name="adress" index="1Ta47c" />
+        <property id="7715583511171367313" name="EnergyConsomSeuil" index="1Ta4f2" />
+        <property id="7715583511171365877" name="temperature" index="1TarAA" />
+        <property id="7715583511171366633" name="energyConsom" index="1TarMU" />
+        <reference id="7715583511171317959" name="type" index="1Tagak" />
+        <child id="7292197992424468418" name="pieces" index="1vtvyM" />
+        <child id="7715583511171316968" name="chambre" index="1TanUV" />
+      </concept>
+      <concept id="7715583511171303565" name="HoBACIoT.structure.Devices" flags="ng" index="1TakFu">
+        <property id="7715583511171369642" name="connexion" index="1Ta4zT" />
+        <property id="7715583511171369276" name="modele" index="1Ta4HJ" />
+        <property id="7715583511171482785" name="id" index="1TbSrM" />
+        <reference id="7715583511171370191" name="userRef" index="1Ta4Us" />
+        <reference id="7715583511171378810" name="type" index="1Ta6KD" />
+        <child id="9130818380121215610" name="cusine" index="3T3bMa" />
+      </concept>
+      <concept id="7715583511171354946" name="HoBACIoT.structure.Autorization" flags="ng" index="1Tapch">
+        <reference id="7715583511174432408" name="type" index="1TuCjb" />
+      </concept>
       <concept id="7715583511171357767" name="HoBACIoT.structure.EntityType" flags="ng" index="1TapSk">
+        <reference id="9130818380122754349" name="policy" index="3Tp2ft" />
+        <child id="9130818380119740132" name="house" index="3T4y0k" />
         <child id="7715583511171358602" name="famille" index="1TapRp" />
         <child id="7715583511171359644" name="subjects" index="1Taq7f" />
         <child id="7715583511171360505" name="objects" index="1TaqiE" />
         <child id="7715583511171362199" name="environment" index="1TaqZ4" />
         <child id="7715583511171363244" name="Authorization" index="1TarfZ" />
+        <child id="9130818380118293963" name="person" index="3TetcV" />
         <child id="7715583511174427410" name="action" index="1TuJ51" />
       </concept>
       <concept id="7715583511174429685" name="HoBACIoT.structure.AuthorizationType" flags="ng" index="1TuJAA" />
@@ -79,7 +132,110 @@
     </language>
   </registry>
   <node concept="1TapSk" id="6Gjg_ciluIf">
-    <property role="TrG5h" value="Entities" />
+    <property role="TrG5h" value="MyEntities" />
+    <ref role="3Tp2ft" node="7URbJ27vcwu" resolve="Access" />
+    <node concept="39Iub4" id="7URbJ27IQX7" role="3T4y0k">
+      <property role="TrG5h" value="House1" />
+      <property role="1TarAA" value="22" />
+      <property role="1TarMU" value="15" />
+      <property role="1Ta4f2" value="20" />
+      <property role="1Ta47c" value="levis" />
+      <ref role="1Tagak" node="6Gjg_cimD8f" resolve="Batisse" />
+      <node concept="39Iu8O" id="7URbJ27IQXd" role="1TanUV">
+        <property role="TrG5h" value="Ch1" />
+        <property role="1TbUNV" value="idchambre" />
+        <property role="1TbU2z" value="23" />
+        <ref role="1TbUvz" node="6Gjg_cimD8f" resolve="Batisse" />
+      </node>
+      <node concept="39Iu8T" id="7URbJ27IQX9" role="1vtvyM">
+        <property role="1TbUNV" value="id_piece" />
+        <property role="1TbU2z" value="23" />
+        <property role="TrG5h" value="P1" />
+        <ref role="1TbUvz" node="6Gjg_cimD8f" resolve="Batisse" />
+        <node concept="1TakFu" id="7URbJ27KQXS" role="1TagQB">
+          <property role="TrG5h" value="APP3" />
+          <property role="1TbSrM" value="idhouse" />
+          <property role="1Ta4HJ" value="sam" />
+          <property role="1Ta4zT" value="2cS6XcGq7mz/Bluethooth" />
+          <ref role="1Ta4Us" node="7URbJ27_Lkg" resolve="Mamadou" />
+          <ref role="1Ta6KD" node="6Gjg_cimD8o" resolve="Autre" />
+          <node concept="39Iu8K" id="7URbJ27KQXU" role="3T3bMa">
+            <property role="TrG5h" value="Cuisine1" />
+            <property role="1TbUNV" value="idcuisine" />
+            <property role="1TbU2z" value="22" />
+            <ref role="1TbUvz" node="6Gjg_cimD8o" resolve="Autre" />
+            <node concept="2eGucc" id="7URbJ27KQXW" role="1vuUeM">
+              <property role="TrG5h" value="Four1" />
+              <property role="1TbSrM" value="idfour" />
+              <property role="1Ta4zT" value="65PH1LjFs6L/Other" />
+              <property role="1Ta4HJ" value="sam" />
+              <ref role="1Ta4Us" node="7URbJ27_Lkg" resolve="Mamadou" />
+              <ref role="1Ta6KD" node="6Gjg_cimD8o" resolve="Autre" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="39Iub3" id="7URbJ27_Lkg" role="3TetcV">
+      <property role="TrG5h" value="Mamadou" />
+      <property role="39IubP" value="id_age" />
+      <property role="39IubK" value="Mouslim" />
+      <property role="1Takbo" value="log" />
+      <property role="1Tako5" value="pass" />
+      <property role="39Iuac" value="lévis" />
+      <property role="39Iua1" value="25" />
+      <property role="39Iua7" value="ingenieur" />
+      <property role="1T83$7" value="6Gjg_cicRMl/Masculin" />
+      <ref role="1TakKB" node="6Gjg_cilysO" resolve="Diallo" />
+      <ref role="1Tal3k" node="6Gjg_cimD8a" resolve="Admin" />
+      <node concept="hJvnG" id="7URbJ27DgAp" role="1Tappe">
+        <property role="TrG5h" value="Act2" />
+        <property role="hIIwl" value="id_act2" />
+        <ref role="hIJ1c" node="6Gjg_civd4v" resolve="Control Total" />
+      </node>
+      <node concept="1Tapch" id="7URbJ27DgAn" role="1Tao$a">
+        <property role="TrG5h" value="Auth2" />
+        <ref role="1TuCjb" node="6Gjg_civd4$" resolve="Permit" />
+      </node>
+      <node concept="1TakFu" id="7URbJ27_Lki" role="1Takje">
+        <property role="TrG5h" value="IoT" />
+        <property role="1TbSrM" value="id_menager" />
+        <property role="1Ta4HJ" value="china" />
+        <property role="1Ta4zT" value="2cS6XcGq7mm/Ethernet" />
+        <ref role="1Ta4Us" node="7URbJ27_Lkg" resolve="Mamadou" />
+        <ref role="1Ta6KD" node="6Gjg_cimD8k" resolve="Electromenager" />
+      </node>
+    </node>
+    <node concept="39Iub3" id="7URbJ27Dg_Y" role="3TetcV">
+      <property role="TrG5h" value="Mehdi" />
+      <property role="39IubP" value="id_role" />
+      <property role="39IubK" value="Karim" />
+      <property role="1Takbo" value="log" />
+      <property role="1Tako5" value="pass" />
+      <property role="39Iuac" value="adress" />
+      <property role="39Iua1" value="50" />
+      <property role="39Iua7" value="prof" />
+      <property role="1T83$7" value="6Gjg_cicRMl/Masculin" />
+      <ref role="1TakKB" node="6Gjg_cilysQ" resolve="Adda" />
+      <ref role="1Tal3k" node="6Gjg_cimD8c" resolve="User" />
+      <node concept="hJvnG" id="7URbJ27DgAl" role="1Tappe">
+        <property role="TrG5h" value="Ac1" />
+        <property role="hIIwl" value="id_action" />
+        <ref role="hIJ1c" node="6Gjg_civd4m" resolve="READ" />
+      </node>
+      <node concept="1Tapch" id="7URbJ27DgAj" role="1Tao$a">
+        <property role="TrG5h" value="Auth1" />
+        <ref role="1TuCjb" node="6Gjg_civd4A" resolve="Deny" />
+      </node>
+      <node concept="1TakFu" id="7URbJ27DgA2" role="1Takje">
+        <property role="TrG5h" value="APP_UQAR" />
+        <property role="1TbSrM" value="id_electro" />
+        <property role="1Ta4HJ" value="samsung" />
+        <property role="1Ta4zT" value="2cS6XcGq7mm/Ethernet" />
+        <ref role="1Ta4Us" node="7URbJ27Dg_Y" resolve="Mehdi" />
+        <ref role="1Ta6KD" node="6Gjg_cimD8h" resolve="Electronique" />
+      </node>
+    </node>
     <node concept="1TuJAA" id="6Gjg_civd4$" role="1TarfZ">
       <property role="TrG5h" value="Permit" />
     </node>
@@ -124,6 +280,9 @@
     </node>
     <node concept="hIHgQ" id="6Gjg_cimD8c" role="1Taq7f">
       <property role="TrG5h" value="User" />
+    </node>
+    <node concept="hIHgQ" id="7URbJ27_Lkc" role="1Taq7f">
+      <property role="TrG5h" value="invité" />
     </node>
     <node concept="2eGubn" id="6Gjg_cilysO" role="1TapRp">
       <property role="TrG5h" value="Diallo" />

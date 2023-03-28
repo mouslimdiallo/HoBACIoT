@@ -77,7 +77,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="chambre" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="2sEr4ZI$STV" resolve="Chambre" />
+      <ref role="20lvS9" node="2sEr4ZI$STV" resolve="Room" />
     </node>
     <node concept="1TJgyj" id="6Gjg_cieBFo" role="1TKVEi">
       <property role="IQ2ns" value="7715583511171332824" />

@@ -19,12 +19,10 @@ public class EnumerationDescriptor_Connectivity extends EnumerationDescriptorBas
   private final EnumerationDescriptor.MemberDescriptor myMember_Serial_0 = new EnumerationDescriptor.MemberDescriptor("Serial", "Serial", 0x23381bd32c687597L, "r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/2537808983820367255");
   private final EnumerationDescriptor.MemberDescriptor myMember_WiFi_0 = new EnumerationDescriptor.MemberDescriptor("WiFi", "WiFi", 0x23381bd32c68759eL, "r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/2537808983820367262");
   private final EnumerationDescriptor.MemberDescriptor myMember_Bluethooth_0 = new EnumerationDescriptor.MemberDescriptor("Bluethooth", "Bluethooth", 0x23381bd32c6875a3L, "r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/2537808983820367267");
-  private final EnumerationDescriptor.MemberDescriptor myMember_ZigBee_0 = new EnumerationDescriptor.MemberDescriptor("ZigBee", "ZigBee", 0x23381bd32c6875adL, "r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/2537808983820367277");
-  private final EnumerationDescriptor.MemberDescriptor myMember_Z_Wave_0 = new EnumerationDescriptor.MemberDescriptor("Z_Wave", "Z_Wave", 0x23381bd32c6875b3L, "r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/2537808983820367283");
   private final EnumerationDescriptor.MemberDescriptor myMember_Other_0 = new EnumerationDescriptor.MemberDescriptor("Other", "Other", 0x6175b41c53adc1b1L, "r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/7022717227710136753");
 
-  private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x23381bd32c687595L, 0x23381bd32c687596L, 0x23381bd32c687597L, 0x23381bd32c68759eL, 0x23381bd32c6875a3L, 0x23381bd32c6875adL, 0x23381bd32c6875b3L, 0x6175b41c53adc1b1L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_Ethernet_0, myMember_Serial_0, myMember_WiFi_0, myMember_Bluethooth_0, myMember_ZigBee_0, myMember_Z_Wave_0, myMember_Other_0);
+  private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x23381bd32c687595L, 0x23381bd32c687596L, 0x23381bd32c687597L, 0x23381bd32c68759eL, 0x23381bd32c6875a3L, 0x6175b41c53adc1b1L);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_Ethernet_0, myMember_Serial_0, myMember_WiFi_0, myMember_Bluethooth_0, myMember_Other_0);
 
   @Nullable
   @Override
@@ -53,10 +51,6 @@ public class EnumerationDescriptor_Connectivity extends EnumerationDescriptorBas
         return myMember_WiFi_0;
       case "Bluethooth":
         return myMember_Bluethooth_0;
-      case "ZigBee":
-        return myMember_ZigBee_0;
-      case "Z_Wave":
-        return myMember_Z_Wave_0;
       case "Other":
         return myMember_Other_0;
     }

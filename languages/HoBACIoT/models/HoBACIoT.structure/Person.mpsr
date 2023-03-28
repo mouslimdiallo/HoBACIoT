@@ -51,11 +51,6 @@
       <property role="TrG5h" value="subject_id" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="1TJgyi" id="2sEr4ZI$SUW" role="1TKVEl">
-      <property role="IQ2nx" value="2822187207061900988" />
-      <property role="TrG5h" value="nom" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="1TJgyi" id="2sEr4ZI$SUZ" role="1TKVEl">
       <property role="IQ2nx" value="2822187207061900991" />
       <property role="TrG5h" value="prenom" />

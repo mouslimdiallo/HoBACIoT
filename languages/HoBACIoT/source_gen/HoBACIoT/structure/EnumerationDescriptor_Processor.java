@@ -18,9 +18,10 @@ public class EnumerationDescriptor_Processor extends EnumerationDescriptorBase {
   private final EnumerationDescriptor.MemberDescriptor myMember_ARM_0 = new EnumerationDescriptor.MemberDescriptor("ARM", "ARM", 0x23381bd32c6859a2L, "r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/2537808983820360098");
   private final EnumerationDescriptor.MemberDescriptor myMember_x86_0 = new EnumerationDescriptor.MemberDescriptor("x86", "x86", 0x23381bd32c6859a3L, "r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/2537808983820360099");
   private final EnumerationDescriptor.MemberDescriptor myMember_x64_0 = new EnumerationDescriptor.MemberDescriptor("x64", "x64", 0x25ba6d72b2e7837eL, "r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/2718605664466731902");
+  private final EnumerationDescriptor.MemberDescriptor myMember_AMD_0 = new EnumerationDescriptor.MemberDescriptor("AMD", "AMD", 0x7eb72ef087bb7aacL, "r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/9130818380121209516");
 
-  private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x23381bd32c6859a1L, 0x23381bd32c6859a2L, 0x23381bd32c6859a3L, 0x25ba6d72b2e7837eL);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_ARM_0, myMember_x86_0, myMember_x64_0);
+  private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x23381bd32c6859a1L, 0x23381bd32c6859a2L, 0x23381bd32c6859a3L, 0x25ba6d72b2e7837eL, 0x7eb72ef087bb7aacL);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_ARM_0, myMember_x86_0, myMember_x64_0, myMember_AMD_0);
 
   @Nullable
   @Override
@@ -47,6 +48,8 @@ public class EnumerationDescriptor_Processor extends EnumerationDescriptorBase {
         return myMember_x86_0;
       case "x64":
         return myMember_x64_0;
+      case "AMD":
+        return myMember_AMD_0;
     }
     return null;
   }

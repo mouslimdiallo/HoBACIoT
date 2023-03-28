@@ -561,7 +561,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return LINKS.chambre$2skh;
     }
     public SAbstractConcept getChildSConcept() {
-      return CONCEPTS.Chambre$uj;
+      return CONCEPTS.Room$uj;
     }
 
     public EditorCell createNodeCell(SNode elementNode) {
@@ -633,7 +633,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     /*package*/ static final SConcept PropertyAttribute$Gb = MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da56L, "jetbrains.mps.lang.core.structure.PropertyAttribute");
     /*package*/ static final SConcept LinkAttribute$v_ = MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da51L, "jetbrains.mps.lang.core.structure.LinkAttribute");
     /*package*/ static final SConcept Piece$hH = MetaAdapterFactory.getConcept(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x272a6c4fee938e76L, "HoBACIoT.structure.Piece");
-    /*package*/ static final SConcept Chambre$uj = MetaAdapterFactory.getConcept(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x272a6c4fee938e7bL, "HoBACIoT.structure.Chambre");
+    /*package*/ static final SConcept Room$uj = MetaAdapterFactory.getConcept(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x272a6c4fee938e7bL, "HoBACIoT.structure.Room");
   }
 
   private static final class LINKS {

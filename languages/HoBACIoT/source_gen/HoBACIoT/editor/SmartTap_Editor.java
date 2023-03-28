@@ -7,8 +7,8 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class Chambre_Editor extends DefaultNodeEditor {
+public class SmartTap_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new Chambre_EditorBuilder_a(editorContext, node).createCell();
+    return new SmartTap_EditorBuilder_a(editorContext, node).createCell();
   }
 }
