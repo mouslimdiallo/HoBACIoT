@@ -18,10 +18,6 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
-      <concept id="1083245097125" name="jetbrains.mps.baseLanguage.structure.EnumClass" flags="ig" index="Qs71p">
-        <child id="1083245396908" name="enumConstant" index="Qtgdg" />
-      </concept>
-      <concept id="1083245299891" name="jetbrains.mps.baseLanguage.structure.EnumConstantDeclaration" flags="ig" index="QsSxf" />
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
@@ -42,15 +38,11 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
-        <child id="1178549979242" name="visibility" index="1B3o_S" />
-      </concept>
       <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
         <child id="1163668914799" name="condition" index="3K4Cdx" />
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
-      <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
       <concept id="6666499814681515200" name="jetbrains.mps.core.xml.structure.XmlFile" flags="ng" index="2pMbU2">
@@ -137,7 +129,7 @@
     </node>
     <node concept="3lhOvk" id="7URbJ27pwgd" role="3lj3bC">
       <ref role="30HIoZ" to="jlpl:6Gjg_cieHL7" resolve="EntityType" />
-      <ref role="3lhOvi" node="7URbJ27pwnY" resolve="map_EntityType" />
+      <ref role="3lhOvi" node="7URbJ27zFoW" resolve="map_EntityType" />
     </node>
   </node>
   <node concept="2pMbU2" id="6Gjg_cid75j">
@@ -846,26 +838,21 @@
       </node>
     </node>
   </node>
-  <node concept="Qs71p" id="7URbJ27pwnY">
+  <node concept="2pMbU2" id="7URbJ27zFoW">
     <property role="TrG5h" value="map_EntityType" />
-    <node concept="QsSxf" id="7URbJ27pwtb" role="Qtgdg">
-      <property role="TrG5h" value="Admin" />
-      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+    <node concept="3rIKKV" id="7URbJ27zFoX" role="2pMbU3">
+      <node concept="2pNNFK" id="7URbJ27zFy1" role="2pNm8H">
+        <property role="2pNNFO" value="Entity" />
+        <node concept="3o6iSG" id="7URbJ27zFA7" role="3o6s8t" />
+        <node concept="3o6iSG" id="7URbJ27zFAX" role="3o6s8t" />
+      </node>
+      <node concept="2pNm8N" id="7URbJ27zFsh" role="2pNm8Q">
+        <node concept="3W$oVP" id="7URbJ27zFvX" role="BGLLu">
+          <property role="1D$jbd" value="1.0" />
+        </node>
+      </node>
     </node>
-    <node concept="QsSxf" id="7URbJ27pwHf" role="Qtgdg">
-      <property role="TrG5h" value="User" />
-      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
-    </node>
-    <node concept="QsSxf" id="7URbJ27pwTM" role="Qtgdg">
-      <property role="TrG5h" value="Invite" />
-      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
-    </node>
-    <node concept="QsSxf" id="7URbJ27pxbK" role="Qtgdg">
-      <property role="TrG5h" value="Mous" />
-      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
-    </node>
-    <node concept="3Tm1VV" id="7URbJ27pwnZ" role="1B3o_S" />
-    <node concept="n94m4" id="7URbJ27pwo0" role="lGtFl">
+    <node concept="n94m4" id="7URbJ27zFoZ" role="lGtFl">
       <ref role="n9lRv" to="jlpl:6Gjg_cieHL7" resolve="EntityType" />
     </node>
   </node>
