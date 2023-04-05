@@ -118,10 +118,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createRefCell_0() {
-    final SReferenceLink referenceLink = LINKS.entity$v1$W;
+    final SReferenceLink referenceLink = LINKS.entityRef$v1$W;
     SReferenceCellProvider provider = new SReferenceCellProvider(getNode(), referenceLink, getEditorContext()) {
       protected EditorCell createReferenceCell(final SNode targetNode) {
-        EditorCell cell = getUpdateSession().updateReferencedNodeCell(() -> new Inline_Builder0(getEditorContext(), getNode(), targetNode).createCell(), targetNode, LINKS.entity$v1$W);
+        EditorCell cell = getUpdateSession().updateReferencedNodeCell(() -> new Inline_Builder0(getEditorContext(), getNode(), targetNode).createCell(), targetNode, LINKS.entityRef$v1$W);
         CellUtil.setupIDeprecatableStyles(targetNode, cell);
         setSemanticNodeToCells(cell, getNode());
         installDeleteActions_notnull(cell);
@@ -129,12 +129,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
       }
     };
 
-    provider.setNoTargetText("<no entity>");
+    provider.setNoTargetText("<no entityRef>");
     EditorCell editorCell = provider.createCell();
 
     if (editorCell.getSRole() == null) {
       editorCell.setReferenceCell(true);
-      editorCell.setSRole(LINKS.entity$v1$W);
+      editorCell.setSRole(LINKS.entityRef$v1$W);
     }
     editorCell.setSubstituteInfo(new SReferenceSubstituteInfo(editorCell, referenceLink));
     Iterable<SNode> referenceAttributes = SNodeOperations.ofConcept(new IAttributeDescriptor.AllAttributes().list(myNode), CONCEPTS.LinkAttribute$v_);
@@ -748,10 +748,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createRefCell_1() {
-    final SReferenceLink referenceLink = LINKS.entity$v1$W;
+    final SReferenceLink referenceLink = LINKS.entityRef$v1$W;
     SReferenceCellProvider provider = new SReferenceCellProvider(getNode(), referenceLink, getEditorContext()) {
       protected EditorCell createReferenceCell(final SNode targetNode) {
-        EditorCell cell = getUpdateSession().updateReferencedNodeCell(() -> new Inline_Builder1(getEditorContext(), getNode(), targetNode).createCell(), targetNode, LINKS.entity$v1$W);
+        EditorCell cell = getUpdateSession().updateReferencedNodeCell(() -> new Inline_Builder1(getEditorContext(), getNode(), targetNode).createCell(), targetNode, LINKS.entityRef$v1$W);
         CellUtil.setupIDeprecatableStyles(targetNode, cell);
         setSemanticNodeToCells(cell, getNode());
         installDeleteActions_notnull(cell);
@@ -759,12 +759,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
       }
     };
 
-    provider.setNoTargetText("<no entity>");
+    provider.setNoTargetText("<no entityRef>");
     EditorCell editorCell = provider.createCell();
 
     if (editorCell.getSRole() == null) {
       editorCell.setReferenceCell(true);
-      editorCell.setSRole(LINKS.entity$v1$W);
+      editorCell.setSRole(LINKS.entityRef$v1$W);
     }
     editorCell.setSubstituteInfo(new SReferenceSubstituteInfo(editorCell, referenceLink));
     Iterable<SNode> referenceAttributes = SNodeOperations.ofConcept(new IAttributeDescriptor.AllAttributes().list(myNode), CONCEPTS.LinkAttribute$v_);
@@ -870,7 +870,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   private static final class LINKS {
-    /*package*/ static final SReferenceLink entity$v1$W = MetaAdapterFactory.getReferenceLink(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b7ddbL, 0x7eb72ef0875ab9f4L, "entity");
+    /*package*/ static final SReferenceLink entityRef$v1$W = MetaAdapterFactory.getReferenceLink(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b7ddbL, 0x7eb72ef0875ab9f4L, "entityRef");
     /*package*/ static final SContainmentLink rules$Wee$ = MetaAdapterFactory.getContainmentLink(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b7ddbL, 0x36d641ea276b9250L, "rules");
     /*package*/ static final SContainmentLink target$dHN3 = MetaAdapterFactory.getContainmentLink(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b7ddbL, 0x18cdb4f874e29a7bL, "target");
     /*package*/ static final SContainmentLink ruleCombinAlgo$SE1l = MetaAdapterFactory.getContainmentLink(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b7ddbL, 0x6d82a070768513dcL, "ruleCombinAlgo");

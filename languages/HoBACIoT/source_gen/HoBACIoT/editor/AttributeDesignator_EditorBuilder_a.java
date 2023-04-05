@@ -145,9 +145,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
     private EditorCell createProperty_0() {
       getCellFactory().pushCellContext();
       try {
-        final SProperty property = PROPS.text$vmGV;
+        final SProperty property = PROPS.text$z1vl;
         getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
-        EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
+        EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, true, false), myNode);
         editorCell.setDefaultText("<no text>");
         editorCell.setCellId("property_text");
         editorCell.setSubstituteInfo(new SPropertySubstituteInfo(editorCell, property));
@@ -390,7 +390,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty text$vmGV = MetaAdapterFactory.getProperty(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276c3402L, 0x6558e6404af14f17L, "text");
+    /*package*/ static final SProperty text$z1vl = MetaAdapterFactory.getProperty(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276c3402L, 0x3b36d8e9550b610dL, "text");
     /*package*/ static final SProperty category$87Ei = MetaAdapterFactory.getProperty(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276c516aL, 0x36d641ea276c5ff4L, "category");
     /*package*/ static final SProperty attributeid$SPgG = MetaAdapterFactory.getProperty(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276c516aL, 0x36d641ea276c643aL, "attributeid");
     /*package*/ static final SProperty dataType$yDjG = MetaAdapterFactory.getProperty(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276c516aL, 0x36d641ea276c67cbL, "dataType");

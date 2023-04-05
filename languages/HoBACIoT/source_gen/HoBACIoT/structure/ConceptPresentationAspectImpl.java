@@ -50,6 +50,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Piece;
   private ConceptPresentation props_Policy;
   private ConceptPresentation props_PolicyCombiningAlgorithm;
+  private ConceptPresentation props_PolicyReference;
   private ConceptPresentation props_PolicySet;
   private ConceptPresentation props_Prise;
   private ConceptPresentation props_Request;
@@ -366,6 +367,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_PolicyCombiningAlgorithm = cpb.create();
         }
         return props_PolicyCombiningAlgorithm;
+      case LanguageConceptSwitch.PolicyReference:
+        if (props_PolicyReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x7ffb635df14fd38cL, 0x7ffb635df14fd38dL, "policy", "", "");
+          props_PolicyReference = cpb.create();
+        }
+        return props_PolicyReference;
       case LanguageConceptSwitch.PolicySet:
         if (props_PolicySet == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

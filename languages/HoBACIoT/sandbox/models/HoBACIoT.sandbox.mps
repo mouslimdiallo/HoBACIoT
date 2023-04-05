@@ -9,6 +9,9 @@
     <language id="c51db5c4-495f-4e00-b889-12a634a9acb3" name="HoBACIoT">
       <concept id="3298194222149298428" name="HoBACIoT.structure.Family" flags="ng" index="2eGubn" />
       <concept id="3298194222149298471" name="HoBACIoT.structure.Four" flags="ng" index="2eGucc" />
+      <concept id="9222073917102871436" name="HoBACIoT.structure.PolicyReference" flags="ng" index="2eHb3h">
+        <reference id="9222073917102871437" name="policy" index="2eHb3g" />
+      </concept>
       <concept id="3951418197003751786" name="HoBACIoT.structure.AttributeDesignator" flags="ng" index="hIx20">
         <property id="3951418197003755508" name="category" index="hIxSu" />
         <property id="3951418197003756602" name="attributeid" index="hIyng" />
@@ -19,6 +22,7 @@
       <concept id="3951418197003744258" name="HoBACIoT.structure.AttributeValue" flags="ng" index="hIBnC">
         <property id="3951418197003747279" name="dataType" index="hIBS_" />
         <property id="7302839959590883095" name="text" index="JEq_n" />
+        <property id="4266836193645912333" name="text" index="1IfrB$" />
       </concept>
       <concept id="3951418197003787878" name="HoBACIoT.structure.ObjectType" flags="ng" index="hIDYc" />
       <concept id="3951418197003795121" name="HoBACIoT.structure.EnvironmentType" flags="ng" index="hIFHr" />
@@ -41,7 +45,7 @@
         <property id="3951418197003732374" name="ruleCombiningAlgId" index="hI$hW" />
         <property id="3951418197003733885" name="maxDelegationDepth" index="hI$En" />
         <property id="3951418197003734903" name="description" index="hI$Ut" />
-        <reference id="9130818380114868724" name="type" index="3TVps4" />
+        <reference id="9130818380114868724" name="entityRef" index="3TVps4" />
         <child id="3951418197003702864" name="rules" index="hJteU" />
         <child id="7891045901991744476" name="ruleCombinAlgo" index="r1VeG" />
       </concept>
@@ -49,6 +53,7 @@
         <property id="3951418197003720764" name="ruleid" index="hJpBm" />
         <property id="3951418197003721286" name="effect" index="hJpIG" />
         <property id="7891045901991734868" name="RuleCombiningALId" index="r1$S$" />
+        <property id="4266836193643720681" name="description" index="1JRNs0" />
         <child id="3951418197005221214" name="apply" index="hlfMO" />
         <child id="3951418197003728308" name="target" index="hJrhu" />
         <child id="7891045901993696246" name="condition" index="r87I6" />
@@ -113,7 +118,7 @@
         <reference id="7715583511174432408" name="type" index="1TuCjb" />
       </concept>
       <concept id="7715583511171357767" name="HoBACIoT.structure.EntityType" flags="ng" index="1TapSk">
-        <reference id="9130818380122754349" name="policy" index="3Tp2ft" />
+        <child id="9222073917102871840" name="policy" index="2eHbpX" />
         <child id="9130818380119740132" name="house" index="3T4y0k" />
         <child id="7715583511171358602" name="famille" index="1TapRp" />
         <child id="7715583511171359644" name="subjects" index="1Taq7f" />
@@ -132,8 +137,13 @@
     </language>
   </registry>
   <node concept="1TapSk" id="6Gjg_ciluIf">
-    <property role="TrG5h" value="MyEntities" />
-    <ref role="3Tp2ft" node="7URbJ27vcwu" resolve="Access" />
+    <property role="TrG5h" value="Entities" />
+    <node concept="2eHb3h" id="7ZVoPRLmz$9" role="2eHbpX">
+      <ref role="2eHb3g" node="7URbJ27vcwu" resolve="Access" />
+    </node>
+    <node concept="2eHb3h" id="7ZVoPRLmz$b" role="2eHbpX">
+      <ref role="2eHb3g" node="7ZVoPRLmzzD" resolve="FamilyAcess" />
+    </node>
     <node concept="39Iub4" id="7URbJ27IQX7" role="3T4y0k">
       <property role="TrG5h" value="House1" />
       <property role="1TarAA" value="22" />
@@ -299,17 +309,18 @@
   </node>
   <node concept="hJjKL" id="7URbJ27vcwu">
     <property role="TrG5h" value="Access" />
-    <property role="hI$cq" value="idpol" />
-    <property role="hI$hW" value="rulcom" />
+    <property role="hI$cq" value="idpolicy" />
+    <property role="hI$hW" value="Permit-Overrides" />
     <property role="hI$En" value="4" />
-    <property role="hI$Ut" value="descrip" />
+    <property role="hI$Ut" value="Policy Description" />
     <property role="hF5ye" value="1.0" />
     <ref role="3TVps4" node="6Gjg_ciluIf" resolve="Entities" />
     <node concept="hJs2S" id="7URbJ27vcwv" role="hJteU">
       <property role="TrG5h" value="rule1" />
-      <property role="hJpBm" value="idrule" />
+      <property role="hJpBm" value="idrule1" />
       <property role="hJpIG" value="3rmguCBqXXS/Permit" />
       <property role="r1$S$" value="overide" />
+      <property role="1JRNs0" value="Rule Description" />
       <node concept="hJunJ" id="7URbJ27vcwN" role="hlfMO">
         <property role="hIAsb" value="funid" />
         <node concept="hIx20" id="7URbJ27vcwR" role="hE4jb">
@@ -321,9 +332,10 @@
           <ref role="hC3J2" node="7URbJ27vcwP" resolve="valATT" />
         </node>
         <node concept="hIBnC" id="7URbJ27vcwP" role="hIATH">
-          <property role="JEq_n" value="administrateur" />
+          <property role="JEq_n" value="Admin" />
           <property role="hIBS_" value="data" />
           <property role="TrG5h" value="val" />
+          <property role="1IfrB$" value="ad" />
         </node>
       </node>
       <node concept="hJtzH" id="7URbJ27vcww" role="hJrhu">
@@ -347,20 +359,23 @@
     </node>
     <node concept="hJs2S" id="7URbJ27vcyz" role="hJteU">
       <property role="TrG5h" value="rule2" />
-      <property role="hJpBm" value="id2" />
+      <property role="hJpBm" value="id_rule2" />
       <property role="hJpIG" value="3rmguCBqY7D/Deny" />
       <property role="r1$S$" value="denyoverride" />
+      <property role="1JRNs0" value="Rule2 Description" />
       <node concept="hJunJ" id="7URbJ27xbuC" role="hlfMO">
         <property role="hIAsb" value="idfunc" />
         <node concept="hIx20" id="7URbJ27xbuG" role="hE4jb">
           <property role="hIxSu" value="catss" />
           <property role="hIyng" value="idat" />
           <property role="hIyox" value="dat" />
-          <ref role="hC3J2" node="7URbJ27vcwP" resolve="valATT" />
+          <ref role="hC3J2" node="7URbJ27xbuE" resolve="val" />
         </node>
         <node concept="hIBnC" id="7URbJ27xbuE" role="hIATH">
           <property role="hIBS_" value="dx" />
           <property role="JEq_n" value="user" />
+          <property role="1IfrB$" value="text" />
+          <property role="TrG5h" value="val1" />
         </node>
       </node>
       <node concept="hJtzH" id="7URbJ27vcy$" role="hJrhu">
@@ -378,6 +393,44 @@
       <node concept="r84kD" id="7URbJ27xbuA" role="r87I6" />
     </node>
     <node concept="r1UTr" id="7URbJ27vcwz" role="r1VeG" />
+  </node>
+  <node concept="hJjKL" id="3GQQe_l4ZFf">
+    <property role="TrG5h" value="FamilyAcc" />
+    <property role="hI$cq" value="id" />
+    <property role="hI$hW" value="rul" />
+    <property role="hI$En" value="5" />
+    <property role="hI$Ut" value="des" />
+    <property role="hF5ye" value="1.0" />
+    <ref role="3TVps4" node="6Gjg_ciluIf" resolve="Entities" />
+    <node concept="hJs2S" id="3GQQe_l4ZFg" role="hJteU">
+      <property role="TrG5h" value="rule1" />
+      <property role="hJpBm" value="idru" />
+      <property role="hJpIG" value="3rmguCBqXXS/Permit" />
+      <property role="r1$S$" value="overides" />
+      <property role="1JRNs0" value="descc" />
+      <node concept="hJunJ" id="3GQQe_l4ZFp" role="hlfMO">
+        <property role="hIAsb" value="ifub" />
+        <node concept="hIBnC" id="3GQQe_l4ZFr" role="hIATH">
+          <property role="hIBS_" value="data" />
+          <property role="1IfrB$" value="tct" />
+          <property role="TrG5h" value="val2" />
+        </node>
+      </node>
+      <node concept="hJtzH" id="3GQQe_l4ZFh" role="hJrhu">
+        <property role="TrG5h" value="cible1" />
+        <node concept="hIKpR" id="3GQQe_l4ZFi" role="hIRTZ">
+          <node concept="hIKVf" id="3GQQe_l4ZFj" role="1luXO$">
+            <node concept="hILlk" id="3GQQe_l4ZFl" role="hILSL">
+              <property role="hILBv" value="idm" />
+              <ref role="hl8CP" node="7URbJ27vcwP" resolve="val" />
+              <ref role="hl92R" node="7URbJ27vcwR" resolve="Designator" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="r84kD" id="3GQQe_l4ZFn" role="r87I6" />
+    </node>
+    <node concept="r1UTr" id="3GQQe_l4ZFk" role="r1VeG" />
   </node>
 </model>
 

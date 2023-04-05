@@ -1,0 +1,11 @@
+<?xml version = "1.0"?>
+<Policy xmlns="urn:oasis:names:tc:xacml:3.0:core:schema:wd-17" PolicyId="idpol" RuleCombiningAlgId="rulecom" Version="1.0" description="description" maxDelegationDepth="5">  
+  <Description></Description>
+  
+  <Target></Target>
+  <Rule RuledId="idrule1" Effect="Deny">    
+    <Description></Description>
+    
+    <Condition></Condition>
+  </Rule>
+</Policy>
