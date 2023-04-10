@@ -1,25 +1,29 @@
 <?xml version = "1.0"?>
-<Policy xmlns="urn:oasis:names:tc:xacml:3.0:core:schema:wd-17" PolicyId="idpol" RuleCombiningAlgId="rulcom" Version="1.0" description="descrip" maxDelegationDepth="4">  
-  <Description></Description>
+<Policy xmlns="urn:oasis:names:tc:xacml:3.0:core:schema:wd-17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xacml:3.0:core:schema:wd-17 http://docs.oasis-open.org/xacml/3.0/xacml-core-v3-schema-wd-17.xsd" PolicyId="urn:oasis:names:tc:xacml:3.0:idpolicy" RuleCombiningAlgId="ruidentifier:rule-combining-algorithm:Permit-Overrides" Version="1.0" maxDelegationDepth="4">  
+  <Description>Policy Description</Description>
   
   <Target></Target>
-  <Rule RuledId="idrule" Effect="Permit">    
-    <Description></Description>
+  <Rule RuledId="urn:oasis:names:tc:xacml:3.0:idrule1" Effect="Permit">    
+    <Description>Rule Description</Description>
     
     <Condition>      
       <Apply FunctionId="funid">        
-        <AttributeValue DataType="data">administrateur</AttributeValue>
+        <AttributeValue DataType="dat">txt</AttributeValue>
+        <AttributeValue DataType="d">txt</AttributeValue>
+        <AttributeValue DataType="dy">txt</AttributeValue>
         <AttributeDesignator AttributeID="ida" Category="cat" DataType="daypp" MustBePresent="true"></AttributeDesignator>
+        
       </Apply>
     </Condition>
   </Rule>
-  <Rule RuledId="id2" Effect="Deny">    
-    <Description></Description>
+  <Rule RuledId="urn:oasis:names:tc:xacml:3.0:id_rule2" Effect="Deny">    
+    <Description>Rule2 Description</Description>
     
     <Condition>      
       <Apply FunctionId="idfunc">        
-        <AttributeValue DataType="dx">user</AttributeValue>
+        <AttributeValue DataType="tdat">txt</AttributeValue>
         <AttributeDesignator AttributeID="idat" Category="catss" DataType="dat" MustBePresent="false"></AttributeDesignator>
+        
       </Apply>
     </Condition>
   </Rule>
