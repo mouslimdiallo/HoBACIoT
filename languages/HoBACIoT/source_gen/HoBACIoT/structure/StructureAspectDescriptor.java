@@ -57,6 +57,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptPiece = createDescriptorForPiece();
   /*package*/ final ConceptDescriptor myConceptPolicy = createDescriptorForPolicy();
   /*package*/ final ConceptDescriptor myConceptPolicyCombiningAlgorithm = createDescriptorForPolicyCombiningAlgorithm();
+  /*package*/ final ConceptDescriptor myConceptPolicyReference = createDescriptorForPolicyReference();
   /*package*/ final ConceptDescriptor myConceptPolicySet = createDescriptorForPolicySet();
   /*package*/ final ConceptDescriptor myConceptPrise = createDescriptorForPrise();
   /*package*/ final ConceptDescriptor myConceptRequest = createDescriptorForRequest();
@@ -99,7 +100,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAction, myConceptActionType, myConceptAllOf, myConceptAllumer, myConceptAnyOf, myConceptApply, myConceptAspirateur, myConceptAttribute, myConceptAttributeDesignator, myConceptAttributeValue, myConceptAttributes, myConceptAuthorizationType, myConceptAutorization, myConceptBathroom, myConceptBluetooth, myConceptCondition, myConceptDevices, myConceptEnfants, myConceptEntityType, myConceptEnvironment, myConceptEnvironmentType, myConceptEteindre, myConceptFamily, myConceptFour, myConceptFrigo, myConceptGrandMaman, myConceptGrandPapa, myConceptGrandParents, myConceptHouse, myConceptKitchen, myConceptMaman, myConceptMatch, myConceptMicrOnde, myConceptMiror, myConceptObjectType, myConceptPapa, myConceptParents, myConceptPerson, myConceptPiece, myConceptPolicy, myConceptPolicyCombiningAlgorithm, myConceptPolicySet, myConceptPrise, myConceptRequest, myConceptResource, myConceptResponse, myConceptResult, myConceptRoom, myConceptRule, myConceptRuleCombiningAlgorithm, myConceptSalleReunion, myConceptSalon, myConceptSmartTap, myConceptSmart_City, myConceptStore, myConceptSubject, myConceptSubjectType, myConceptTV, myConceptTarget, myConceptThermostat, myConceptToothBrush, myConceptTournerAgauche, myConceptTurnerAdroite, myConceptUsager);
+    return Arrays.asList(myConceptAction, myConceptActionType, myConceptAllOf, myConceptAllumer, myConceptAnyOf, myConceptApply, myConceptAspirateur, myConceptAttribute, myConceptAttributeDesignator, myConceptAttributeValue, myConceptAttributes, myConceptAuthorizationType, myConceptAutorization, myConceptBathroom, myConceptBluetooth, myConceptCondition, myConceptDevices, myConceptEnfants, myConceptEntityType, myConceptEnvironment, myConceptEnvironmentType, myConceptEteindre, myConceptFamily, myConceptFour, myConceptFrigo, myConceptGrandMaman, myConceptGrandPapa, myConceptGrandParents, myConceptHouse, myConceptKitchen, myConceptMaman, myConceptMatch, myConceptMicrOnde, myConceptMiror, myConceptObjectType, myConceptPapa, myConceptParents, myConceptPerson, myConceptPiece, myConceptPolicy, myConceptPolicyCombiningAlgorithm, myConceptPolicyReference, myConceptPolicySet, myConceptPrise, myConceptRequest, myConceptResource, myConceptResponse, myConceptResult, myConceptRoom, myConceptRule, myConceptRuleCombiningAlgorithm, myConceptSalleReunion, myConceptSalon, myConceptSmartTap, myConceptSmart_City, myConceptStore, myConceptSubject, myConceptSubjectType, myConceptTV, myConceptTarget, myConceptThermostat, myConceptToothBrush, myConceptTournerAgauche, myConceptTurnerAdroite, myConceptUsager);
   }
 
   @Override
@@ -188,6 +189,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptPolicy;
       case LanguageConceptSwitch.PolicyCombiningAlgorithm:
         return myConceptPolicyCombiningAlgorithm;
+      case LanguageConceptSwitch.PolicyReference:
+        return myConceptPolicyReference;
       case LanguageConceptSwitch.PolicySet:
         return myConceptPolicySet;
       case LanguageConceptSwitch.Prise:
@@ -341,7 +344,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3951418197003744258");
     b.version(3);
     b.property("dataType", 0x36d641ea276c3fcfL).type(PrimitiveTypeId.STRING).origin("3951418197003747279").done();
-    b.property("text", 0x6558e6404af14f17L).type(PrimitiveTypeId.STRING).origin("7302839959590883095").done();
+    b.alias("Attributevalue");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForAttributes() {
@@ -433,7 +436,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/7715583511171357767");
     b.version(3);
-    b.associate("policy", 0x7eb72ef087d30d2dL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b7ddbL).optional(true).origin("9130818380122754349").done();
     b.aggregate("famille", 0x6b134253123adf8aL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x2dc58a2ba37468fcL).optional(true).ordered(true).multiple(true).origin("7715583511171358602").done();
     b.aggregate("person", 0x7eb72ef0878efdcbL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x272a6c4fee938e8cL).optional(true).ordered(true).multiple(true).origin("9130818380118293963").done();
     b.aggregate("house", 0x7eb72ef087a50ee4L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x272a6c4fee938e8bL).optional(true).ordered(true).multiple(true).origin("9130818380119740132").done();
@@ -442,6 +444,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("environment", 0x6b134253123aed97L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276cfab1L).optional(true).ordered(true).multiple(true).origin("7715583511171362199").done();
     b.aggregate("action", 0x6b1342531269b312L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276cb6f0L).optional(true).ordered(true).multiple(true).origin("7715583511174427410").done();
     b.aggregate("Authorization", 0x6b134253123af1acL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6b1342531269bbf5L).optional(true).ordered(true).multiple(true).origin("7715583511171363244").done();
+    b.aggregate("policy", 0x7ffb635df14fd520L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x7ffb635df14fd38cL).optional(true).ordered(true).multiple(true).origin("9222073917102871840").done();
     b.alias("EntityType");
     return b.create();
   }
@@ -678,7 +681,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("maxDelegationDepth", 0x36d641ea276c0b7dL).type(PrimitiveTypeId.INTEGER).origin("3951418197003733885").done();
     b.property("description", 0x36d641ea276c0f77L).type(PrimitiveTypeId.STRING).origin("3951418197003734903").done();
     b.property("version", 0x36d641ea277a1964L).type(PrimitiveTypeId.STRING).origin("3951418197004654948").done();
-    b.associate("entity", 0x7eb72ef0875ab9f4L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6b134253123adc47L).optional(false).origin("9130818380114868724").done();
+    b.associate("entityRef", 0x7eb72ef0875ab9f4L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6b134253123adc47L).optional(false).origin("9130818380114868724").done();
     b.aggregate("rules", 0x36d641ea276b9250L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b8152L).optional(false).ordered(true).multiple(true).origin("3951418197003702864").done();
     b.aggregate("target", 0x18cdb4f874e29a7bL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b9907L).optional(true).ordered(true).multiple(false).origin("1787283606341851771").done();
     b.aggregate("ruleCombinAlgo", 0x6d82a070768513dcL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6d82a07076850e2bL).optional(false).ordered(true).multiple(false).origin("7891045901991744476").done();
@@ -690,6 +693,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/7891045901991749639");
     b.version(3);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForPolicyReference() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "PolicyReference", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x7ffb635df14fd38cL);
+    b.class_(false, false, false);
+    b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/9222073917102871436");
+    b.version(3);
+    b.associate("policy", 0x7ffb635df14fd38dL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b7ddbL).optional(false).origin("9222073917102871437").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPolicySet() {
@@ -777,6 +788,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("ruleid", 0x36d641ea276bd83cL).type(PrimitiveTypeId.STRING).origin("3951418197003720764").done();
     b.property("effect", 0x36d641ea276bda46L).type(MetaIdFactory.dataTypeId(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276bdf77L)).origin("3951418197003721286").done();
     b.property("RuleCombiningALId", 0x6d82a0707684ee54L).type(PrimitiveTypeId.STRING).origin("7891045901991734868").done();
+    b.property("description", 0x3b36d8e954e9efe9L).type(PrimitiveTypeId.STRING).origin("4266836193643720681").done();
     b.aggregate("target", 0x36d641ea276bf5b4L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b9907L).optional(false).ordered(true).multiple(false).origin("3951418197003728308").done();
     b.aggregate("apply", 0x36d641ea2782bd5eL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276ba405L).optional(true).ordered(true).multiple(true).origin("3951418197005221214").done();
     b.aggregate("condition", 0x6d82a07076a2dbf6L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6d82a07076a2e559L).optional(true).ordered(true).multiple(false).origin("7891045901993696246").done();

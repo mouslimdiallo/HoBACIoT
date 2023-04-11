@@ -98,7 +98,7 @@
     </node>
     <node concept="1TJgyj" id="7URbJ27mFBO" role="1TKVEi">
       <property role="IQ2ns" value="9130818380114868724" />
-      <property role="20kJfa" value="entity" />
+      <property role="20kJfa" value="entityRef" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6Gjg_cieHL7" resolve="EntityType" />
     </node>

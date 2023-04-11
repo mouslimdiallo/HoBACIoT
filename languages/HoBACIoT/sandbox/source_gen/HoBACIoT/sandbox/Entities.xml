@@ -1,0 +1,61 @@
+<?xml version = "1.0"?>
+<Entity>  
+  <Famille>Diallo</Famille>
+  <Famille>Adda</Famille>
+  <Famille>Gates</Famille>
+  <Famille>Autre</Famille>
+  
+  <Person>    
+    <subject_id>id_age</subject_id>
+    <Prenom>Mouslim</Prenom>
+    <Age>25</Age>
+    <Login>log</Login>
+    <Password>pass</Password>
+    <Profession>ingenieur</Profession>
+    <Adresse>lévis</Adresse>
+    <Sexe>Masculin</Sexe>
+    
+    
+  </Person>
+  <Person>    
+    <subject_id>id_role</subject_id>
+    <Prenom>Karim</Prenom>
+    <Age>50</Age>
+    <Login>log</Login>
+    <Password>pass</Password>
+    <Profession>prof</Profession>
+    <Adresse>adress</Adresse>
+    <Sexe>Masculin</Sexe>
+    
+    
+  </Person>
+  
+  <House>    
+    <temperature>22</temperature>
+    <energyConsom>15</energyConsom>
+    <EnergyConsomSeuil>20</EnergyConsomSeuil>
+    <adress>levis</adress>
+    
+  </House>
+  <Subjects>Admin</Subjects>
+  <Subjects>User</Subjects>
+  <Subjects>invité</Subjects>
+  <Subjects>Other</Subjects>
+  <Objects>Batisse</Objects>
+  <Objects>Electronique</Objects>
+  <Objects>Electromenager</Objects>
+  <Objects>Autre</Objects>
+  <Contexte>Envi 1</Contexte>
+  <Contexte>Envi 2</Contexte>
+  <Contexte>Envi 3</Contexte>
+  <Action>READ</Action>
+  <Action>Execution</Action>
+  <Action>DELETE</Action>
+  <Action>Control Total</Action>
+  <Authorization>Permit</Authorization>
+  <Authorization>Deny</Authorization>
+  
+  
+  
+  
+</Entity>
