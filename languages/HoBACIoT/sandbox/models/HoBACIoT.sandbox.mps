@@ -16,7 +16,6 @@
         <property id="3951418197003755508" name="category" index="hIxSu" />
         <property id="3951418197003756602" name="attributeid" index="hIyng" />
         <property id="3951418197003757515" name="dataType" index="hIyox" />
-        <property id="3951418197003758299" name="mustBePresent" index="hIyGL" />
         <reference id="3951418197004417576" name="attributevalue" index="hC3J2" />
       </concept>
       <concept id="3951418197003744258" name="HoBACIoT.structure.AttributeValue" flags="ng" index="hIBnC">
@@ -318,29 +317,6 @@
       <property role="hJpIG" value="3rmguCBqXXS/Permit" />
       <property role="r1$S$" value="overide" />
       <property role="1JRNs0" value="Rule Description" />
-      <node concept="hJunJ" id="7URbJ27vcwN" role="hlfMO">
-        <property role="hIAsb" value="funid" />
-        <node concept="hIBnC" id="3GQQe_l9oaf" role="hIATH">
-          <property role="TrG5h" value="V" />
-          <property role="hIBS_" value="dat" />
-        </node>
-        <node concept="hIBnC" id="3GQQe_l9or5" role="hIATH">
-          <property role="TrG5h" value="X" />
-          <property role="hIBS_" value="d" />
-        </node>
-        <node concept="hIBnC" id="3GQQe_l9or8" role="hIATH">
-          <property role="TrG5h" value="Y" />
-          <property role="hIBS_" value="dy" />
-        </node>
-        <node concept="hIx20" id="7URbJ27vcwR" role="hE4jb">
-          <property role="TrG5h" value="Designator" />
-          <property role="hIxSu" value="cat" />
-          <property role="hIyng" value="ida" />
-          <property role="hIyox" value="daypp" />
-          <property role="hIyGL" value="true" />
-          <ref role="hC3J2" node="3GQQe_l9oaf" resolve="Value" />
-        </node>
-      </node>
       <node concept="hJtzH" id="7URbJ27vcww" role="hJrhu">
         <property role="TrG5h" value="cible" />
         <node concept="hIKpR" id="7URbJ27vcwx" role="hIRTZ">
