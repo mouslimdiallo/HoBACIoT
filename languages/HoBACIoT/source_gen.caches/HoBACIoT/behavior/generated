@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-biio6ejwgy87kw694446a39c6yceeyi" />
+<product version="3" modelHash="-e06trt8uxuv22a0pcttjdu8es56xjqy">
+  <files names="BehaviorAspectDescriptor.java:EntityCategory.java" />
+</product>
 

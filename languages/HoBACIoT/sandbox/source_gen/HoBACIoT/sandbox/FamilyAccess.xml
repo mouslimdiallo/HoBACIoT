@@ -1,0 +1,25 @@
+<?xml version = "1.0"?>
+<Policy xmlns="urn:oasis:names:tc:xacml:3.0:core:schema:wd-17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xacml:3.0:core:schema:wd-17 http://docs.oasis-open.org/xacml/3.0/xacml-core-v3-schema-wd-17.xsd" PolicyId="urn:oasis:names:tc:xacml:3.0:id_policy" RuleCombiningAlgId="ruidentifier:rule-combining-algorithm:overrides" Version="1.0" maxDelegationDepth="10">  
+  <Description>This policy description give access</Description>
+  
+  <Target></Target>
+  <Rule RuledId="urn:oasis:names:tc:xacml:3.0:id_rule1" Effect="Permit">    
+    <Description>rule description permit</Description>
+    <Target>      
+      <AnyOf>        
+        <AllOf>          
+          <Match MatchId="rfc822Name-match:Permit">            
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Permit</AttributeValue>
+            <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:resource-id" Category="category-resource" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"></AttributeDesignator>
+          </Match>
+          <Match MatchId="rfc822Name-match:Deny">            
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Deny</AttributeValue>
+            <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:resource-id" Category="category-resource" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"></AttributeDesignator>
+          </Match>
+        </AllOf>
+      </AnyOf>
+    </Target>
+    
+    <Condition></Condition>
+  </Rule>
+</Policy>

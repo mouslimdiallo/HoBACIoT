@@ -8,7 +8,6 @@
         <property id="1421157252384165432" name="memberId" index="3tVfz5" />
       </concept>
       <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
-        <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
         <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
       <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
@@ -24,30 +23,25 @@
       </concept>
     </language>
   </registry>
-  <node concept="25R3W" id="2cS6XcGq5Ax">
-    <property role="3F6X1D" value="2537808983820360097" />
-    <property role="TrG5h" value="Processor" />
+  <node concept="25R3W" id="2dYMB0V3z9b">
+    <property role="3F6X1D" value="2557704221768954443" />
     <property role="3GE5qa" value="IoT Infra" />
-    <ref role="1H5jkz" node="2mUrnaMTSdY" resolve="x64" />
-    <node concept="25R33" id="2cS6XcGq5Ay" role="25R1y">
-      <property role="3tVfz5" value="2537808983820360098" />
-      <property role="TrG5h" value="ARM" />
+    <property role="TrG5h" value="AttributeCategory" />
+    <node concept="25R33" id="2dYMB0V3ze1" role="25R1y">
+      <property role="3tVfz5" value="2557704221768954753" />
+      <property role="TrG5h" value="resource" />
     </node>
-    <node concept="25R33" id="2cS6XcGq5Az" role="25R1y">
-      <property role="3tVfz5" value="2537808983820360099" />
-      <property role="TrG5h" value="x86" />
+    <node concept="25R33" id="2dYMB0V3ze3" role="25R1y">
+      <property role="3tVfz5" value="2557704221768954755" />
+      <property role="TrG5h" value="action" />
     </node>
-    <node concept="25R33" id="2mUrnaMTSdY" role="25R1y">
-      <property role="3tVfz5" value="2718605664466731902" />
-      <property role="TrG5h" value="x64" />
+    <node concept="25R33" id="2dYMB0V3ze6" role="25R1y">
+      <property role="3tVfz5" value="2557704221768954758" />
+      <property role="TrG5h" value="subject" />
     </node>
-    <node concept="25R33" id="7URbJ27IREG" role="25R1y">
-      <property role="3tVfz5" value="9130818380121209516" />
-      <property role="TrG5h" value="AMD" />
-    </node>
-    <node concept="25R33" id="3Q2Latc3u2X" role="25R1y">
-      <property role="3tVfz5" value="4432321206100549821" />
-      <property role="TrG5h" value="Intel" />
+    <node concept="25R33" id="2dYMB0V3zea" role="25R1y">
+      <property role="3tVfz5" value="2557704221768954762" />
+      <property role="TrG5h" value="environment" />
     </node>
   </node>
 </model>

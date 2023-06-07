@@ -72,8 +72,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.addEditorCell(createConstant_2());
     editorCell.addEditorCell(createConstant_3());
     editorCell.addEditorCell(createCollection_1());
+    editorCell.addEditorCell(createConstant_29());
     editorCell.addEditorCell(createConstant_30());
-    editorCell.addEditorCell(createConstant_31());
     return editorCell;
   }
   private EditorCell createConstant_0() {
@@ -179,9 +179,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.addEditorCell(createConstant_25());
     editorCell.addEditorCell(createConstant_26());
     editorCell.addEditorCell(createConstant_27());
-    editorCell.addEditorCell(createRefNodeList_8());
     editorCell.addEditorCell(createConstant_28());
-    editorCell.addEditorCell(createConstant_29());
     return editorCell;
   }
   private EditorCell createConstant_4() {
@@ -1032,105 +1030,21 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createConstant_27() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Policy Associate : ");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
     editorCell.setCellId("Constant_mz193_fb5a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
-    style.set(StyleAttributes.BACKGROUND_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.cyan));
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefNodeList_8() {
-    AbstractCellListHandler handler = new policyListHandler_mz193_gb5a(myNode, getEditorContext());
-    EditorCell_Collection editorCell = handler.createCells(new CellLayout_Indent(), false);
-    editorCell.setCellId("refNodeList_policy");
-    editorCell.setSRole(handler.getElementSRole());
-    return editorCell;
-  }
-  private static class policyListHandler_mz193_gb5a extends RefNodeListHandler {
-    @NotNull
-    private SNode myNode;
-
-    public policyListHandler_mz193_gb5a(SNode ownerNode, EditorContext context) {
-      super(context, false);
-      myNode = ownerNode;
-    }
-
-    @NotNull
-    public SNode getNode() {
-      return myNode;
-    }
-    public SContainmentLink getSLink() {
-      return LINKS.policy$TMRM;
-    }
-    public SAbstractConcept getChildSConcept() {
-      return CONCEPTS.PolicyReference$z4;
-    }
-
-    public EditorCell createNodeCell(SNode elementNode) {
-      EditorCell elementCell = getUpdateSession().updateChildNodeCell(elementNode);
-      installElementCellActions(elementNode, elementCell, false);
-      return elementCell;
-    }
-    public EditorCell createEmptyCell() {
-      getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(policyListHandler_mz193_gb5a.this.getNode(), LINKS.policy$TMRM));
-      try {
-        EditorCell emptyCell = null;
-        emptyCell = super.createEmptyCell();
-        installElementCellActions(null, emptyCell, true);
-        setCellContext(emptyCell);
-        return emptyCell;
-      } finally {
-        getCellFactory().popCellContext();
-      }
-    }
-
-    private static final Object OBJ = new Object();
-
-    public void installElementCellActions(SNode elementNode, EditorCell elementCell, boolean isEmptyCell) {
-      if (elementCell.getUserObject(AbstractCellListHandler.ELEMENT_CELL_COMPLETE_SET) == null) {
-        if (elementCell.getSubstituteInfo() == null || elementCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-          elementCell.putUserObject(AbstractCellListHandler.ELEMENT_CELL_COMPLETE_SET, OBJ);
-          elementCell.setSubstituteInfo((isEmptyCell ? new SEmptyContainmentSubstituteInfo(elementCell) : new SChildSubstituteInfo(elementCell)));
-        }
-      }
-      if (elementCell.getUserObject(AbstractCellListHandler.ELEMENT_CELL_DELETE_SET) == null) {
-        if (elementNode != null) {
-          elementCell.putUserObject(AbstractCellListHandler.ELEMENT_CELL_DELETE_SET, OBJ);
-          elementCell.setAction(CellActionType.DELETE, new CellAction_DeleteNode(elementNode, CellAction_DeleteNode.DeleteDirection.FORWARD));
-        }
-      }
-      if (elementCell.getUserObject(ELEMENT_CELL_BACKSPACE_SET) == null) {
-        if (elementNode != null) {
-          elementCell.putUserObject(ELEMENT_CELL_BACKSPACE_SET, OBJ);
-          elementCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(elementNode, CellAction_DeleteNode.DeleteDirection.BACKWARD));
-        }
-      }
-      if (elementCell.getUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET) == null) {
-        if (elementNode != null) {
-          elementCell.putUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET, OBJ);
-        }
-      }
-    }
-  }
   private EditorCell createConstant_28() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
-    editorCell.setCellId("Constant_mz193_hb5a");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
-    editorCell.getStyle().putAll(style);
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "------------------------------------");
+    editorCell.setCellId("Constant_mz193_gb5a");
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createConstant_29() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "------------------------------------");
-    editorCell.setCellId("Constant_mz193_ib5a");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_30() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "}");
     editorCell.setCellId("Constant_mz193_g0");
     Style style = new StyleImpl();
@@ -1139,7 +1053,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_31() {
+  private EditorCell createConstant_30() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
     editorCell.setCellId("Constant_mz193_h0");
     Style style = new StyleImpl();
@@ -1163,7 +1077,6 @@ import org.jetbrains.mps.openapi.language.SConcept;
     /*package*/ static final SConcept EnvironmentType$pQ = MetaAdapterFactory.getConcept(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276cfab1L, "HoBACIoT.structure.EnvironmentType");
     /*package*/ static final SConcept ActionType$7k = MetaAdapterFactory.getConcept(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276cb6f0L, "HoBACIoT.structure.ActionType");
     /*package*/ static final SConcept AuthorizationType$fj = MetaAdapterFactory.getConcept(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6b1342531269bbf5L, "HoBACIoT.structure.AuthorizationType");
-    /*package*/ static final SConcept PolicyReference$z4 = MetaAdapterFactory.getConcept(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x7ffb635df14fd38cL, "HoBACIoT.structure.PolicyReference");
   }
 
   private static final class LINKS {
@@ -1175,6 +1088,5 @@ import org.jetbrains.mps.openapi.language.SConcept;
     /*package*/ static final SContainmentLink environment$WwQd = MetaAdapterFactory.getContainmentLink(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6b134253123adc47L, 0x6b134253123aed97L, "environment");
     /*package*/ static final SContainmentLink action$H_t8 = MetaAdapterFactory.getContainmentLink(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6b134253123adc47L, 0x6b1342531269b312L, "action");
     /*package*/ static final SContainmentLink Authorization$GEkd = MetaAdapterFactory.getContainmentLink(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6b134253123adc47L, 0x6b134253123af1acL, "Authorization");
-    /*package*/ static final SContainmentLink policy$TMRM = MetaAdapterFactory.getContainmentLink(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6b134253123adc47L, 0x7ffb635df14fd520L, "policy");
   }
 }

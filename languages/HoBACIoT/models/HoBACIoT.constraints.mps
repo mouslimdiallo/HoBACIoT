@@ -57,6 +57,11 @@
       </concept>
       <concept id="1153138554286" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_propertyValue" flags="nn" index="1Wqviy" />
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="1M2fIO" id="6Gjg_cieNuE">
     <ref role="1M2myG" to="jlpl:2sEr4ZI$SUb" resolve="House" />
@@ -95,6 +100,17 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1voxSDTDT7i">
+    <property role="3GE5qa" value="PolicyXACML" />
+    <ref role="1M2myG" to="jlpl:6Q2C71QCIlp" resolve="Condition" />
+  </node>
+  <node concept="1M2fIO" id="CnqUctjTxG">
+    <property role="3GE5qa" value="PolicyXACML" />
+    <ref role="1M2myG" to="jlpl:3rmguCBrliY" resolve="Match" />
+    <node concept="EnEH3" id="CnqUctjTyV" role="1MhHOB">
+      <ref role="EomxK" to="jlpl:3rmguCBrlwP" resolve="matchId" />
     </node>
   </node>
 </model>

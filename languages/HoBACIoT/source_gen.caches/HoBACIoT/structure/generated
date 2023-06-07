@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-744zakf1zp4xsjqkahdasbcnjxjykw1">
-  <files names="ConceptPresentationAspectImpl.java:EnumerationDescriptor_Connectivity.java:EnumerationDescriptor_Effect.java:EnumerationDescriptor_Gender.java:EnumerationDescriptor_Processor.java:LanguageConceptSwitch.java:StructureAspectDescriptor.java" />
+<product version="3" modelHash="aoonj9k09ngay4288ldxbu3hk02y06f">
+  <files names="ConceptPresentationAspectImpl.java:EnumerationDescriptor_AttributeCategory.java:EnumerationDescriptor_Connectivity.java:EnumerationDescriptor_Effect.java:EnumerationDescriptor_Gender.java:EnumerationDescriptor_Processor.java:LanguageConceptSwitch.java:StructureAspectDescriptor.java" />
 </product>
 

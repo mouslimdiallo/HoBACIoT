@@ -12,7 +12,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Action;
   private ConceptPresentation props_ActionType;
   private ConceptPresentation props_AllOf;
-  private ConceptPresentation props_Allumer;
   private ConceptPresentation props_AnyOf;
   private ConceptPresentation props_Apply;
   private ConceptPresentation props_Aspirateur;
@@ -25,15 +24,17 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Bathroom;
   private ConceptPresentation props_Bluetooth;
   private ConceptPresentation props_Condition;
+  private ConceptPresentation props_Delete;
   private ConceptPresentation props_Devices;
   private ConceptPresentation props_Enfants;
   private ConceptPresentation props_EntityType;
   private ConceptPresentation props_Environment;
   private ConceptPresentation props_EnvironmentType;
-  private ConceptPresentation props_Eteindre;
+  private ConceptPresentation props_Expression;
   private ConceptPresentation props_Family;
   private ConceptPresentation props_Four;
   private ConceptPresentation props_Frigo;
+  private ConceptPresentation props_Function;
   private ConceptPresentation props_GrandMaman;
   private ConceptPresentation props_GrandPapa;
   private ConceptPresentation props_GrandParents;
@@ -43,6 +44,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Match;
   private ConceptPresentation props_MicrOnde;
   private ConceptPresentation props_Miror;
+  private ConceptPresentation props_Modified;
   private ConceptPresentation props_ObjectType;
   private ConceptPresentation props_Papa;
   private ConceptPresentation props_Parents;
@@ -53,6 +55,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_PolicyReference;
   private ConceptPresentation props_PolicySet;
   private ConceptPresentation props_Prise;
+  private ConceptPresentation props_Read;
   private ConceptPresentation props_Request;
   private ConceptPresentation props_Resource;
   private ConceptPresentation props_Response;
@@ -71,8 +74,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Target;
   private ConceptPresentation props_Thermostat;
   private ConceptPresentation props_ToothBrush;
-  private ConceptPresentation props_TournerAgauche;
-  private ConceptPresentation props_TurnerAdroite;
   private ConceptPresentation props_Usager;
 
   @Override
@@ -101,13 +102,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_AllOf = cpb.create();
         }
         return props_AllOf;
-      case LanguageConceptSwitch.Allumer:
-        if (props_Allumer == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Allumer");
-          props_Allumer = cpb.create();
-        }
-        return props_Allumer;
       case LanguageConceptSwitch.AnyOf:
         if (props_AnyOf == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -188,10 +182,17 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Condition:
         if (props_Condition == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Condition");
+          cpb.presentationByName();
           props_Condition = cpb.create();
         }
         return props_Condition;
+      case LanguageConceptSwitch.Delete:
+        if (props_Delete == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Delete = cpb.create();
+        }
+        return props_Delete;
       case LanguageConceptSwitch.Devices:
         if (props_Devices == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -227,13 +228,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_EnvironmentType = cpb.create();
         }
         return props_EnvironmentType;
-      case LanguageConceptSwitch.Eteindre:
-        if (props_Eteindre == null) {
+      case LanguageConceptSwitch.Expression:
+        if (props_Expression == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Eteindre");
-          props_Eteindre = cpb.create();
+          cpb.presentationByName();
+          props_Expression = cpb.create();
         }
-        return props_Eteindre;
+        return props_Expression;
       case LanguageConceptSwitch.Family:
         if (props_Family == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -255,6 +256,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Frigo = cpb.create();
         }
         return props_Frigo;
+      case LanguageConceptSwitch.Function:
+        if (props_Function == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Function");
+          props_Function = cpb.create();
+        }
+        return props_Function;
       case LanguageConceptSwitch.GrandMaman:
         if (props_GrandMaman == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -318,6 +326,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Miror = cpb.create();
         }
         return props_Miror;
+      case LanguageConceptSwitch.Modified:
+        if (props_Modified == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Modified = cpb.create();
+        }
+        return props_Modified;
       case LanguageConceptSwitch.ObjectType:
         if (props_ObjectType == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -387,6 +402,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Prise = cpb.create();
         }
         return props_Prise;
+      case LanguageConceptSwitch.Read:
+        if (props_Read == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Read = cpb.create();
+        }
+        return props_Read;
       case LanguageConceptSwitch.Request:
         if (props_Request == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -514,20 +536,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ToothBrush = cpb.create();
         }
         return props_ToothBrush;
-      case LanguageConceptSwitch.TournerAgauche:
-        if (props_TournerAgauche == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("TournerAgauche");
-          props_TournerAgauche = cpb.create();
-        }
-        return props_TournerAgauche;
-      case LanguageConceptSwitch.TurnerAdroite:
-        if (props_TurnerAdroite == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("TurnerAdroite");
-          props_TurnerAdroite = cpb.create();
-        }
-        return props_TurnerAdroite;
       case LanguageConceptSwitch.Usager:
         if (props_Usager == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

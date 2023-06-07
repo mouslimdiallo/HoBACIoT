@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)" content="root">
   <persistence version="9" />
-  <imports>
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-  </imports>
+  <imports />
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
@@ -22,11 +20,11 @@
       </concept>
     </language>
   </registry>
-  <node concept="1TIwiD" id="6kN5R0UhJ3Z">
-    <property role="EcuMT" value="7292197992424468735" />
-    <property role="TrG5h" value="TurnerAdroite" />
+  <node concept="1TIwiD" id="6kN5R0UhJ3W">
+    <property role="EcuMT" value="7292197992424468732" />
+    <property role="TrG5h" value="Read" />
     <property role="3GE5qa" value="Actions" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="3rmguCBqVg6" resolve="Action" />
   </node>
 </model>
 
