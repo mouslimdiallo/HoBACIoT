@@ -23,6 +23,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Autorization;
   private ConceptPresentation props_Bathroom;
   private ConceptPresentation props_Bluetooth;
+  private ConceptPresentation props_CheckAccess;
   private ConceptPresentation props_Condition;
   private ConceptPresentation props_Delete;
   private ConceptPresentation props_Devices;
@@ -30,11 +31,9 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_EntityType;
   private ConceptPresentation props_Environment;
   private ConceptPresentation props_EnvironmentType;
-  private ConceptPresentation props_Expression;
   private ConceptPresentation props_Family;
   private ConceptPresentation props_Four;
   private ConceptPresentation props_Frigo;
-  private ConceptPresentation props_Function;
   private ConceptPresentation props_GrandMaman;
   private ConceptPresentation props_GrandPapa;
   private ConceptPresentation props_GrandParents;
@@ -44,8 +43,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Match;
   private ConceptPresentation props_MicrOnde;
   private ConceptPresentation props_Miror;
-  private ConceptPresentation props_Modified;
-  private ConceptPresentation props_ObjectType;
   private ConceptPresentation props_Papa;
   private ConceptPresentation props_Parents;
   private ConceptPresentation props_Person;
@@ -58,6 +55,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Read;
   private ConceptPresentation props_Request;
   private ConceptPresentation props_Resource;
+  private ConceptPresentation props_ResourceType;
   private ConceptPresentation props_Response;
   private ConceptPresentation props_Result;
   private ConceptPresentation props_Room;
@@ -126,7 +124,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Attribute:
         if (props_Attribute == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Attribute");
+          cpb.presentationByName();
           props_Attribute = cpb.create();
         }
         return props_Attribute;
@@ -179,6 +177,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Bluetooth = cpb.create();
         }
         return props_Bluetooth;
+      case LanguageConceptSwitch.CheckAccess:
+        if (props_CheckAccess == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_CheckAccess = cpb.create();
+        }
+        return props_CheckAccess;
       case LanguageConceptSwitch.Condition:
         if (props_Condition == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -228,13 +233,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_EnvironmentType = cpb.create();
         }
         return props_EnvironmentType;
-      case LanguageConceptSwitch.Expression:
-        if (props_Expression == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_Expression = cpb.create();
-        }
-        return props_Expression;
       case LanguageConceptSwitch.Family:
         if (props_Family == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -256,13 +254,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Frigo = cpb.create();
         }
         return props_Frigo;
-      case LanguageConceptSwitch.Function:
-        if (props_Function == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Function");
-          props_Function = cpb.create();
-        }
-        return props_Function;
       case LanguageConceptSwitch.GrandMaman:
         if (props_GrandMaman == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -326,20 +317,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Miror = cpb.create();
         }
         return props_Miror;
-      case LanguageConceptSwitch.Modified:
-        if (props_Modified == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_Modified = cpb.create();
-        }
-        return props_Modified;
-      case LanguageConceptSwitch.ObjectType:
-        if (props_ObjectType == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_ObjectType = cpb.create();
-        }
-        return props_ObjectType;
       case LanguageConceptSwitch.Papa:
         if (props_Papa == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -424,6 +401,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Resource = cpb.create();
         }
         return props_Resource;
+      case LanguageConceptSwitch.ResourceType:
+        if (props_ResourceType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_ResourceType = cpb.create();
+        }
+        return props_ResourceType;
       case LanguageConceptSwitch.Response:
         if (props_Response == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

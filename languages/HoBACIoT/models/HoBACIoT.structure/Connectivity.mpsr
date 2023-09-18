@@ -26,7 +26,7 @@
   <node concept="25R3W" id="2cS6XcGq7ml">
     <property role="3F6X1D" value="2537808983820367253" />
     <property role="TrG5h" value="Connectivity" />
-    <property role="3GE5qa" value="IoT Infra" />
+    <property role="3GE5qa" value="IoT Enum" />
     <node concept="25R33" id="2cS6XcGq7mm" role="25R1y">
       <property role="3tVfz5" value="2537808983820367254" />
       <property role="TrG5h" value="Ethernet" />

@@ -12,7 +12,9 @@ public class EntityCategory {
     return category.getUri();
   }
 
-
+  public static Category[] getAllCategories() {
+    return Category.values();
+  }
   public enum Category {
     AccessSubject("urn:oasis:names:tc:xacml:1.0:subject-category:access-subject"),
     Codebase("urn:oasis:names:tc:xacml:1.0:subject-category:codebase"),
@@ -27,6 +29,7 @@ public class EntityCategory {
     public String getUri() {
       return uri;
     }
+
     private Category(String uri) {
       this.uri = uri;
     }

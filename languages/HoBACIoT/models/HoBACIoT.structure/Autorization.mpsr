@@ -35,7 +35,7 @@
   </registry>
   <node concept="1TIwiD" id="6Gjg_cieH52">
     <property role="EcuMT" value="7715583511171354946" />
-    <property role="3GE5qa" value="PolicyXACML" />
+    <property role="3GE5qa" value="Concepts" />
     <property role="TrG5h" value="Autorization" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6Gjg_cieH9x" role="PzmwI">

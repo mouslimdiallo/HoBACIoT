@@ -31,7 +31,7 @@
     <property role="TrG5h" value="Miror" />
     <property role="EcuMT" value="3298194222149298476" />
     <property role="34LRSv" value="miroir" />
-    <property role="3GE5qa" value="Salle de Bain" />
+    <property role="3GE5qa" value="BathRoom" />
     <ref role="1TJDcQ" node="6Gjg_ciewyd" resolve="Devices" />
     <node concept="PrWs8" id="6Gjg_cieDty" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />

@@ -31,7 +31,7 @@
     <property role="TrG5h" value="Four" />
     <property role="EcuMT" value="3298194222149298471" />
     <property role="34LRSv" value="four" />
-    <property role="3GE5qa" value="Cuisine" />
+    <property role="3GE5qa" value="Kitchen" />
     <ref role="1TJDcQ" node="6Gjg_ciewyd" resolve="Devices" />
     <node concept="PrWs8" id="6Gjg_cieC9y" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />

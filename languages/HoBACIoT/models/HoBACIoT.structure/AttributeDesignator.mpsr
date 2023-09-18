@@ -8,6 +8,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -24,7 +25,6 @@
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
-        <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
@@ -42,32 +42,17 @@
     <property role="EcuMT" value="3951418197003751786" />
     <property role="TrG5h" value="AttributeDesignator" />
     <property role="3GE5qa" value="PolicyXACML" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="3rmguCBr5ZO" role="1TKVEl">
-      <property role="IQ2nx" value="3951418197003755508" />
-      <property role="TrG5h" value="category" />
-      <ref role="AX2Wp" node="2dYMB0V3z9b" resolve="AttributeCategory" />
-    </node>
-    <node concept="1TJgyi" id="3rmguCBr6gU" role="1TKVEl">
-      <property role="IQ2nx" value="3951418197003756602" />
-      <property role="TrG5h" value="attributeid" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="3rmguCBr6vb" role="1TKVEl">
-      <property role="IQ2nx" value="3951418197003757515" />
-      <property role="TrG5h" value="dataType" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    <property role="34LRSv" value="designator" />
+    <ref role="1TJDcQ" node="7URbJ27zDsg" resolve="Attribute" />
+    <node concept="1TJgyj" id="3t0ptLMhdFj" role="1TKVEi">
+      <property role="IQ2ns" value="3981294068079844051" />
+      <property role="20kJfa" value="entity" />
+      <ref role="20lvS9" node="6Gjg_cieHL7" resolve="EntityType" />
     </node>
     <node concept="1TJgyi" id="3rmguCBr6Fr" role="1TKVEl">
       <property role="IQ2nx" value="3951418197003758299" />
       <property role="TrG5h" value="mustBePresent" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="1TJgyj" id="3rmguCBtBCC" role="1TKVEi">
-      <property role="IQ2ns" value="3951418197004417576" />
-      <property role="20kJfa" value="attributevalue" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="3rmguCBr3g2" resolve="AttributeValue" />
     </node>
     <node concept="PrWs8" id="3GQQe_ldcVi" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />

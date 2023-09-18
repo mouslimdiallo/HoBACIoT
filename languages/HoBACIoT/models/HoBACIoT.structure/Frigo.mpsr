@@ -31,7 +31,7 @@
     <property role="TrG5h" value="Frigo" />
     <property role="EcuMT" value="3298194222149298472" />
     <property role="34LRSv" value="frigo" />
-    <property role="3GE5qa" value="Cuisine" />
+    <property role="3GE5qa" value="Kitchen" />
     <ref role="1TJDcQ" node="6Gjg_ciewyd" resolve="Devices" />
     <node concept="PrWs8" id="6Gjg_cieCi6" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />

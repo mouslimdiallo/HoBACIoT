@@ -25,7 +25,7 @@
   </registry>
   <node concept="25R3W" id="6Gjg_cicRMk">
     <property role="3F6X1D" value="7715583511170874516" />
-    <property role="3GE5qa" value="IoT Infra" />
+    <property role="3GE5qa" value="IoT Enum" />
     <property role="TrG5h" value="Gender" />
     <node concept="25R33" id="6Gjg_cicRMl" role="25R1y">
       <property role="3tVfz5" value="7715583511170874517" />

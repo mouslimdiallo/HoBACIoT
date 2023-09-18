@@ -30,7 +30,7 @@
   <node concept="1TIwiD" id="2R5yyIzt6$F">
     <property role="TrG5h" value="ToothBrush" />
     <property role="EcuMT" value="3298194222149298475" />
-    <property role="3GE5qa" value="Salle de Bain" />
+    <property role="3GE5qa" value="BathRoom" />
     <property role="34LRSv" value="brosse" />
     <ref role="1TJDcQ" node="6Gjg_ciewyd" resolve="Devices" />
     <node concept="PrWs8" id="6Gjg_cieDn0" role="PzmwI">

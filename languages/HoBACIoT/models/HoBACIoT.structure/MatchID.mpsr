@@ -6,6 +6,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
         <property id="1421157252384165432" name="memberId" index="3tVfz5" />
+        <property id="672037151186491528" name="presentation" index="1L1pqM" />
       </concept>
       <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
         <child id="3348158742936976577" name="members" index="25R1y" />
@@ -23,25 +24,19 @@
       </concept>
     </language>
   </registry>
-  <node concept="25R3W" id="2dYMB0V3z9b">
-    <property role="3F6X1D" value="2557704221768954443" />
-    <property role="3GE5qa" value="IoT Infra" />
-    <property role="TrG5h" value="AttributeCategory" />
-    <node concept="25R33" id="2dYMB0V3ze1" role="25R1y">
-      <property role="3tVfz5" value="2557704221768954753" />
-      <property role="TrG5h" value="resource" />
+  <node concept="25R3W" id="5TP0$xIxQ2f">
+    <property role="3F6X1D" value="6806348921955639439" />
+    <property role="3GE5qa" value="IoT Enum" />
+    <property role="TrG5h" value="MatchID" />
+    <node concept="25R33" id="5TP0$xIxQ2g" role="25R1y">
+      <property role="3tVfz5" value="6806348921955639440" />
+      <property role="TrG5h" value="string" />
+      <property role="1L1pqM" value="string-equal" />
     </node>
-    <node concept="25R33" id="2dYMB0V3ze3" role="25R1y">
-      <property role="3tVfz5" value="2557704221768954755" />
-      <property role="TrG5h" value="action" />
-    </node>
-    <node concept="25R33" id="2dYMB0V3ze6" role="25R1y">
-      <property role="3tVfz5" value="2557704221768954758" />
-      <property role="TrG5h" value="subject" />
-    </node>
-    <node concept="25R33" id="2dYMB0V3zea" role="25R1y">
-      <property role="3tVfz5" value="2557704221768954762" />
-      <property role="TrG5h" value="environment" />
+    <node concept="25R33" id="5TP0$xIxQ2h" role="25R1y">
+      <property role="3tVfz5" value="6806348921955639441" />
+      <property role="TrG5h" value="integer" />
+      <property role="1L1pqM" value="string-integer" />
     </node>
   </node>
 </model>

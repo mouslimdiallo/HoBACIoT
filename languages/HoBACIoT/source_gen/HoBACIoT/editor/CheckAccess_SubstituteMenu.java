@@ -23,13 +23,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 
-public class Modified_SubstituteMenu extends SubstituteMenuBase {
+public class CheckAccess_SubstituteMenu extends SubstituteMenuBase {
   @NotNull
   @Override
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
-    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_ReferenceScope_1dprxj_a(), CONCEPTS.Modified$$$));
-    result.add(new SMP_Subconcepts_1dprxj_b());
+    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_ReferenceScope_wm5r5i_a(), CONCEPTS.CheckAccess$$$));
+    result.add(new SMP_Subconcepts_wm5r5i_b());
     return result;
   }
 
@@ -37,7 +37,7 @@ public class Modified_SubstituteMenu extends SubstituteMenuBase {
   @Override
   public List<SubstituteMenuItem> createMenuItems(@NotNull SubstituteMenuContext context) {
     context.getEditorMenuTrace().pushTraceInfo();
-    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default substitute menu for Modified. Generated from implicit smart reference attribute.", new SNodePointer("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)", "3681038751293119575")));
+    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default substitute menu for CheckAccess. Generated from implicit smart reference attribute.", new SNodePointer("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)", "3681038751293119575")));
     try {
       return super.createMenuItems(context);
     } finally {
@@ -46,11 +46,11 @@ public class Modified_SubstituteMenu extends SubstituteMenuBase {
   }
 
 
-  public class SMP_ReferenceScope_1dprxj_a extends ReferenceScopeSubstituteMenuPart {
+  public class SMP_ReferenceScope_wm5r5i_a extends ReferenceScopeSubstituteMenuPart {
 
-    public SMP_ReferenceScope_1dprxj_a() {
+    public SMP_ReferenceScope_wm5r5i_a() {
       // that cast is needed for prevent the users from https://youtrack.jetbrains.com/issue/MPS-29051
-      super((SAbstractConcept) CONCEPTS.Modified$$$, LINKS.action_type$JWxk);
+      super((SAbstractConcept) CONCEPTS.CheckAccess$$$, LINKS.type$JWxk);
     }
     @NotNull
     @Override
@@ -65,15 +65,15 @@ public class Modified_SubstituteMenu extends SubstituteMenuBase {
     }
 
   }
-  public class SMP_Subconcepts_1dprxj_b extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
+  public class SMP_Subconcepts_wm5r5i_b extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
     protected Collection getConcepts(final SubstituteMenuContext _context) {
-      return ConceptDescendantsCache.getInstance().getDirectDescendants(CONCEPTS.Modified$$$);
+      return ConceptDescendantsCache.getInstance().getDirectDescendants(CONCEPTS.CheckAccess$$$);
     }
     @NotNull
     @Override
     public List<SubstituteMenuItem> createItems(SubstituteMenuContext context) {
       context.getEditorMenuTrace().pushTraceInfo();
-      context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("include menus for all the direct subconcepts of " + "Modified", null));
+      context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("include menus for all the direct subconcepts of " + "CheckAccess", null));
       try {
         return super.createItems(context);
       } finally {
@@ -88,10 +88,10 @@ public class Modified_SubstituteMenu extends SubstituteMenuBase {
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Modified$$$ = MetaAdapterFactory.getConcept(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x3315ad3dc7461c57L, "HoBACIoT.structure.Modified");
+    /*package*/ static final SConcept CheckAccess$$$ = MetaAdapterFactory.getConcept(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x3315ad3dc7461c57L, "HoBACIoT.structure.CheckAccess");
   }
 
   private static final class LINKS {
-    /*package*/ static final SReferenceLink action_type$JWxk = MetaAdapterFactory.getReferenceLink(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276bb406L, 0x36d641ea276cb1a6L, "action_type");
+    /*package*/ static final SReferenceLink type$JWxk = MetaAdapterFactory.getReferenceLink(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276bb406L, 0x36d641ea276cb1a6L, "type");
   }
 }

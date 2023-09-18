@@ -1,0 +1,76 @@
+<?xml version = "1.0"?>
+
+<house nom="Maison" id="idhouse001" temperature="25" energyConsom="18" energyConsomSeuil="22" adresse="levis" type="Resource">  
+  <Person id="0001" prenom="Mamadou" login="mamadou@uqar.ca" password="passecret" adresse="levis" age="25" profession="Etudiant" sexe="Masculin" type="Subject">    
+    <Attributes Category="sujet">      
+      <Attribute attributeid="0001" datatype="string">
+        <AttributeValue Datatype="http://www.w3.org/2001/XMLSchema#null">PersonValue</AttributeValue>
+      </Attribute>
+    </Attributes>
+  </Person>
+  <Piece id="idPiece1" temperature="23" type="Resource">    
+    <Device id="device_id" modele="samsung" connexion="Ethernet" type="Appareils">      
+      
+      <Kitchen id="cuisine_id" temperature="22" type="Resource">        
+        <Attributes Category="5TP0$xI6jOv/resource">          
+          <Attribute attributeid="idcuisine" datatype="string">
+            <AttributeValue Datatype="http://www.w3.org/2001/XMLSchema#null">ValKitchen</AttributeValue>
+          </Attribute>
+        </Attributes>
+      </Kitchen>
+      <Attributes Category="5TP0$xI6jOv/resource">        
+        <Attribute attributeid="id_resource" datatype="string">
+          <AttributeValue Datatype="http://www.w3.org/2001/XMLSchema#null">ValueDevice</AttributeValue>
+        </Attribute>
+      </Attributes>
+    </Device>
+    <Attributes Category="5TP0$xI6jOv/resource">      
+      <Attribute attributeid="id_piece" datatype="string">
+        <AttributeValue Datatype="http://www.w3.org/2001/XMLSchema#null">25</AttributeValue>
+      </Attribute>
+    </Attributes>
+  </Piece>
+  <Chambre id="chambre_id" temperature="23" type="Resource"></Chambre>
+  <Attributes Category="5TP0$xI6jOv/resource">    
+    <Attribute attributeid="id_Maison" datatype="string">
+      <AttributeValue Datatype="http://www.w3.org/2001/XMLSchema#null">ValHouse</AttributeValue>
+    </Attribute>
+  </Attributes>
+</house>
+<Policy xmlns="urn:oasis:names:tc:xacml:3.0:core:schema:wd-17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xacml:3.0:core:schema:wd-17 http://docs.oasis-open.org/xacml/3.0/xacml-core-v3-schema-wd-17.xsd" PolicyId="urn:oasis:names:tc:xacml:3.0:policy1:badge" Version="1.0">  
+  <Description>Politique d'accès à la maison intelligente pour les personnes avec badge</Description>
+  
+  <Target>    
+    <AnyOf>      
+      <AllOf>        
+        <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">          
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Maison</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:id_resource:Maison" Category="urn:oasis:names:tc:xacml:3.0:Resource" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"></AttributeDesignator>
+        </Match>
+      </AllOf>
+    </AnyOf>
+  </Target>
+  
+  <Rule RuledId="urn:oasis:names:tc:xacml:3.0:idrule" Effect="Permit">    
+    <Description>Tous les appareils intelligents de la maison</Description>
+    <Target>      
+      <AnyOf>        
+        <AllOf>          
+          <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">            
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Propriétaire</AttributeValue>
+            <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:id_subject:Person" Category="urn:oasis:names:tc:xacml:3.0:Subject" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"></AttributeDesignator>
+          </Match>
+        </AllOf>
+      </AnyOf>
+    </Target>
+    
+    <Condition>      
+      <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">        
+        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:boolean-is-in">          
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:ModeVacances:Maison" Category="urn:oasis:names:tc:xacml:3.0:Resource" DataType="http://www.w3.org/2001/XMLSchema#boolean" MustBePresent="false"></AttributeDesignator>
+        </Apply>
+      </Apply>
+    </Condition>
+    
+  </Rule>
+</Policy>

@@ -25,7 +25,7 @@
     <property role="TrG5h" value="SmartTap" />
     <property role="EcuMT" value="3298194222149298474" />
     <property role="34LRSv" value="robinet" />
-    <property role="3GE5qa" value="Salle de Bain" />
+    <property role="3GE5qa" value="BathRoom" />
     <ref role="1TJDcQ" node="6Gjg_ciewyd" resolve="Devices" />
   </node>
 </model>

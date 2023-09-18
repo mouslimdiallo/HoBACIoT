@@ -66,7 +66,7 @@
   <node concept="1M2fIO" id="6Gjg_cieNuE">
     <ref role="1M2myG" to="jlpl:2sEr4ZI$SUb" resolve="House" />
     <node concept="EnEH3" id="6Gjg_cieNwI" role="1MhHOB">
-      <ref role="EomxK" to="jlpl:6Gjg_cieK6h" resolve="EnergyConsomSeuil" />
+      <ref role="EomxK" to="jlpl:5TP0$xJsDx$" resolve="house_id" />
     </node>
     <node concept="EnEH3" id="6Gjg_cif6zq" role="1MhHOB">
       <ref role="EomxK" to="jlpl:6Gjg_cieJJP" resolve="temperature" />
@@ -109,9 +109,14 @@
   <node concept="1M2fIO" id="CnqUctjTxG">
     <property role="3GE5qa" value="PolicyXACML" />
     <ref role="1M2myG" to="jlpl:3rmguCBrliY" resolve="Match" />
-    <node concept="EnEH3" id="CnqUctjTyV" role="1MhHOB">
-      <ref role="EomxK" to="jlpl:3rmguCBrlwP" resolve="matchId" />
-    </node>
+  </node>
+  <node concept="1M2fIO" id="2eEKX8DjmNZ">
+    <property role="3GE5qa" value="PolicyXACML" />
+    <ref role="1M2myG" to="jlpl:3rmguCBr3g2" resolve="AttributeValue" />
+  </node>
+  <node concept="1M2fIO" id="5m5RfZHnsKJ">
+    <property role="3GE5qa" value="PolicyXACML" />
+    <ref role="1M2myG" to="jlpl:7URbJ27zDsg" resolve="Attribute" />
   </node>
 </model>
 

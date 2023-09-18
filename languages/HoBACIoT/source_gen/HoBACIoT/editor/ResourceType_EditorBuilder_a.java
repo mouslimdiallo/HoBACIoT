@@ -26,11 +26,11 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
 
-/*package*/ class ObjectType_EditorBuilder_a extends AbstractEditorBuilder {
+/*package*/ class ResourceType_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
   private SNode myNode;
 
-  public ObjectType_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
+  public ResourceType_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
     super(context);
     myNode = node;
   }
@@ -47,7 +47,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
   private EditorCell createCollection_0() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
-    editorCell.setCellId("Collection_k54vqh_a");
+    editorCell.setCellId("Collection_nzilxu_a");
     editorCell.setBig(true);
     setCellContext(editorCell);
     editorCell.addEditorCell(createConstant_0());
@@ -56,7 +56,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
   private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "-->");
-    editorCell.setCellId("Constant_k54vqh_a0");
+    editorCell.setCellId("Constant_nzilxu_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }

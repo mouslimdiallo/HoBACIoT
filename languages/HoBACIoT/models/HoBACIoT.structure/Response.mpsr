@@ -34,7 +34,7 @@
     <property role="EcuMT" value="9130818380118261403" />
     <property role="3GE5qa" value="PolicyXACML" />
     <property role="TrG5h" value="Response" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7URbJ27zCYv" role="1TKVEi">
       <property role="IQ2ns" value="9130818380118265759" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />

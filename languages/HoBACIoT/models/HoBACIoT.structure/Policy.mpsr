@@ -71,20 +71,17 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6Q2C71QxgSF" resolve="RuleCombiningAlgorithm" />
     </node>
+    <node concept="1TJgyj" id="3uoLHFj5Gu5" role="1TKVEi">
+      <property role="IQ2ns" value="4006170511692711813" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="attributes" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7URbJ27zE09" resolve="Attributes" />
+    </node>
     <node concept="1TJgyi" id="3rmguCBr0bK" role="1TKVEl">
       <property role="IQ2nx" value="3951418197003731696" />
-      <property role="TrG5h" value="policyId" />
+      <property role="TrG5h" value="policyid" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="3rmguCBr0mm" role="1TKVEl">
-      <property role="IQ2nx" value="3951418197003732374" />
-      <property role="TrG5h" value="ruleCombiningAlgId" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="3rmguCBr0HX" role="1TKVEl">
-      <property role="IQ2nx" value="3951418197003733885" />
-      <property role="TrG5h" value="maxDelegationDepth" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
     <node concept="1TJgyi" id="3rmguCBr0XR" role="1TKVEl">
       <property role="IQ2nx" value="3951418197003734903" />
@@ -96,11 +93,10 @@
       <property role="TrG5h" value="version" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="1TJgyj" id="7URbJ27mFBO" role="1TKVEi">
-      <property role="IQ2ns" value="9130818380114868724" />
-      <property role="20kJfa" value="entityRef" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6Gjg_cieHL7" resolve="EntityType" />
+    <node concept="1TJgyj" id="23Gv$GgAUte" role="1TKVEi">
+      <property role="IQ2ns" value="2372409964583692110" />
+      <property role="20kJfa" value="house" />
+      <ref role="20lvS9" node="2sEr4ZI$SUb" resolve="House" />
     </node>
   </node>
 </model>

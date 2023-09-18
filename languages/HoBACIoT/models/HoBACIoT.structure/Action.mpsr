@@ -54,7 +54,7 @@
     </node>
     <node concept="1TJgyj" id="3rmguCBrb6A" role="1TKVEi">
       <property role="IQ2ns" value="3951418197003776422" />
-      <property role="20kJfa" value="action_type" />
+      <property role="20kJfa" value="type" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="3rmguCBrbrK" resolve="ActionType" />
     </node>

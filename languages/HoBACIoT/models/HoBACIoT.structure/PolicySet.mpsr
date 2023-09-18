@@ -77,6 +77,11 @@
       <property role="TrG5h" value="policyCombiningAlgId" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyj" id="23Gv$GgBfnW" role="1TKVEi">
+      <property role="IQ2ns" value="2372409964583777788" />
+      <property role="20kJfa" value="hous" />
+      <ref role="20lvS9" node="2sEr4ZI$SUb" resolve="House" />
+    </node>
   </node>
 </model>
 

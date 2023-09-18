@@ -42,10 +42,10 @@
   </registry>
   <node concept="1TIwiD" id="6Gjg_ciewyd">
     <property role="EcuMT" value="7715583511171303565" />
-    <property role="3GE5qa" value="IoT Infra" />
+    <property role="3GE5qa" value="IoT Enum" />
     <property role="TrG5h" value="Devices" />
     <property role="34LRSv" value="devices" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="6Gjg_cieHL7" resolve="EntityType" />
     <node concept="PrWs8" id="6Gjg_ciewIO" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -74,7 +74,7 @@
       <property role="IQ2ns" value="7715583511171378810" />
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="3rmguCBrdTA" resolve="ObjectType" />
+      <ref role="20lvS9" node="3rmguCBrdTA" resolve="ResourceType" />
     </node>
     <node concept="1TJgyj" id="7URbJ27IT9U" role="1TKVEi">
       <property role="IQ2ns" value="9130818380121215610" />

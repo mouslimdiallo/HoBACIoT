@@ -103,7 +103,7 @@ public class Rule_TransformationMenu extends TransformationMenuBase {
       @Override
       public void execute(@NotNull String pattern) {
         if (ListSequence.fromList(SNodeOperations.getChildren(SLinkOperations.getTarget(_context.getNode(), LINKS.target$JIKD))).isEmpty()) {
-          if (SLinkOperations.getTarget(_context.getNode(), LINKS.condition$oNRw) == null || SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.condition$oNRw), LINKS.exp$nWEV) == null) {
+          if (SLinkOperations.getTarget(_context.getNode(), LINKS.condition$$WQ_) == null || SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.condition$$WQ_), LINKS.apply$ctr7) == null) {
 
           }
         }
@@ -137,8 +137,8 @@ public class Rule_TransformationMenu extends TransformationMenuBase {
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink condition$oNRw = MetaAdapterFactory.getContainmentLink(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b8152L, 0x6d82a07076a2dbf6L, "condition");
-    /*package*/ static final SContainmentLink exp$nWEV = MetaAdapterFactory.getContainmentLink(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6d82a07076a2e559L, 0x764d3e486b328856L, "exp");
+    /*package*/ static final SContainmentLink condition$$WQ_ = MetaAdapterFactory.getContainmentLink(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b8152L, 0x19d338b9591fa639L, "condition");
+    /*package*/ static final SContainmentLink apply$ctr7 = MetaAdapterFactory.getContainmentLink(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6d82a07076a2e559L, 0x374065dc726614acL, "apply");
     /*package*/ static final SContainmentLink target$JIKD = MetaAdapterFactory.getContainmentLink(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b8152L, 0x36d641ea276bf5b4L, "target");
   }
 }

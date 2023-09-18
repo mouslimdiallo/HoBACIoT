@@ -8,6 +8,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -43,7 +44,8 @@
     <property role="EcuMT" value="3951418197003710216" />
     <property role="TrG5h" value="Resource" />
     <property role="3GE5qa" value="Concepts" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <property role="34LRSv" value="Resource" />
+    <ref role="1TJDcQ" node="6Gjg_cieHL7" resolve="EntityType" />
     <node concept="PrWs8" id="3rmguCBqV9X" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -56,7 +58,7 @@
       <property role="IQ2ns" value="3951418197003784444" />
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="3rmguCBrdTA" resolve="ObjectType" />
+      <ref role="20lvS9" node="3rmguCBrdTA" resolve="ResourceType" />
     </node>
     <node concept="1TJgyj" id="3rmguCBrhJk" role="1TKVEi">
       <property role="IQ2ns" value="3951418197003803604" />

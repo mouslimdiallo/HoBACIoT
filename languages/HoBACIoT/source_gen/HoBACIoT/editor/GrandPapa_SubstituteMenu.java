@@ -23,13 +23,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 
-public class Resource_SubstituteMenu extends SubstituteMenuBase {
+public class GrandPapa_SubstituteMenu extends SubstituteMenuBase {
   @NotNull
   @Override
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
-    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_ReferenceScope_lr5w39_a(), CONCEPTS.Resource$OM));
-    result.add(new SMP_Subconcepts_lr5w39_b());
+    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_ReferenceScope_9mtwfp_a(), CONCEPTS.GrandPapa$tr));
+    result.add(new SMP_Subconcepts_9mtwfp_b());
     return result;
   }
 
@@ -37,7 +37,7 @@ public class Resource_SubstituteMenu extends SubstituteMenuBase {
   @Override
   public List<SubstituteMenuItem> createMenuItems(@NotNull SubstituteMenuContext context) {
     context.getEditorMenuTrace().pushTraceInfo();
-    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default substitute menu for Resource. Generated from implicit smart reference attribute.", new SNodePointer("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)", "3951418197003710216")));
+    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default substitute menu for GrandPapa. Generated from implicit smart reference attribute.", new SNodePointer("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)", "3298194222149298444")));
     try {
       return super.createMenuItems(context);
     } finally {
@@ -46,11 +46,11 @@ public class Resource_SubstituteMenu extends SubstituteMenuBase {
   }
 
 
-  public class SMP_ReferenceScope_lr5w39_a extends ReferenceScopeSubstituteMenuPart {
+  public class SMP_ReferenceScope_9mtwfp_a extends ReferenceScopeSubstituteMenuPart {
 
-    public SMP_ReferenceScope_lr5w39_a() {
+    public SMP_ReferenceScope_9mtwfp_a() {
       // that cast is needed for prevent the users from https://youtrack.jetbrains.com/issue/MPS-29051
-      super((SAbstractConcept) CONCEPTS.Resource$OM, LINKS.type$byie);
+      super((SAbstractConcept) CONCEPTS.GrandPapa$tr, LINKS.type$G8To);
     }
     @NotNull
     @Override
@@ -65,15 +65,15 @@ public class Resource_SubstituteMenu extends SubstituteMenuBase {
     }
 
   }
-  public class SMP_Subconcepts_lr5w39_b extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
+  public class SMP_Subconcepts_9mtwfp_b extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
     protected Collection getConcepts(final SubstituteMenuContext _context) {
-      return ConceptDescendantsCache.getInstance().getDirectDescendants(CONCEPTS.Resource$OM);
+      return ConceptDescendantsCache.getInstance().getDirectDescendants(CONCEPTS.GrandPapa$tr);
     }
     @NotNull
     @Override
     public List<SubstituteMenuItem> createItems(SubstituteMenuContext context) {
       context.getEditorMenuTrace().pushTraceInfo();
-      context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("include menus for all the direct subconcepts of " + "Resource", null));
+      context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("include menus for all the direct subconcepts of " + "GrandPapa", null));
       try {
         return super.createItems(context);
       } finally {
@@ -88,10 +88,10 @@ public class Resource_SubstituteMenu extends SubstituteMenuBase {
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Resource$OM = MetaAdapterFactory.getConcept(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276baf08L, "HoBACIoT.structure.Resource");
+    /*package*/ static final SConcept GrandPapa$tr = MetaAdapterFactory.getConcept(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x2dc58a2ba374690cL, "HoBACIoT.structure.GrandPapa");
   }
 
   private static final class LINKS {
-    /*package*/ static final SReferenceLink type$byie = MetaAdapterFactory.getReferenceLink(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276baf08L, 0x36d641ea276cd0fcL, "type");
+    /*package*/ static final SReferenceLink type$G8To = MetaAdapterFactory.getReferenceLink(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x272a6c4fee938e8cL, 0x6b134253123a1287L, "type");
   }
 }

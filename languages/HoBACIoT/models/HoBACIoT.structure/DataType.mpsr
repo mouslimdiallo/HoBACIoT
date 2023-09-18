@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
+        <property id="1421157252384165432" name="memberId" index="3tVfz5" />
+      </concept>
+      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
+        <child id="3348158742936976577" name="members" index="25R1y" />
+      </concept>
+      <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
+        <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="25R3W" id="5TP0$xIxQ2l">
+    <property role="3F6X1D" value="6806348921955639445" />
+    <property role="3GE5qa" value="IoT Enum" />
+    <property role="TrG5h" value="DataType" />
+    <node concept="25R33" id="5TP0$xIxQ2m" role="25R1y">
+      <property role="3tVfz5" value="6806348921955639446" />
+      <property role="TrG5h" value="string" />
+    </node>
+    <node concept="25R33" id="5TP0$xIxQ2n" role="25R1y">
+      <property role="3tVfz5" value="6806348921955639447" />
+      <property role="TrG5h" value="integer" />
+    </node>
+    <node concept="25R33" id="23Gv$GgNrb$" role="25R1y">
+      <property role="3tVfz5" value="2372409964586971876" />
+      <property role="TrG5h" value="boolean" />
+    </node>
+    <node concept="25R33" id="23Gv$GgNrbC" role="25R1y">
+      <property role="3tVfz5" value="2372409964586971880" />
+      <property role="TrG5h" value="date" />
+    </node>
+    <node concept="25R33" id="5r9N1qfUNEb" role="25R1y">
+      <property role="3tVfz5" value="6253753954856549003" />
+      <property role="TrG5h" value="time" />
+    </node>
+    <node concept="25R33" id="5r9N1qfUNEi" role="25R1y">
+      <property role="3tVfz5" value="6253753954856549010" />
+      <property role="TrG5h" value="double" />
+    </node>
+    <node concept="25R33" id="5r9N1qfUNEp" role="25R1y">
+      <property role="3tVfz5" value="6253753954856549017" />
+      <property role="TrG5h" value="anyURI" />
+    </node>
+  </node>
+</model>
+
