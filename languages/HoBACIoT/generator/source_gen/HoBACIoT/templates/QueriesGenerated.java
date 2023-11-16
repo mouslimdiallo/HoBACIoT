@@ -41,22 +41,22 @@ public class QueriesGenerated extends QueryProviderBase {
     super(1);
   }
   public static boolean rule_Condition_6_0(final BaseMappingRuleContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.typeEntity$Zs05) == "House";
+    return SPropertyOperations.getEnum(_context.getNode(), PROPS.typeEntity$Zs05).toString() == "House";
   }
   public static boolean rule_Condition_6_1(final BaseMappingRuleContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.typeEntity$Zs05) == "Person";
+    return SPropertyOperations.getEnum(_context.getNode(), PROPS.typeEntity$Zs05).toString() == "Person";
   }
   public static boolean rule_Condition_6_2(final BaseMappingRuleContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.typeEntity$Zs05) == "Action";
+    return SPropertyOperations.getEnum(_context.getNode(), PROPS.typeEntity$Zs05).toString() == "Action";
   }
   public static boolean rule_Condition_6_3(final BaseMappingRuleContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.typeEntity$Zs05) == "Authorization";
+    return SPropertyOperations.getEnum(_context.getNode(), PROPS.typeEntity$Zs05).toString() == "Authorization";
   }
   public static boolean rule_Condition_6_4(final BaseMappingRuleContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.typeEntity$Zs05) == "Environment";
+    return SPropertyOperations.getEnum(_context.getNode(), PROPS.typeEntity$Zs05).toString() == "Environment";
   }
   public static boolean rule_Condition_6_5(final BaseMappingRuleContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.typeEntity$Zs05) == "Resource";
+    return SPropertyOperations.getEnum(_context.getNode(), PROPS.typeEntity$Zs05).toString() == "Resource";
   }
   public static Object propertyMacro_GetValue_1_0(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.description$6a0F);
@@ -79,13 +79,13 @@ public class QueriesGenerated extends QueryProviderBase {
     } else {
       return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.entity$lY2k), PROPS.name$MnvL);
     }
-    return null;
+    return "";
   }
   public static Object propertyMacro_GetValue_1_4(final PropertyMacroContext _context) {
     return String.format(_context.getTemplateValue(), SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.attDesignator$Bn_Y), PROPS.attributeid$dqu4), SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.entity$lY2k), PROPS.name$MnvL));
   }
   public static Object propertyMacro_GetValue_1_5(final PropertyMacroContext _context) {
-    return String.format(_context.getTemplateValue(), SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.entity$lY2k), PROPS.typeEntity$Zs05));
+    return String.format(_context.getTemplateValue(), SPropertyOperations.getEnum(SLinkOperations.getTarget(_context.getNode(), LINKS.entity$lY2k), PROPS.typeEntity$Zs05));
   }
   public static Object propertyMacro_GetValue_1_6(final PropertyMacroContext _context) {
     return String.format(_context.getTemplateValue(), SPropertyOperations.getEnum(SLinkOperations.getTarget(_context.getNode(), LINKS.attDesignator$Bn_Y), PROPS.dataType$GSA9), SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL));
@@ -94,7 +94,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return (SPropertyOperations.getBoolean(SLinkOperations.getTarget(_context.getNode(), LINKS.attDesignator$Bn_Y), PROPS.mustBePresent$6d$4) ? "true" : "false");
   }
   public static Object propertyMacro_GetValue_1_8(final PropertyMacroContext _context) {
-    return String.format(_context.getTemplateValue(), SPropertyOperations.getString(_context.getNode(), PROPS.Ruleid$kN1F), SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL));
+    return String.format(_context.getTemplateValue(), SPropertyOperations.getString(_context.getNode(), PROPS.RuleId$kN1F), SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL));
   }
   public static Object propertyMacro_GetValue_1_9(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.description$LpDJ);
@@ -123,7 +123,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return String.format(_context.getTemplateValue(), SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.attDesignator$Bn_Y), PROPS.attributeid$dqu4), SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.entity$lY2k), PROPS.name$MnvL));
   }
   public static Object propertyMacro_GetValue_1_14(final PropertyMacroContext _context) {
-    return String.format(_context.getTemplateValue(), SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.entity$lY2k), PROPS.typeEntity$Zs05));
+    return String.format(_context.getTemplateValue(), SPropertyOperations.getEnum(SLinkOperations.getTarget(_context.getNode(), LINKS.entity$lY2k), PROPS.typeEntity$Zs05));
   }
   public static Object propertyMacro_GetValue_1_15(final PropertyMacroContext _context) {
     return String.format(_context.getTemplateValue(), SPropertyOperations.getEnum(SLinkOperations.getTarget(_context.getNode(), LINKS.attDesignator$Bn_Y), PROPS.dataType$GSA9), SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL));
@@ -175,7 +175,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return String.format(_context.getTemplateValue(), SPropertyOperations.getString(SLinkOperations.getTarget(((SNode) _context.getVariable("Match")), LINKS.attDesignator$Bn_Y), PROPS.attributeid$dqu4), SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL));
   }
   public static Object propertyMacro_GetValue_4_4(final PropertyMacroContext _context) {
-    return String.format(_context.getTemplateValue(), SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(((SNode) _context.getVariable("Match")), LINKS.attDesignator$Bn_Y), LINKS.entity$PBbL), PROPS.typeEntity$Zs05));
+    return String.format(_context.getTemplateValue(), SPropertyOperations.getEnum(SLinkOperations.getTarget(SLinkOperations.getTarget(((SNode) _context.getVariable("Match")), LINKS.attDesignator$Bn_Y), LINKS.entity$PBbL), PROPS.typeEntity$Zs05));
   }
   public static Object propertyMacro_GetValue_4_5(final PropertyMacroContext _context) {
     return String.format(_context.getTemplateValue(), SPropertyOperations.getEnum(SLinkOperations.getTarget(((SNode) _context.getVariable("Match")), LINKS.attDesignator$Bn_Y), PROPS.dataType$GSA9));
@@ -187,7 +187,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return String.format(_context.getTemplateValue(), SPropertyOperations.getString(_context.getNode(), PROPS.attributeid$dqu4), SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.entity$PBbL), PROPS.name$MnvL));
   }
   public static Object propertyMacro_GetValue_5_1(final PropertyMacroContext _context) {
-    return String.format(_context.getTemplateValue(), SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.entity$PBbL), PROPS.typeEntity$Zs05));
+    return String.format(_context.getTemplateValue(), SPropertyOperations.getEnum(SLinkOperations.getTarget(_context.getNode(), LINKS.entity$PBbL), PROPS.typeEntity$Zs05));
   }
   public static Object propertyMacro_GetValue_5_2(final PropertyMacroContext _context) {
     return String.format(_context.getTemplateValue(), SPropertyOperations.getEnum(_context.getNode(), PROPS.dataType$GSA9));
@@ -196,7 +196,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return (SPropertyOperations.getBoolean(_context.getNode(), PROPS.mustBePresent$6d$4) ? "true" : "false");
   }
   public static Object propertyMacro_GetValue_7_0(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.typeEntity$Zs05);
+    return SPropertyOperations.getEnum(_context.getNode(), PROPS.typeEntity$Zs05).toString();
   }
   public static Object propertyMacro_GetValue_9_0(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL);
@@ -217,7 +217,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(_context.getNode(), PROPS.adress$b_ko);
   }
   public static Object propertyMacro_GetValue_9_6(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.typeEntity$Zs05);
+    return SPropertyOperations.getEnum(_context.getNode(), PROPS.typeEntity$Zs05).toString();
   }
   public static Object propertyMacro_GetValue_10_0(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.subject_id$rrtK);
@@ -244,7 +244,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getEnum(_context.getNode(), PROPS.sexe$HSjK).toString();
   }
   public static Object propertyMacro_GetValue_10_8(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.typeEntity$Zs05);
+    return SPropertyOperations.getEnum(_context.getNode(), PROPS.typeEntity$Zs05).toString();
   }
   public static Object propertyMacro_GetValue_11_0(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.id$czxQ);
@@ -256,7 +256,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getEnum(_context.getNode(), PROPS.connexion$pCOI).toString();
   }
   public static Object propertyMacro_GetValue_11_3(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.typeEntity$Zs05);
+    return SPropertyOperations.getEnum(_context.getNode(), PROPS.typeEntity$Zs05).toString();
   }
   public static Object propertyMacro_GetValue_12_0(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.matchId$qKpE);
@@ -268,7 +268,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getInteger(_context.getNode(), PROPS.temperature$D_Fn) + "";
   }
   public static Object propertyMacro_GetValue_13_2(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.typeEntity$Zs05);
+    return SPropertyOperations.getEnum(_context.getNode(), PROPS.typeEntity$Zs05).toString();
   }
   public static Object propertyMacro_GetValue_14_0(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.category$BZpq).toString();
@@ -286,7 +286,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getInteger(_context.getNode(), PROPS.temperature$D_Fn) + "";
   }
   public static Object propertyMacro_GetValue_16_2(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.typeEntity$Zs05);
+    return SPropertyOperations.getEnum(_context.getNode(), PROPS.typeEntity$Zs05).toString();
   }
   public static Object propertyMacro_GetValue_17_0(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.id_piece$LeiO);
@@ -295,7 +295,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getInteger(_context.getNode(), PROPS.temperature$D_Fn) + "";
   }
   public static Object propertyMacro_GetValue_17_2(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.typeEntity$Zs05);
+    return SPropertyOperations.getEnum(_context.getNode(), PROPS.typeEntity$Zs05).toString();
   }
   public static Object propertyMacro_GetValue_18_0(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.id_piece$LeiO);
@@ -304,7 +304,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getInteger(_context.getNode(), PROPS.temperature$D_Fn) + "";
   }
   public static Object propertyMacro_GetValue_18_2(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.typeEntity$Zs05);
+    return SPropertyOperations.getEnum(_context.getNode(), PROPS.typeEntity$Zs05).toString();
   }
   public static Object propertyMacro_GetValue_19_0(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.id$czxQ);
@@ -316,7 +316,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getEnum(_context.getNode(), PROPS.connexion$pCOI).toString();
   }
   public static Object propertyMacro_GetValue_19_3(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.typeEntity$Zs05);
+    return SPropertyOperations.getEnum(_context.getNode(), PROPS.typeEntity$Zs05).toString();
   }
   public static Object propertyMacro_GetValue_20_0(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.id$czxQ);
@@ -328,7 +328,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getEnum(_context.getNode(), PROPS.connexion$pCOI).toString();
   }
   public static Object propertyMacro_GetValue_20_3(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.typeEntity$Zs05);
+    return SPropertyOperations.getEnum(_context.getNode(), PROPS.typeEntity$Zs05).toString();
   }
   public static Object propertyMacro_GetValue_21_0(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.id$czxQ);
@@ -340,7 +340,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getEnum(_context.getNode(), PROPS.connexion$pCOI).toString();
   }
   public static Object propertyMacro_GetValue_21_3(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.typeEntity$Zs05);
+    return SPropertyOperations.getEnum(_context.getNode(), PROPS.typeEntity$Zs05).toString();
   }
   public static Object propertyMacro_GetValue_22_0(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.id$czxQ);
@@ -352,7 +352,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getEnum(_context.getNode(), PROPS.connexion$pCOI).toString();
   }
   public static Object propertyMacro_GetValue_22_3(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.typeEntity$Zs05);
+    return SPropertyOperations.getEnum(_context.getNode(), PROPS.typeEntity$Zs05).toString();
   }
   public static Object propertyMacro_GetValue_23_0(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.id$czxQ);
@@ -364,7 +364,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getEnum(_context.getNode(), PROPS.connexion$pCOI).toString();
   }
   public static Object propertyMacro_GetValue_23_3(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.typeEntity$Zs05);
+    return SPropertyOperations.getEnum(_context.getNode(), PROPS.typeEntity$Zs05).toString();
   }
   public static Object propertyMacro_GetValue_24_0(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.id$czxQ);
@@ -376,7 +376,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getEnum(_context.getNode(), PROPS.connexion$pCOI).toString();
   }
   public static Object propertyMacro_GetValue_24_3(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.typeEntity$Zs05);
+    return SPropertyOperations.getEnum(_context.getNode(), PROPS.typeEntity$Zs05).toString();
   }
   public static Object propertyMacro_GetValue_25_0(final PropertyMacroContext _context) {
     return String.format(_context.getTemplateValue(), SPropertyOperations.getEnum(SNodeOperations.getNodeAncestor(((SNode) _context.getVariable("var:Value")), CONCEPTS.AttributeDesignator$th, false, false), PROPS.dataType$GSA9));
@@ -400,7 +400,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return String.format(_context.getTemplateValue(), SPropertyOperations.getString(_context.getNode(), PROPS.attributeid$dqu4), SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.entity$PBbL), PROPS.name$MnvL));
   }
   public static Object propertyMacro_GetValue_26_5(final PropertyMacroContext _context) {
-    return String.format(_context.getTemplateValue(), SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.entity$PBbL), PROPS.typeEntity$Zs05));
+    return String.format(_context.getTemplateValue(), SPropertyOperations.getEnum(SLinkOperations.getTarget(_context.getNode(), LINKS.entity$PBbL), PROPS.typeEntity$Zs05));
   }
   public static Object propertyMacro_GetValue_26_6(final PropertyMacroContext _context) {
     return String.format(_context.getTemplateValue(), SPropertyOperations.getEnum(_context.getNode(), PROPS.dataType$GSA9));
@@ -411,14 +411,14 @@ public class QueriesGenerated extends QueryProviderBase {
   public static boolean ifMacro_Condition_1_0(final IfMacroContext _context) {
     return (SLinkOperations.getTarget(_context.getNode(), LINKS.target$dHN3) != null);
   }
+  public static boolean ifMacro_Condition_1_1(final IfMacroContext _context) {
+    return (SLinkOperations.getTarget(_context.getNode(), LINKS.condition$$WQ_) != null);
+  }
   public static boolean ifMacro_Condition_2_0(final IfMacroContext _context) {
     return SPropertyOperations.getBoolean(_context.getNode(), PROPS.CombinedDecision$vDEG);
   }
   public static boolean ifMacro_Condition_4_0(final IfMacroContext _context) {
     return SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.Person$US);
-  }
-  public static boolean ifMacro_Condition_26_0(final IfMacroContext _context) {
-    return (SLinkOperations.getTarget(_context.getNode(), LINKS.apply$ctr7) != null);
   }
   public static SNode sourceNodeQuery_1_0(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), LINKS.condition$$WQ_);
@@ -1156,9 +1156,9 @@ public class QueriesGenerated extends QueryProviderBase {
   {
     int i = 0;
     imcMethods.put("2372409964586702765", new IfMC(i++));
+    imcMethods.put("4566735271942297557", new IfMC(i++));
     imcMethods.put("9222073917104513377", new IfMC(i++));
     imcMethods.put("727168213159096933", new IfMC(i++));
-    imcMethods.put("6253753954854516071", new IfMC(i++));
   }
   @NotNull
   @Override
@@ -1177,11 +1177,11 @@ public class QueriesGenerated extends QueryProviderBase {
         case 0:
           return QueriesGenerated.ifMacro_Condition_1_0(ctx);
         case 1:
-          return QueriesGenerated.ifMacro_Condition_2_0(ctx);
+          return QueriesGenerated.ifMacro_Condition_1_1(ctx);
         case 2:
-          return QueriesGenerated.ifMacro_Condition_4_0(ctx);
+          return QueriesGenerated.ifMacro_Condition_2_0(ctx);
         case 3:
-          return QueriesGenerated.ifMacro_Condition_26_0(ctx);
+          return QueriesGenerated.ifMacro_Condition_4_0(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no condition method for if macro %s (key: #%d)", ctx.getTemplateReference(), methodKey));
       }
@@ -1230,7 +1230,7 @@ public class QueriesGenerated extends QueryProviderBase {
     /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
     /*package*/ static final SProperty attributeid$dqu4 = MetaAdapterFactory.getProperty(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x7eb72ef0878e9710L, 0x7eb72ef0878e9900L, "attributeid");
     /*package*/ static final SProperty mustBePresent$6d$4 = MetaAdapterFactory.getProperty(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276c516aL, 0x36d641ea276c6adbL, "mustBePresent");
-    /*package*/ static final SProperty Ruleid$kN1F = MetaAdapterFactory.getProperty(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b8152L, 0x36d641ea276bd83cL, "Ruleid");
+    /*package*/ static final SProperty RuleId$kN1F = MetaAdapterFactory.getProperty(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b8152L, 0x36d641ea276bd83cL, "RuleId");
     /*package*/ static final SProperty description$LpDJ = MetaAdapterFactory.getProperty(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b8152L, 0x3b36d8e954e9efe9L, "description");
     /*package*/ static final SProperty effect$KCf5 = MetaAdapterFactory.getProperty(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b8152L, 0x36d641ea276bda46L, "effect");
     /*package*/ static final SProperty policyid$OZ9_ = MetaAdapterFactory.getProperty(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b7ddbL, 0x36d641ea276c02f0L, "policyid");

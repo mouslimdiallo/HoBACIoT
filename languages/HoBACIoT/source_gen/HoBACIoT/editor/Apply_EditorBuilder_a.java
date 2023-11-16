@@ -78,7 +78,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createConstant_0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "apply");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Apply");
     editorCell.setCellId("Constant_q0auof_a0");
     editorCell.setDefaultText("");
     return editorCell;
@@ -109,7 +109,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
   }
   private EditorCell createConstant_1() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, " entity");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, " Entity");
     editorCell.setCellId("Constant_q0auof_c0");
     editorCell.setDefaultText("");
     return editorCell;
@@ -383,7 +383,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createConstant_9() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "attributevalue");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "attributeValue");
     editorCell.setCellId("Constant_q0auof_i5a");
     editorCell.setDefaultText("");
     return editorCell;
@@ -487,7 +487,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createConstant_12() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "designators");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "designator");
     editorCell.setCellId("Constant_q0auof_m5a");
     editorCell.setDefaultText("");
     return editorCell;

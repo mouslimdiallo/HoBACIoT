@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-dhytt94tpjv60x154f1hs2tu0fb71d0">
-  <files names="TypesystemDescriptor.java:check_AttributeDesignator_NonTypesystemRule.java:check_Match_NonTypesystemRule.java" />
+<product version="3" modelHash="1tvi5fgqwptl23zkg6pdgsv9x5ob8y0">
+  <files names="TypesystemDescriptor.java:check_AttributeDesignator_NonTypesystemRule.java:check_AttributeValue_NonTypesystemRule.java:check_Match_NonTypesystemRule.java" />
 </product>
 

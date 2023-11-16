@@ -43,7 +43,7 @@
     <property role="EcuMT" value="3951418197003711494" />
     <property role="TrG5h" value="Action" />
     <property role="3GE5qa" value="Concepts" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="6Gjg_cieHL7" resolve="EntityType" />
     <node concept="PrWs8" id="3rmguCBqVOh" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>

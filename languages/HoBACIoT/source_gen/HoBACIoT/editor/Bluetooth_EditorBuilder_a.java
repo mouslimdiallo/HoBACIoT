@@ -66,7 +66,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.addEditorCell(createRefCell_1());
     editorCell.addEditorCell(createConstant_3());
     editorCell.addEditorCell(createCollection_1());
-    editorCell.addEditorCell(createConstant_12());
+    editorCell.addEditorCell(createConstant_14());
     return editorCell;
   }
   private EditorCell createConstant_0() {
@@ -298,6 +298,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.addEditorCell(createConstant_10());
     editorCell.addEditorCell(createConstant_11());
     editorCell.addEditorCell(createProperty_6());
+    editorCell.addEditorCell(createConstant_12());
+    editorCell.addEditorCell(createProperty_7());
+    editorCell.addEditorCell(createConstant_13());
     return editorCell;
   }
   private EditorCell createConstant_4() {
@@ -473,6 +476,43 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
   }
   private EditorCell createConstant_12() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "type d'entité :");
+    editorCell.setCellId("Constant_ue8yen_m7a");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createProperty_7() {
+    getCellFactory().pushCellContext();
+    try {
+      final SProperty property = PROPS.typeEntity$Zs05;
+      getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
+      EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
+      editorCell.setDefaultText("<no typeEntity>");
+      editorCell.setCellId("property_typeEntity");
+      editorCell.setSubstituteInfo(new SPropertySubstituteInfo(editorCell, property));
+      setCellContext(editorCell);
+      Iterable<SNode> propertyAttributes = SNodeOperations.ofConcept(new IAttributeDescriptor.AllAttributes().list(myNode), CONCEPTS.PropertyAttribute$Gb);
+      Iterable<SNode> currentPropertyAttributes = Sequence.fromIterable(propertyAttributes).where(new IWhereFilter<SNode>() {
+        public boolean accept(SNode it) {
+          return Objects.equals(PropertyAttribute__BehaviorDescriptor.getProperty_id1avfQ4BBzOo.invoke(it), property);
+        }
+      });
+      if (Sequence.fromIterable(currentPropertyAttributes).isNotEmpty()) {
+        EditorManager manager = EditorManager.getInstanceFromContext(getEditorContext());
+        return manager.createNodeRoleAttributeCell(Sequence.fromIterable(currentPropertyAttributes).first(), AttributeKind.PROPERTY, editorCell);
+      } else
+      return editorCell;
+    } finally {
+      getCellFactory().popCellContext();
+    }
+  }
+  private EditorCell createConstant_13() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
+    editorCell.setCellId("Constant_ue8yen_o7a");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_14() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "}");
     editorCell.setCellId("Constant_ue8yen_i0");
     Style style = new StyleImpl();
@@ -488,6 +528,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     /*package*/ static final SProperty id$czxQ = MetaAdapterFactory.getProperty(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6b134253123a088dL, 0x6b134253123cc4a1L, "id");
     /*package*/ static final SProperty modele$bTHb = MetaAdapterFactory.getProperty(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6b134253123a088dL, 0x6b134253123b093cL, "modele");
     /*package*/ static final SProperty connexion$pCOI = MetaAdapterFactory.getProperty(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6b134253123a088dL, 0x6b134253123b0aaaL, "connexion");
+    /*package*/ static final SProperty typeEntity$Zs05 = MetaAdapterFactory.getProperty(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6b134253123adc47L, 0x1ba3c51e3cbefd37L, "typeEntity");
   }
 
   private static final class CONCEPTS {

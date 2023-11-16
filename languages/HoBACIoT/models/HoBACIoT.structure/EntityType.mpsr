@@ -84,6 +84,20 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="3rmguCBrfEL" resolve="EnvironmentType" />
     </node>
+    <node concept="1TJgyj" id="6QHwkk$C2zt" role="1TKVEi">
+      <property role="IQ2ns" value="7903115055072291037" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="actions" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="3rmguCBqVg6" resolve="Action" />
+    </node>
+    <node concept="1TJgyj" id="6QHwkk$C2Gy" role="1TKVEi">
+      <property role="IQ2ns" value="7903115055072291618" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="environments" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="3rmguCBqW_W" resolve="Environment" />
+    </node>
     <node concept="1TJgyj" id="5TP0$xJaa9Z" role="1TKVEi">
       <property role="IQ2ns" value="6806348921966207615" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -101,7 +115,7 @@
     <node concept="1TJgyi" id="1IzLhSWJJOR" role="1TKVEl">
       <property role="IQ2nx" value="1991652193886731575" />
       <property role="TrG5h" value="typeEntity" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <ref role="AX2Wp" node="5TP0$xI6jMu" resolve="CategoryEnum" />
     </node>
   </node>
 </model>

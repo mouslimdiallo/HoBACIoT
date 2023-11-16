@@ -156,11 +156,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private EditorCell createProperty_1() {
     getCellFactory().pushCellContext();
     try {
-      final SProperty property = PROPS.Ruleid$kN1F;
+      final SProperty property = PROPS.RuleId$kN1F;
       getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
       EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
-      editorCell.setDefaultText("<no Ruleid>");
-      editorCell.setCellId("property_Ruleid");
+      editorCell.setDefaultText("<no RuleId>");
+      editorCell.setCellId("property_RuleId");
       Style style = new StyleImpl();
       style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
       editorCell.getStyle().putAll(style);
@@ -531,7 +531,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
   private static final class PROPS {
     /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
-    /*package*/ static final SProperty Ruleid$kN1F = MetaAdapterFactory.getProperty(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b8152L, 0x36d641ea276bd83cL, "Ruleid");
+    /*package*/ static final SProperty RuleId$kN1F = MetaAdapterFactory.getProperty(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b8152L, 0x36d641ea276bd83cL, "RuleId");
     /*package*/ static final SProperty effect$KCf5 = MetaAdapterFactory.getProperty(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b8152L, 0x36d641ea276bda46L, "effect");
     /*package*/ static final SProperty description$LpDJ = MetaAdapterFactory.getProperty(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b8152L, 0x3b36d8e954e9efe9L, "description");
   }

@@ -96,7 +96,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   @Override
   public void reportDependencies(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.Dependencies deps) {
     deps.extendedLanguage(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, "jetbrains.mps.lang.core");
-    deps.aggregatedLanguage(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, "jetbrains.mps.lang.core");
   }
 
   @Override
@@ -253,6 +252,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForAction() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "Action", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276bb406L);
     b.class_(false, false, false);
+    // extends: HoBACIoT.structure.EntityType
+    b.super_(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6b134253123adc47L);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3951418197003711494");
     b.version(3);
@@ -295,7 +296,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("functionId", 0x374065dc720c715dL).type(PrimitiveTypeId.STRING).origin("3981294068076147037").done();
     b.associate("entity", 0x6bbe24d586e463b1L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6b134253123adc47L).optional(true).origin("7763683307143062449").done();
     b.aggregate("apply", 0x19d338b958f341b9L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276ba405L).optional(true).ordered(true).multiple(true).origin("1860893439746589113").done();
-    b.aggregate("attributeValue", 0x36d641ea276c2f87L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276c3402L).optional(false).ordered(true).multiple(true).origin("3951418197003743111").done();
+    b.aggregate("attributeValue", 0x36d641ea276c2f87L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276c3402L).optional(true).ordered(true).multiple(true).origin("3951418197003743111").done();
     b.aggregate("design", 0x56c9cc16902e8651L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276c516aL).optional(true).ordered(true).multiple(true).origin("6253753954860959313").done();
     b.alias("apply");
     return b.create();
@@ -343,6 +344,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3951418197003744258");
     b.version(3);
     b.property("value", 0x5585dcffed5db8a7L).type(PrimitiveTypeId.STRING).origin("6162574656883505319").done();
+    b.property("datatype", 0x3f604d88c35e8850L).type(MetaIdFactory.dataTypeId(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x5e7502486e876095L)).origin("4566735271942326352").done();
     b.associate("design", 0x56c9cc169059f013L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276c516aL).optional(true).origin("6253753954863804435").done();
     b.alias("Value");
     return b.create();
@@ -462,12 +464,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/7715583511171357767");
     b.version(3);
-    b.property("typeEntity", 0x1ba3c51e3cbefd37L).type(PrimitiveTypeId.STRING).origin("1991652193886731575").done();
+    b.property("typeEntity", 0x1ba3c51e3cbefd37L).type(MetaIdFactory.dataTypeId(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x5e7502486e193c9eL)).origin("1991652193886731575").done();
     b.aggregate("attributes", 0x1ba3c51e3cc33b3eL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x7eb72ef0878ea009L).optional(true).ordered(true).multiple(true).origin("1991652193887009598").done();
     b.aggregate("subjectType", 0x5e7502486f035af2L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276c95dcL).optional(true).ordered(true).multiple(true).origin("6806348921963764466").done();
     b.aggregate("resourceType", 0x5e7502486f035e83L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276cde66L).optional(true).ordered(true).multiple(true).origin("6806348921963765379").done();
     b.aggregate("actionType", 0x5e7502486f0361adL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276cb6f0L).optional(true).ordered(true).multiple(true).origin("6806348921963766189").done();
     b.aggregate("environmentType", 0x5e7502486f0363eeL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276cfab1L).optional(true).ordered(true).multiple(true).origin("6806348921963766766").done();
+    b.aggregate("actions", 0x6dad814524a028ddL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276bb406L).optional(true).ordered(true).multiple(true).origin("7903115055072291037").done();
+    b.aggregate("environments", 0x6dad814524a02b22L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276bc97cL).optional(true).ordered(true).multiple(true).origin("7903115055072291618").done();
     b.aggregate("famille", 0x5e7502486f28a27fL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x2dc58a2ba37468fcL).optional(true).ordered(true).multiple(true).origin("6806348921966207615").done();
     b.aggregate("authorization", 0x5e7502486f28ab9eL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6b1342531269bbf5L).optional(true).ordered(true).multiple(true).origin("6806348921966209950").done();
     b.alias("EntityType");
@@ -476,12 +480,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForEnvironment() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "Environment", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276bc97cL);
     b.class_(false, false, false);
+    // extends: HoBACIoT.structure.EntityType
+    b.super_(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6b134253123adc47L);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3951418197003716988");
     b.version(3);
     b.property("environment_id", 0x36d641ea276ceda9L).type(PrimitiveTypeId.STRING).origin("3951418197003791785").done();
     b.associate("type", 0x36d641ea276cf272L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276cfab1L).optional(false).origin("3951418197003793010").done();
-    b.aggregate("attributes", 0x36d641ea276d0fe2L).target(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x47bf8397520e5939L).optional(true).ordered(true).multiple(true).origin("3951418197003800546").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForEnvironmentType() {
@@ -754,6 +759,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     // extends: HoBACIoT.structure.Action
     b.super_(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276bb406L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/7292197992424468732");
     b.version(3);
     return b.create();
@@ -820,6 +826,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/2822187207061900923");
     b.version(3);
+    b.aggregate("thermostat", 0x3f604d88c36df131L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x2dc58a2ba374692eL).optional(true).ordered(true).multiple(true).origin("4566735271943336241").done();
+    b.aggregate("store", 0x3f604d88c36df40bL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x2dc58a2ba374692dL).optional(true).ordered(true).multiple(true).origin("4566735271943336971").done();
+    b.aggregate("tv", 0x3f604d88c36df700L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x2dc58a2ba3746930L).optional(true).ordered(true).multiple(true).origin("4566735271943337728").done();
     b.alias("chambre");
     return b.create();
   }
@@ -829,7 +838,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3951418197003698514");
     b.version(3);
-    b.property("Ruleid", 0x36d641ea276bd83cL).type(PrimitiveTypeId.STRING).origin("3951418197003720764").done();
+    b.property("RuleId", 0x36d641ea276bd83cL).type(PrimitiveTypeId.STRING).origin("3951418197003720764").done();
     b.property("effect", 0x36d641ea276bda46L).type(MetaIdFactory.dataTypeId(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276bdf77L)).origin("3951418197003721286").done();
     b.property("description", 0x3b36d8e954e9efe9L).type(PrimitiveTypeId.STRING).origin("4266836193643720681").done();
     b.aggregate("target", 0x36d641ea276bf5b4L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b9907L).optional(false).ordered(true).multiple(false).origin("3951418197003728308").done();
@@ -951,6 +960,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3298194222149298478");
     b.version(3);
+    b.property("temperatureActuelle", 0x3f604d88c3770902L).type(PrimitiveTypeId.INTEGER).origin("4566735271943932162").done();
     b.alias("thermostat");
     return b.create();
   }

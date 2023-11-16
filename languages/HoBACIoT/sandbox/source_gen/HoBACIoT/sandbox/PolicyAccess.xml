@@ -1,17 +1,17 @@
 <?xml version = "1.0"?>
 
-<house nom="Maison" id="idhouse001" temperature="25" energyConsom="18" energyConsomSeuil="22" adresse="levis" type="Resource">  
-  <Person id="0001" prenom="Mamadou" login="mamadou@uqar.ca" password="passecret" adresse="levis" age="25" profession="Etudiant" sexe="Masculin" type="Subject">    
+<house nom="Maison" id="idhouse001" temperature="25" energyConsom="18" energyConsomSeuil="22" adresse="levis" type="urn:oasis:names:tc:xacml:3.0:attribute-category:resource">  
+  <Person id="0001" prenom="Mamadou" login="mamadou@uqar.ca" password="passecret" adresse="levis" age="25" profession="Etudiant" sexe="Masculin" type="urn:oasis:names:tc:xacml:1.0:subject-category:access-subject">    
     <Attributes Category="sujet">      
       <Attribute attributeid="0001" datatype="string">
         <AttributeValue Datatype="http://www.w3.org/2001/XMLSchema#null">PersonValue</AttributeValue>
       </Attribute>
     </Attributes>
   </Person>
-  <Piece id="idPiece1" temperature="23" type="Resource">    
-    <Device id="device_id" modele="samsung" connexion="Ethernet" type="Appareils">      
+  <Piece id="idPiece1" temperature="23" type="urn:oasis:names:tc:xacml:3.0:attribute-category:resource">    
+    <Device id="device_id" modele="samsung" connexion="Ethernet" type="urn:oasis:names:tc:xacml:3.0:attribute-category:resource">      
       
-      <Kitchen id="cuisine_id" temperature="22" type="Resource">        
+      <Kitchen id="cuisine_id" temperature="22" type="urn:oasis:names:tc:xacml:3.0:attribute-category:resource">        
         <Attributes Category="5TP0$xI6jOv/resource">          
           <Attribute attributeid="idcuisine" datatype="string">
             <AttributeValue Datatype="http://www.w3.org/2001/XMLSchema#null">ValKitchen</AttributeValue>
@@ -30,7 +30,7 @@
       </Attribute>
     </Attributes>
   </Piece>
-  <Chambre id="chambre_id" temperature="23" type="Resource"></Chambre>
+  <Chambre id="chambre_id" temperature="23" type="urn:oasis:names:tc:xacml:3.0:attribute-category:resource"></Chambre>
   <Attributes Category="5TP0$xI6jOv/resource">    
     <Attribute attributeid="id_Maison" datatype="string">
       <AttributeValue Datatype="http://www.w3.org/2001/XMLSchema#null">ValHouse</AttributeValue>
@@ -45,20 +45,20 @@
       <AllOf>        
         <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">          
           <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Maison</AttributeValue>
-          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:id_resource:Maison" Category="urn:oasis:names:tc:xacml:3.0:Resource" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"></AttributeDesignator>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:resource_id:Maison" Category="urn:oasis:names:tc:xacml:3.0:urn:oasis:names:tc:xacml:3.0:attribute-category:resource" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"></AttributeDesignator>
         </Match>
       </AllOf>
     </AnyOf>
   </Target>
   
-  <Rule RuledId="urn:oasis:names:tc:xacml:3.0:idrule" Effect="Permit">    
-    <Description>Tous les appareils intelligents de la maison</Description>
+  <Rule RuleId="urn:oasis:names:tc:xacml:3.0:idrule" Effect="Permit">    
+    <Description>Controler tous les appareils intelligents de la maison</Description>
     <Target>      
       <AnyOf>        
         <AllOf>          
           <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">            
             <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Propriétaire</AttributeValue>
-            <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:id_subject:Person" Category="urn:oasis:names:tc:xacml:3.0:Subject" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"></AttributeDesignator>
+            <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:subject_id:Person" Category="urn:oasis:names:tc:xacml:3.0:urn:oasis:names:tc:xacml:1.0:subject-category:access-subject" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"></AttributeDesignator>
           </Match>
         </AllOf>
       </AnyOf>
@@ -67,10 +67,234 @@
     <Condition>      
       <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">        
         <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:boolean-is-in">          
-          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:ModeVacances:Maison" Category="urn:oasis:names:tc:xacml:3.0:Resource" DataType="http://www.w3.org/2001/XMLSchema#boolean" MustBePresent="false"></AttributeDesignator>
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#boolean">True</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:ModeVacances:Maison" Category="urn:oasis:names:tc:xacml:3.0:urn:oasis:names:tc:xacml:3.0:attribute-category:resource" DataType="http://www.w3.org/2001/XMLSchema#boolean" MustBePresent="false"></AttributeDesignator>
         </Apply>
       </Apply>
     </Condition>
+  </Rule>
+  <Rule RuleId="urn:oasis:names:tc:xacml:3.0:id_rule2" Effect="Permit">    
+    <Description>Les invités peuvent contrôler les appareils intelligents de la pièce où ils se trouvent sauf en mode nuit ou le proprio a verouillé</Description>
+    <Target>      
+      <AnyOf>        
+        <AllOf>          
+          <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">            
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Invité</AttributeValue>
+            <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:subject_id:Person" Category="urn:oasis:names:tc:xacml:3.0:urn:oasis:names:tc:xacml:1.0:subject-category:access-subject" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"></AttributeDesignator>
+          </Match>
+          <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">            
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Piece1</AttributeValue>
+            <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:resource_id:Piece1" Category="urn:oasis:names:tc:xacml:3.0:urn:oasis:names:tc:xacml:3.0:attribute-category:resource" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"></AttributeDesignator>
+          </Match>
+        </AllOf>
+      </AnyOf>
+    </Target>
+    
+    <Condition>      
+      <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">        
+        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:boolean-is-in">          
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#boolean">True</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:ModeNuit:Maison" Category="urn:oasis:names:tc:xacml:3.0:urn:oasis:names:tc:xacml:3.0:attribute-category:resource" DataType="http://www.w3.org/2001/XMLSchema#boolean" MustBePresent="false"></AttributeDesignator>
+        </Apply>
+      </Apply>
+    </Condition>
+  </Rule>
+  <Rule RuleId="urn:oasis:names:tc:xacml:3.0:id_rule3" Effect="Permit">    
+    <Description>Les livreurs peuvent ouvrir la porte d’entrée s’ils ont un code d’accès valide et si le propriétaire a confirmé la livraison.</Description>
+    <Target>      
+      <AnyOf>        
+        <AllOf>          
+          <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">            
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Livreur</AttributeValue>
+            <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:subject_id:Person" Category="urn:oasis:names:tc:xacml:3.0:urn:oasis:names:tc:xacml:1.0:subject-category:access-subject" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"></AttributeDesignator>
+          </Match>
+          <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">            
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">CODE</AttributeValue>
+            <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:action_id:code" Category="urn:oasis:names:tc:xacml:3.0:urn:oasis:names:tc:xacml:3.0:attribute-category:action" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"></AttributeDesignator>
+          </Match>
+        </AllOf>
+      </AnyOf>
+    </Target>
+    
+    <Condition>      
+      <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:and">        
+        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:boolean-at-least-one-member-of">          
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#boolean">TRUE</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:CodeValidé:Maison" Category="urn:oasis:names:tc:xacml:3.0:urn:oasis:names:tc:xacml:3.0:attribute-category:resource" DataType="http://www.w3.org/2001/XMLSchema#boolean" MustBePresent="false"></AttributeDesignator>
+        </Apply>
+      </Apply>
+    </Condition>
+  </Rule>
+  <Rule RuleId="urn:oasis:names:tc:xacml:3.0:id_rule4" Effect="Deny">    
+    <Description>Les enfants ne peuvent pas allumer le four ni le micro-ondes, sauf s’ils sont accompagnés d’un adulte.</Description>
+    <Target>      
+      <AnyOf>        
+        <AllOf>          
+          <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">            
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Enfant</AttributeValue>
+            <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:subject_id:Person" Category="urn:oasis:names:tc:xacml:3.0:urn:oasis:names:tc:xacml:1.0:subject-category:access-subject" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"></AttributeDesignator>
+          </Match>
+          <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">            
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Four1</AttributeValue>
+            <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:resource_id:Four1" Category="urn:oasis:names:tc:xacml:3.0:urn:oasis:names:tc:xacml:3.0:attribute-category:resource" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"></AttributeDesignator>
+          </Match>
+          <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">            
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">MicrOnde</AttributeValue>
+            <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:resource_id:MicrOnde" Category="urn:oasis:names:tc:xacml:3.0:urn:oasis:names:tc:xacml:3.0:attribute-category:resource" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"></AttributeDesignator>
+          </Match>
+        </AllOf>
+      </AnyOf>
+    </Target>
+    
+    <Condition>      
+      <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:boolean-equal">        
+        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-is-in">          
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Adulte</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:subject_id:Person" Category="urn:oasis:names:tc:xacml:3.0:urn:oasis:names:tc:xacml:1.0:subject-category:access-subject" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"></AttributeDesignator>
+        </Apply>
+      </Apply>
+    </Condition>
+  </Rule>
+  <Rule RuleId="urn:oasis:names:tc:xacml:3.0:id_rule5" Effect="Permit">    
+    <Description>Le propriétaire peut modifier le mode du thermostat à tout moment.</Description>
+    <Target>      
+      <AnyOf>        
+        <AllOf>          
+          <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">            
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Propriétaire</AttributeValue>
+            <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:subject_id:Person" Category="urn:oasis:names:tc:xacml:3.0:urn:oasis:names:tc:xacml:1.0:subject-category:access-subject" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"></AttributeDesignator>
+          </Match>
+          <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">            
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Thermostat2</AttributeValue>
+            <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:resource_id:Thermostat2" Category="urn:oasis:names:tc:xacml:3.0:urn:oasis:names:tc:xacml:3.0:attribute-category:resource" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"></AttributeDesignator>
+          </Match>
+        </AllOf>
+      </AnyOf>
+    </Target>
     
   </Rule>
+  <Rule RuleId="urn:oasis:names:tc:xacml:3.0:id_rule6" Effect="Permit">    
+    <Description>Le propriétaire peut allumer ou éteindre les lumières de la maison à tout moment.</Description>
+    <Target>      
+      <AnyOf>        
+        <AllOf>          
+          <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">            
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Propriétaire</AttributeValue>
+            <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:subject_id:Person" Category="urn:oasis:names:tc:xacml:3.0:urn:oasis:names:tc:xacml:1.0:subject-category:access-subject" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"></AttributeDesignator>
+          </Match>
+          <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">            
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Public</AttributeValue>
+            <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:resource_id:Maison" Category="urn:oasis:names:tc:xacml:3.0:urn:oasis:names:tc:xacml:3.0:attribute-category:resource" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"></AttributeDesignator>
+          </Match>
+        </AllOf>
+      </AnyOf>
+    </Target>
+    
+  </Rule>
+  <Rule RuleId="urn:oasis:names:tc:xacml:3.0:id_rule7" Effect="Permit">    
+    <Description>Les caméras de surveillance ne peuvent enregistrer que les images des intrus qui tentent de pénétrer dans la maison, sauf si le propriétaire a activé le mode privé</Description>
+    <Target>      
+      <AnyOf>        
+        <AllOf>          
+          <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">            
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Intrus</AttributeValue>
+            <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:subject_id:Person" Category="urn:oasis:names:tc:xacml:3.0:urn:oasis:names:tc:xacml:1.0:subject-category:access-subject" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"></AttributeDesignator>
+          </Match>
+          <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">            
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Caméras de Surveillance</AttributeValue>
+            <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:resource_id:Device1" Category="urn:oasis:names:tc:xacml:3.0:urn:oasis:names:tc:xacml:3.0:attribute-category:resource" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"></AttributeDesignator>
+          </Match>
+        </AllOf>
+      </AnyOf>
+    </Target>
+    
+    <Condition>      
+      <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:boolean-equal">        
+        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-at-least-one-member-of">          
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Desactivé</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:environment_id:MODEPRIVE" Category="urn:oasis:names:tc:xacml:3.0:urn:oasis:names:tc:xacml:3.0:attribute-category:environment" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"></AttributeDesignator>
+        </Apply>
+      </Apply>
+    </Condition>
+  </Rule>
+  <Rule RuleId="urn:oasis:names:tc:xacml:3.0:id_rule8" Effect="Permit">    
+    <Description>Les agents d’entretien peuvent nettoyer les pièces de la maison, sauf celles qui sont fermées par le proprio</Description>
+    <Target>      
+      <AnyOf>        
+        <AllOf>          
+          <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">            
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Nettoyer Pièce Maison</AttributeValue>
+            <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:action_id:NettoyerPiece" Category="urn:oasis:names:tc:xacml:3.0:urn:oasis:names:tc:xacml:3.0:attribute-category:action" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"></AttributeDesignator>
+          </Match>
+        </AllOf>
+      </AnyOf>
+    </Target>
+    
+    <Condition>      
+      <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:any-of">        
+        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">          
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Agent d'entretien</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:user-subject:Person" Category="urn:oasis:names:tc:xacml:3.0:urn:oasis:names:tc:xacml:1.0:subject-category:access-subject" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"></AttributeDesignator>
+        </Apply>
+        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">          
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">non fermé</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:resource_id:Piece1" Category="urn:oasis:names:tc:xacml:3.0:urn:oasis:names:tc:xacml:3.0:attribute-category:resource" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"></AttributeDesignator>
+        </Apply>
+      </Apply>
+    </Condition>
+  </Rule>
+  <Rule RuleId="urn:oasis:names:tc:xacml:3.0:id_rule9" Effect="Permit">    
+    <Description>Le propriétaire peut ouvrir ou fermer les stores de la maison à tout moment.</Description>
+    <Target>      
+      <AnyOf>        
+        <AllOf>          
+          <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">            
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Ouvrir Store</AttributeValue>
+            <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:resource_id:Store1" Category="urn:oasis:names:tc:xacml:3.0:urn:oasis:names:tc:xacml:3.0:attribute-category:resource" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"></AttributeDesignator>
+          </Match>
+          <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">            
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Fermer Store</AttributeValue>
+            <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:resource_id:Store1" Category="urn:oasis:names:tc:xacml:3.0:urn:oasis:names:tc:xacml:3.0:attribute-category:resource" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"></AttributeDesignator>
+          </Match>
+        </AllOf>
+      </AnyOf>
+    </Target>
+    
+    <Condition>      
+      <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:any-of">        
+        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">          
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Propriétaire</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:subject_id:Person" Category="urn:oasis:names:tc:xacml:3.0:urn:oasis:names:tc:xacml:1.0:subject-category:access-subject" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"></AttributeDesignator>
+        </Apply>
+      </Apply>
+    </Condition>
+  </Rule>
+  <Rule RuleId="urn:oasis:names:tc:xacml:3.0:id_rule10" Effect="Permit">    
+    <Description>Accès aux ressources de type Thermostat pour les utilisateurs ayant le rôle Propriétaire ou Invité autorisé et se trouvant dans l'environnement Mode Thermostat</Description>
+    <Target>      
+      <AnyOf>        
+        <AllOf>          
+          <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">            
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Thermostat2</AttributeValue>
+            <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:resource_id:Thermostat2" Category="urn:oasis:names:tc:xacml:3.0:urn:oasis:names:tc:xacml:3.0:attribute-category:resource" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"></AttributeDesignator>
+          </Match>
+        </AllOf>
+      </AnyOf>
+    </Target>
+    
+    <Condition>      
+      <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:any-of">        
+        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">          
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Mode Thermostat</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:environment_id:ther" Category="urn:oasis:names:tc:xacml:3.0:urn:oasis:names:tc:xacml:3.0:attribute-category:environment" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"></AttributeDesignator>
+        </Apply>
+        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">          
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Propriétaire</AttributeValue>
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Invité autorisé</AttributeValue>
+          <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:subject_role:Person" Category="urn:oasis:names:tc:xacml:3.0:urn:oasis:names:tc:xacml:1.0:subject-category:access-subject" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"></AttributeDesignator>
+        </Apply>
+      </Apply>
+    </Condition>
+  </Rule>
+  
 </Policy>
