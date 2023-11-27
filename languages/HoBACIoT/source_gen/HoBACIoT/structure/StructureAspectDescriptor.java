@@ -30,9 +30,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAutorization = createDescriptorForAutorization();
   /*package*/ final ConceptDescriptor myConceptBathroom = createDescriptorForBathroom();
   /*package*/ final ConceptDescriptor myConceptBluetooth = createDescriptorForBluetooth();
-  /*package*/ final ConceptDescriptor myConceptCheckAccess = createDescriptorForCheckAccess();
   /*package*/ final ConceptDescriptor myConceptCondition = createDescriptorForCondition();
-  /*package*/ final ConceptDescriptor myConceptDelete = createDescriptorForDelete();
   /*package*/ final ConceptDescriptor myConceptDevices = createDescriptorForDevices();
   /*package*/ final ConceptDescriptor myConceptEnfants = createDescriptorForEnfants();
   /*package*/ final ConceptDescriptor myConceptEntityType = createDescriptorForEntityType();
@@ -59,7 +57,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptPolicyReference = createDescriptorForPolicyReference();
   /*package*/ final ConceptDescriptor myConceptPolicySet = createDescriptorForPolicySet();
   /*package*/ final ConceptDescriptor myConceptPrise = createDescriptorForPrise();
-  /*package*/ final ConceptDescriptor myConceptRead = createDescriptorForRead();
   /*package*/ final ConceptDescriptor myConceptRequest = createDescriptorForRequest();
   /*package*/ final ConceptDescriptor myConceptResource = createDescriptorForResource();
   /*package*/ final ConceptDescriptor myConceptResourceType = createDescriptorForResourceType();
@@ -85,7 +82,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final EnumerationDescriptor myEnumerationDataType = new EnumerationDescriptor_DataType();
   /*package*/ final EnumerationDescriptor myEnumerationEffect = new EnumerationDescriptor_Effect();
   /*package*/ final EnumerationDescriptor myEnumerationGender = new EnumerationDescriptor_Gender();
-  /*package*/ final EnumerationDescriptor myEnumerationMatchID = new EnumerationDescriptor_MatchID();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -100,7 +96,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAction, myConceptActionType, myConceptAllOf, myConceptAnyOf, myConceptApply, myConceptAspirateur, myConceptAttribute, myConceptAttributeDesignator, myConceptAttributeValue, myConceptAttributes, myConceptAuthorizationType, myConceptAutorization, myConceptBathroom, myConceptBluetooth, myConceptCheckAccess, myConceptCondition, myConceptDelete, myConceptDevices, myConceptEnfants, myConceptEntityType, myConceptEnvironment, myConceptEnvironmentType, myConceptFamily, myConceptFour, myConceptFrigo, myConceptGrandMaman, myConceptGrandPapa, myConceptGrandParents, myConceptHouse, myConceptKitchen, myConceptMaman, myConceptMatch, myConceptMicrOnde, myConceptMiror, myConceptPapa, myConceptParents, myConceptPerson, myConceptPiece, myConceptPolicy, myConceptPolicyCombiningAlgorithm, myConceptPolicyReference, myConceptPolicySet, myConceptPrise, myConceptRead, myConceptRequest, myConceptResource, myConceptResourceType, myConceptResponse, myConceptResult, myConceptRoom, myConceptRule, myConceptRuleCombiningAlgorithm, myConceptSalleReunion, myConceptSalon, myConceptSmartTap, myConceptSmart_City, myConceptStore, myConceptSubject, myConceptSubjectType, myConceptTV, myConceptTarget, myConceptThermostat, myConceptToothBrush, myConceptUsager);
+    return Arrays.asList(myConceptAction, myConceptActionType, myConceptAllOf, myConceptAnyOf, myConceptApply, myConceptAspirateur, myConceptAttribute, myConceptAttributeDesignator, myConceptAttributeValue, myConceptAttributes, myConceptAuthorizationType, myConceptAutorization, myConceptBathroom, myConceptBluetooth, myConceptCondition, myConceptDevices, myConceptEnfants, myConceptEntityType, myConceptEnvironment, myConceptEnvironmentType, myConceptFamily, myConceptFour, myConceptFrigo, myConceptGrandMaman, myConceptGrandPapa, myConceptGrandParents, myConceptHouse, myConceptKitchen, myConceptMaman, myConceptMatch, myConceptMicrOnde, myConceptMiror, myConceptPapa, myConceptParents, myConceptPerson, myConceptPiece, myConceptPolicy, myConceptPolicyCombiningAlgorithm, myConceptPolicyReference, myConceptPolicySet, myConceptPrise, myConceptRequest, myConceptResource, myConceptResourceType, myConceptResponse, myConceptResult, myConceptRoom, myConceptRule, myConceptRuleCombiningAlgorithm, myConceptSalleReunion, myConceptSalon, myConceptSmartTap, myConceptSmart_City, myConceptStore, myConceptSubject, myConceptSubjectType, myConceptTV, myConceptTarget, myConceptThermostat, myConceptToothBrush, myConceptUsager);
   }
 
   @Override
@@ -135,12 +131,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptBathroom;
       case LanguageConceptSwitch.Bluetooth:
         return myConceptBluetooth;
-      case LanguageConceptSwitch.CheckAccess:
-        return myConceptCheckAccess;
       case LanguageConceptSwitch.Condition:
         return myConceptCondition;
-      case LanguageConceptSwitch.Delete:
-        return myConceptDelete;
       case LanguageConceptSwitch.Devices:
         return myConceptDevices;
       case LanguageConceptSwitch.Enfants:
@@ -193,8 +185,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptPolicySet;
       case LanguageConceptSwitch.Prise:
         return myConceptPrise;
-      case LanguageConceptSwitch.Read:
-        return myConceptRead;
       case LanguageConceptSwitch.Request:
         return myConceptRequest;
       case LanguageConceptSwitch.Resource:
@@ -242,7 +232,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
-    return Arrays.asList(myEnumerationCategoryEnum, myEnumerationConnectivity, myEnumerationDataType, myEnumerationEffect, myEnumerationGender, myEnumerationMatchID);
+    return Arrays.asList(myEnumerationCategoryEnum, myEnumerationConnectivity, myEnumerationDataType, myEnumerationEffect, myEnumerationGender);
   }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
@@ -354,7 +344,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/9130818380118269961");
     b.version(3);
-    b.property("category", 0x7eb72ef0878ea128L).type(PrimitiveTypeId.STRING).origin("9130818380118270248").done();
+    b.property("category", 0x7eb72ef0878ea128L).type(MetaIdFactory.dataTypeId(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x5e7502486e193c9eL)).origin("9130818380118270248").done();
     b.aggregate("attribute", 0x7eb72ef0878ea296L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x7eb72ef0878e9710L).optional(true).ordered(true).multiple(true).origin("9130818380118270614").done();
     return b.create();
   }
@@ -401,15 +391,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("frequence", 0xd31c90f1956e1b4L).type(PrimitiveTypeId.STRING).origin("950762063038702004").done();
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForCheckAccess() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "CheckAccess", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x3315ad3dc7461c57L);
-    b.class_(false, false, false);
-    // extends: HoBACIoT.structure.Action
-    b.super_(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276bb406L);
-    b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3681038751293119575");
-    b.version(3);
-    return b.create();
-  }
   private static ConceptDescriptor createDescriptorForCondition() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "Condition", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x6d82a07076a2e559L);
     b.class_(false, false, false);
@@ -419,15 +400,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.associate("rule", 0x19d338b958c661a0L).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276b8152L).optional(false).origin("1860893439743648160").done();
     b.aggregate("apply", 0x374065dc726614acL).target(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276ba405L).optional(true).ordered(true).multiple(false).origin("3981294068082021548").done();
     b.alias("condition");
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForDelete() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "Delete", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x653317703a46f0feL);
-    b.class_(false, false, false);
-    // extends: HoBACIoT.structure.Action
-    b.super_(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276bb406L);
-    b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/7292197992424468734");
-    b.version(3);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForDevices() {
@@ -752,16 +724,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/3298194222149298481");
     b.version(3);
     b.alias("prise");
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForRead() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HoBACIoT", "Read", 0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x653317703a46f0fcL);
-    b.class_(false, false, false);
-    // extends: HoBACIoT.structure.Action
-    b.super_(0xc51db5c4495f4e00L, 0xb88912a634a9acb3L, 0x36d641ea276bb406L);
-    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
-    b.origin("r:d3c5e9ba-a836-466a-a7ba-7d798a44fd00(HoBACIoT.structure)/7292197992424468732");
-    b.version(3);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForRequest() {

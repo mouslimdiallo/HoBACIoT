@@ -23,9 +23,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Autorization;
   private ConceptPresentation props_Bathroom;
   private ConceptPresentation props_Bluetooth;
-  private ConceptPresentation props_CheckAccess;
   private ConceptPresentation props_Condition;
-  private ConceptPresentation props_Delete;
   private ConceptPresentation props_Devices;
   private ConceptPresentation props_Enfants;
   private ConceptPresentation props_EntityType;
@@ -52,7 +50,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_PolicyReference;
   private ConceptPresentation props_PolicySet;
   private ConceptPresentation props_Prise;
-  private ConceptPresentation props_Read;
   private ConceptPresentation props_Request;
   private ConceptPresentation props_Resource;
   private ConceptPresentation props_ResourceType;
@@ -177,13 +174,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Bluetooth = cpb.create();
         }
         return props_Bluetooth;
-      case LanguageConceptSwitch.CheckAccess:
-        if (props_CheckAccess == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_CheckAccess = cpb.create();
-        }
-        return props_CheckAccess;
       case LanguageConceptSwitch.Condition:
         if (props_Condition == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -191,13 +181,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Condition = cpb.create();
         }
         return props_Condition;
-      case LanguageConceptSwitch.Delete:
-        if (props_Delete == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_Delete = cpb.create();
-        }
-        return props_Delete;
       case LanguageConceptSwitch.Devices:
         if (props_Devices == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -379,13 +362,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Prise = cpb.create();
         }
         return props_Prise;
-      case LanguageConceptSwitch.Read:
-        if (props_Read == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_Read = cpb.create();
-        }
-        return props_Read;
       case LanguageConceptSwitch.Request:
         if (props_Request == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

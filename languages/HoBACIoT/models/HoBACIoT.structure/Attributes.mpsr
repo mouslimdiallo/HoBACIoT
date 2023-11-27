@@ -43,7 +43,7 @@
     <node concept="1TJgyi" id="7URbJ27zE4C" role="1TKVEl">
       <property role="IQ2nx" value="9130818380118270248" />
       <property role="TrG5h" value="category" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <ref role="AX2Wp" node="5TP0$xI6jMu" resolve="CategoryEnum" />
     </node>
     <node concept="1TJgyj" id="7URbJ27zEam" role="1TKVEi">
       <property role="IQ2ns" value="9130818380118270614" />

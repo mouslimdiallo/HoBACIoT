@@ -1,42 +1,42 @@
 <?xml version = "1.0"?>
 
-<house nom="Maison" id="idhouse001" temperature="25" energyConsom="18" energyConsomSeuil="22" adresse="levis" type="urn:oasis:names:tc:xacml:3.0:attribute-category:resource">  
-  <Person id="0001" prenom="Mamadou" login="mamadou@uqar.ca" password="passecret" adresse="levis" age="25" profession="Etudiant" sexe="Masculin" type="urn:oasis:names:tc:xacml:1.0:subject-category:access-subject">    
-    <Attributes Category="sujet">      
-      <Attribute attributeid="0001" datatype="string">
-        <AttributeValue Datatype="http://www.w3.org/2001/XMLSchema#null">PersonValue</AttributeValue>
+<House name="Maison" id="idhouse001" temperature="25" energyConsom="18" energyConsomSeuil="22" adress="levis" type="urn:oasis:names:tc:xacml:3.0:attribute-category:resource">  
+  <Person id="0001" firstname="Mamadou" login="mamadou@uqar.ca" password="passecret" adress="levis" age="25" profession="Etudiant" sexe="Masculin" type="urn:oasis:names:tc:xacml:1.0:subject-category:access-subject">    
+    <Attributes Category="urn:oasis:names:tc:xacml:1.0:subject-category:access-subject">      
+      <Attribute attributeid="0001" Datatype="http://www.w3.org/2001/XMLSchema#string">
+        <AttributeValue Datatype="http://www.w3.org/2001/XMLSchema#string">Mamadou</AttributeValue>
       </Attribute>
     </Attributes>
   </Person>
-  <Piece id="idPiece1" temperature="23" type="urn:oasis:names:tc:xacml:3.0:attribute-category:resource">    
+  <Piece id="id_Piece1" temperature="23" type="urn:oasis:names:tc:xacml:3.0:attribute-category:resource">    
     <Device id="device_id" modele="samsung" connexion="Ethernet" type="urn:oasis:names:tc:xacml:3.0:attribute-category:resource">      
       
       <Kitchen id="cuisine_id" temperature="22" type="urn:oasis:names:tc:xacml:3.0:attribute-category:resource">        
-        <Attributes Category="5TP0$xI6jOv/resource">          
-          <Attribute attributeid="idcuisine" datatype="string">
-            <AttributeValue Datatype="http://www.w3.org/2001/XMLSchema#null">ValKitchen</AttributeValue>
+        <Attributes Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource">          
+          <Attribute attributeid="cuisine_897" Datatype="http://www.w3.org/2001/XMLSchema#string">
+            <AttributeValue Datatype="http://www.w3.org/2001/XMLSchema#string">Cuisin56</AttributeValue>
           </Attribute>
         </Attributes>
       </Kitchen>
-      <Attributes Category="5TP0$xI6jOv/resource">        
-        <Attribute attributeid="id_resource" datatype="string">
-          <AttributeValue Datatype="http://www.w3.org/2001/XMLSchema#null">ValueDevice</AttributeValue>
+      <Attributes Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource">        
+        <Attribute attributeid="device_564" Datatype="http://www.w3.org/2001/XMLSchema#string">
+          <AttributeValue Datatype="http://www.w3.org/2001/XMLSchema#string">Device60</AttributeValue>
         </Attribute>
       </Attributes>
     </Device>
-    <Attributes Category="5TP0$xI6jOv/resource">      
-      <Attribute attributeid="id_piece" datatype="string">
-        <AttributeValue Datatype="http://www.w3.org/2001/XMLSchema#null">25</AttributeValue>
+    <Attributes Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource">      
+      <Attribute attributeid="034_piece" Datatype="http://www.w3.org/2001/XMLSchema#string">
+        <AttributeValue Datatype="http://www.w3.org/2001/XMLSchema#string">25</AttributeValue>
       </Attribute>
     </Attributes>
   </Piece>
   <Chambre id="chambre_id" temperature="23" type="urn:oasis:names:tc:xacml:3.0:attribute-category:resource"></Chambre>
-  <Attributes Category="5TP0$xI6jOv/resource">    
-    <Attribute attributeid="id_Maison" datatype="string">
-      <AttributeValue Datatype="http://www.w3.org/2001/XMLSchema#null">ValHouse</AttributeValue>
+  <Attributes Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource">    
+    <Attribute attributeid="Maison_1234" Datatype="http://www.w3.org/2001/XMLSchema#string">
+      <AttributeValue Datatype="http://www.w3.org/2001/XMLSchema#string">Uqar</AttributeValue>
     </Attribute>
   </Attributes>
-</house>
+</House>
 <Policy xmlns="urn:oasis:names:tc:xacml:3.0:core:schema:wd-17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xacml:3.0:core:schema:wd-17 http://docs.oasis-open.org/xacml/3.0/xacml-core-v3-schema-wd-17.xsd" PolicyId="urn:oasis:names:tc:xacml:3.0:policy1:badge" Version="1.0">  
   <Description>Politique d'accès à la maison intelligente pour les personnes avec badge</Description>
   

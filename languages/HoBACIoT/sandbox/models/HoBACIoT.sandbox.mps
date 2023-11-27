@@ -247,11 +247,13 @@
       <property role="3TeoZo" value="5TP0$xI6jOv/resource" />
       <node concept="3TerBw" id="6IY9dm6hBW6" role="3TeoLA">
         <property role="TrG5h" value="Maison" />
-        <property role="3TervK" value="id_Maison" />
+        <property role="3TervK" value="Maison_1234" />
         <property role="2SQ1Gs" value="string" />
         <node concept="hIBnC" id="6IY9dm6hBW7" role="3Terk5">
-          <property role="TrG5h" value="V" />
-          <property role="2SQ6ho" value="ValHouse" />
+          <property role="TrG5h" value="ValueHouse" />
+          <property role="2SQ6ho" value="Uqar" />
+          <property role="3WfGno" value="5TP0$xIxQ2m/string" />
+          <ref role="36$3K5" node="5r9N1qgfn6G" resolve="Designator2" />
         </node>
       </node>
     </node>
@@ -305,14 +307,16 @@
       <property role="B7jwD" value="5TP0$xI6jPc/accessSubject" />
       <ref role="1Tal3k" node="5TP0$xJfgdf" resolve="Admin" />
       <node concept="3TeoVT" id="6IY9dm604Tk" role="BofSw">
-        <property role="3TeoZo" value="sujet" />
+        <property role="3TeoZo" value="5TP0$xI6jPc/accessSubject" />
         <node concept="3TerBw" id="6IY9dm604Tm" role="3TeoLA">
           <property role="TrG5h" value="AttributePerson" />
           <property role="3TervK" value="0001" />
           <property role="2SQ1Gs" value="string" />
           <node concept="hIBnC" id="6IY9dm604Tn" role="3Terk5">
-            <property role="TrG5h" value="V" />
-            <property role="2SQ6ho" value="PersonValue" />
+            <property role="TrG5h" value="Value_Person" />
+            <property role="2SQ6ho" value="Mamadou" />
+            <property role="3WfGno" value="5TP0$xIxQ2m/string" />
+            <ref role="36$3K5" node="5r9N1qgfn6C" resolve="Designator1" />
           </node>
         </node>
       </node>
@@ -359,7 +363,7 @@
     </node>
     <node concept="39Iu8T" id="5TP0$xJfgdl" role="1vtvyM">
       <property role="TrG5h" value="Piece1" />
-      <property role="1TbUNV" value="idPiece1" />
+      <property role="1TbUNV" value="id_Piece1" />
       <property role="1TbU2z" value="23" />
       <property role="B7jwD" value="5TP0$xI6jOv/resource" />
       <ref role="1TbUvz" node="5TP0$xJfgdn" resolve="Piece1" />
@@ -367,11 +371,13 @@
         <property role="3TeoZo" value="5TP0$xI6jOv/resource" />
         <node concept="3TerBw" id="6IY9dm6DByu" role="3TeoLA">
           <property role="TrG5h" value="Piece" />
-          <property role="3TervK" value="id_piece" />
+          <property role="3TervK" value="034_piece" />
           <property role="2SQ1Gs" value="string" />
           <node concept="hIBnC" id="6IY9dm6DByv" role="3Terk5">
             <property role="TrG5h" value="PiecV" />
             <property role="2SQ6ho" value="25" />
+            <property role="3WfGno" value="5TP0$xIxQ2m/string" />
+            <ref role="36$3K5" node="5r9N1qgfn6G" resolve="Designator2" />
           </node>
         </node>
       </node>
@@ -387,11 +393,11 @@
           <property role="3TeoZo" value="5TP0$xI6jOv/resource" />
           <node concept="3TerBw" id="6IY9dm604Tc" role="3TeoLA">
             <property role="TrG5h" value="AttributeResource" />
-            <property role="3TervK" value="id_resource" />
+            <property role="3TervK" value="device_564" />
             <property role="2SQ1Gs" value="string" />
             <node concept="hIBnC" id="6IY9dm604Td" role="3Terk5">
               <property role="TrG5h" value="ValueRessource" />
-              <property role="2SQ6ho" value="ValueDevice" />
+              <property role="2SQ6ho" value="Device60" />
               <property role="3WfGno" value="5TP0$xIxQ2m/string" />
               <ref role="36$3K5" node="5r9N1qgfn6G" resolve="Designator2" />
             </node>
@@ -414,8 +420,8 @@
           </node>
           <node concept="2eGuc2" id="6IY9dm6_5Qo" role="1vuUeX">
             <property role="TrG5h" value="MicrOnde" />
-            <property role="1TbSrM" value="idmicro" />
-            <property role="1Ta4HJ" value="Motorol" />
+            <property role="1TbSrM" value="micro_id" />
+            <property role="1Ta4HJ" value="Motorola" />
             <property role="1Ta4zT" value="2cS6XcGq7mu/WiFi" />
             <property role="B7jwD" value="5TP0$xI6jOv/resource" />
             <ref role="1Ta4Us" node="6IY9dm604mU" resolve="Person1" />
@@ -424,11 +430,11 @@
               <property role="3TeoZo" value="resource" />
               <node concept="3TerBw" id="6IY9dm6Bo5X" role="3TeoLA">
                 <property role="TrG5h" value="Micro" />
-                <property role="3TervK" value="idmicro" />
+                <property role="3TervK" value="micro_i567" />
                 <property role="2SQ1Gs" value="string" />
                 <node concept="hIBnC" id="6IY9dm6Bo5Y" role="3Terk5">
                   <property role="TrG5h" value="Micro" />
-                  <property role="2SQ6ho" value="ValMicro" />
+                  <property role="2SQ6ho" value="78" />
                   <property role="3WfGno" value="5TP0$xIxQ2m/string" />
                   <ref role="36$3K5" node="5r9N1qgfn6G" resolve="Designator2" />
                 </node>
@@ -439,11 +445,11 @@
             <property role="3TeoZo" value="5TP0$xI6jOv/resource" />
             <node concept="3TerBw" id="23Gv$Ggrm$z" role="3TeoLA">
               <property role="TrG5h" value="AttCuisine" />
-              <property role="3TervK" value="idcuisine" />
+              <property role="3TervK" value="cuisine_897" />
               <property role="2SQ1Gs" value="string" />
               <node concept="hIBnC" id="23Gv$Ggrm$$" role="3Terk5">
                 <property role="TrG5h" value="Kithen" />
-                <property role="2SQ6ho" value="ValKitchen" />
+                <property role="2SQ6ho" value="Cuisin56" />
                 <property role="3WfGno" value="5TP0$xIxQ2m/string" />
                 <ref role="36$3K5" node="5r9N1qgfn6G" resolve="Designator2" />
               </node>
