@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectResources">
+    <resource url="urn:oasis:names:tc:xacml:3.0:core:schema:wd-17" location="$PROJECT_DIR$" />
+  </component>
+</project>
